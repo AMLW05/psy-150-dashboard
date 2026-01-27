@@ -46,16 +46,52 @@ const module3Activities = {
         }
     },
     la4: {
-        dataAnalysis: {
-            title: "Memory Research Data Analysis",
-            chartData: {
-                title: "Forgetting Curve & Spacing Effect"
-            },
-            questions: [
-                { q: "According to Ebbinghaus's forgetting curve, when does most forgetting occur?", a: "Within the first hour after learning, then levels off" },
-                { q: "How does the spacing effect improve memory compared to massed practice?", a: "Distributed practice over time produces better long-term retention than cramming" },
-                { q: "What study strategy does this research support?", a: "Study in multiple shorter sessions over several days rather than one long session" }
-            ]
+        studentChoice: {
+            title: "LA4: Student Choice Activity (20 points)",
+            description: "Choose ONE option that interests you most. Each option requires applying learning and memory research to real-world contexts.",
+            options: [
+                {
+                    id: "A",
+                    title: "Option A: Eyewitness Testimony Research Evaluation",
+                    description: "Evaluate the research validity on eyewitness testimony and memory reliability. Create a policy recommendation for courts based on scientific evidence.",
+                    instructions: "Review research on factors affecting eyewitness accuracy (stress, weapon focus, leading questions, confidence-accuracy relationship). Analyze 2-3 key studies. Write a 2-3 page policy brief recommending how courts should handle eyewitness testimony. Use scientific evidence to support recommendations.",
+                    gradingCriteria: [
+                        "Research synthesis (8 pts) - Accuracy and depth of research understanding",
+                        "Critical evaluation (6 pts) - Assessment of study validity and limitations",
+                        "Application (6 pts) - Practical, evidence-based policy recommendations"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS2"]
+                },
+                {
+                    id: "B",
+                    title: "Option B: Personal Study Strategy Experiment",
+                    description: "Design and test a personal study strategy based on memory research (spacing effect, testing effect, elaborative encoding). Conduct a mini self-experiment.",
+                    instructions: "Choose one memory principle from research (spacing, testing effect, elaborative encoding, etc.). Design a 2-week personal experiment testing it with your own studying. Track your performance. Write a 2-3 page report including: hypothesis, method, results, and reflection on effectiveness. Compare to your usual study methods.",
+                    gradingCriteria: [
+                        "Research foundation (7 pts) - Correct understanding of memory principle",
+                        "Experiment design (7 pts) - Clear method, appropriate measurement",
+                        "Analysis & reflection (6 pts) - Thoughtful evaluation of results and implications"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS2"]
+                },
+                {
+                    id: "C",
+                    title: "Option C: 'Learning Styles' Myth Analysis",
+                    description: "Analyze the 'Learning Styles' myth using scientific evidence. Explain why it persists in education despite being scientifically debunked.",
+                    instructions: "Research the scientific evidence against 'learning styles' (visual/auditory/kinesthetic). Analyze why this myth persists in education. Write a 2-3 page analysis including: What the research shows, why the myth is appealing but wrong, what educators should do instead based on actual memory research.",
+                    gradingCriteria: [
+                        "Scientific evidence (8 pts) - Accurate research on learning styles myth",
+                        "Critical analysis (6 pts) - Explanation of why myth persists",
+                        "Practical recommendations (6 pts) - Evidence-based alternatives for educators"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS6"]
+                }
+            ],
+            submissionFormat: "2-3 page written analysis uploaded to Canvas",
+            rubric: "Student Choice Activity Rubric (20 points total)"
         }
     }
 };

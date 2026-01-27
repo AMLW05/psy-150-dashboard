@@ -58,12 +58,53 @@ const module6Activities = {
         }
     },
     la4: {
-        title: "Cognitive Dissonance Analysis",
-        scenarios: [
-            { situation: "A person who values health continues to smoke", dissonance: "Behavior (smoking) conflicts with belief (health is important)", reduction: "Minimize risk, quit smoking, or change attitude about health" },
-            { situation: "Someone lies to get a job they really want", dissonance: "Behavior (lying) conflicts with self-concept (honest person)", reduction: "Justify lying, feel guilty, or change self-perception" },
-            { situation: "A student cheats despite believing cheating is wrong", dissonance: "Behavior conflicts with moral belief", reduction: "Rationalize ('everyone does it'), feel guilt, or stop cheating" }
-        ]
+        studentChoice: {
+            title: "LA4: Student Choice Activity (20 points)",
+            description: "Choose ONE option that interests you most. Each option requires applying personality or social psychology research to real-world contexts.",
+            options: [
+                {
+                    id: "A",
+                    title: "Option A: Classic Social Psychology Research Ethics",
+                    description: "Evaluate classic social psychology research ethics (Milgram, Stanford Prison Experiment, Asch) and create ethical guidelines for modern research.",
+                    instructions: "Select 2-3 classic social psychology studies (Milgram obedience, Stanford Prison Experiment, Asch conformity, Zimbardo's research, etc.). Analyze what ethical violations occurred using current APA ethics standards. Consider: informed consent, protection from harm, deception, debriefing, etc. Write a 2-3 page analysis that: (1) Explains what happened in each study, (2) Identifies ethical problems using current standards, (3) Proposes specific guidelines to prevent similar problems today while still allowing important research.",
+                    gradingCriteria: [
+                        "Research understanding (8 pts) - Accurate description of studies and their findings",
+                        "Ethical analysis (6 pts) - Clear identification of violations and principles",
+                        "Practical guidelines (6 pts) - Thoughtful, feasible recommendations"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS4", "PTS1"]
+                },
+                {
+                    id: "B",
+                    title: "Option B: Cognitive Dissonance in Real-World Contexts",
+                    description: "Apply cognitive dissonance theory to explain real-world attitude change in politics, health behaviors, or consumer choices.",
+                    instructions: "Choose a domain where people experience cognitive dissonance: political beliefs vs evidence, health behaviors vs knowledge, consumer ethics vs purchasing, professional values vs workplace demands, etc. Analyze specific examples using Festinger's theory. Write a 2-3 page analysis that: (1) Explains cognitive dissonance theory, (2) Describes specific real-world examples, (3) Analyzes how people reduce dissonance (change beliefs, change behavior, add consonant cognitions, minimize importance), (4) Discusses implications for persuasion or behavior change.",
+                    gradingCriteria: [
+                        "Theoretical accuracy (7 pts) - Correct understanding of cognitive dissonance",
+                        "Real-world application (7 pts) - Specific, compelling examples",
+                        "Analysis depth (6 pts) - Insightful examination of dissonance reduction strategies"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS2", "PTS1"]
+                },
+                {
+                    id: "C",
+                    title: "Option C: Personality Assessment - Science vs Pop Psychology",
+                    description: "Compare personality assessment tools (Myers-Briggs vs Big Five) using scientific validity criteria.",
+                    instructions: "Research two personality assessment approaches: Myers-Briggs Type Indicator (MBTI) and the Big Five (OCEAN). Compare them using scientific criteria: reliability (consistency), validity (accuracy), predictive power, research support. Write a 2-3 page comparative analysis that: (1) Describes each approach, (2) Evaluates scientific evidence for each, (3) Explains why MBTI is popular despite weak scientific support, (4) Recommends which should be used in different contexts (career counseling, research, hiring, etc.) with justification.",
+                    gradingCriteria: [
+                        "Scientific understanding (8 pts) - Accurate knowledge of validity criteria",
+                        "Comparative analysis (6 pts) - Fair, evidence-based comparison",
+                        "Critical thinking (6 pts) - Insight into popularity vs scientific merit gap"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS6"]
+                }
+            ],
+            submissionFormat: "2-3 page written analysis uploaded to Canvas",
+            rubric: "Student Choice Activity Rubric (20 points total)"
+        }
     }
 };
 

@@ -41,14 +41,53 @@ const module5Activities = {
         }
     },
     la4: {
-        title: "Motivation Self-Analysis",
-        instructions: "Analyze your own motivation for college using drive-reduction theory, arousal theory, and self-determination theory. Identify intrinsic vs extrinsic factors.",
-        prompts: [
-            "What intrinsic factors motivate you to attend college?",
-            "What extrinsic factors motivate you?",
-            "How do autonomy, competence, and relatedness affect your motivation?",
-            "What could increase your intrinsic motivation?"
-        ]
+        studentChoice: {
+            title: "LA4: Student Choice Activity (20 points)",
+            description: "Choose ONE option that interests you most. Each option requires applying cognition and motivation research to real-world contexts.",
+            options: [
+                {
+                    id: "A",
+                    title: "Option A: Intelligence Testing Controversies",
+                    description: "Evaluate intelligence testing controversies (cultural bias, nature vs nurture, multiple intelligences) using scientific evidence and create an informed position.",
+                    instructions: "Research the major controversies in intelligence testing: cultural bias in IQ tests, nature vs nurture debate, validity of multiple intelligences theory, or stereotype threat effects. Analyze research evidence from multiple perspectives. Write a 2-3 page position paper that: (1) Presents the controversy fairly, (2) Evaluates the scientific evidence, (3) Takes an informed position supported by research.",
+                    gradingCriteria: [
+                        "Research quality (8 pts) - Accurate understanding of multiple perspectives",
+                        "Critical evaluation (6 pts) - Assessment of evidence quality and limitations",
+                        "Reasoned position (6 pts) - Well-supported conclusion based on evidence"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS6"]
+                },
+                {
+                    id: "B",
+                    title: "Option B: Workplace Motivation Design",
+                    description: "Apply motivation theories to a workplace scenario - design a motivation strategy for employee engagement using research-based principles.",
+                    instructions: "Choose a workplace motivation challenge (low engagement, high turnover, resistance to change, etc.). Apply 2-3 motivation theories (Self-Determination Theory, Goal-Setting Theory, Intrinsic vs Extrinsic motivation, etc.) to design an evidence-based intervention. Write a 2-3 page proposal including: problem analysis, theoretical foundation, specific strategies, and expected outcomes.",
+                    gradingCriteria: [
+                        "Theoretical foundation (7 pts) - Accurate application of motivation theories",
+                        "Strategy design (7 pts) - Practical, research-based interventions",
+                        "Justification (6 pts) - Clear explanation of why strategies should work"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS2", "PTS1"]
+                },
+                {
+                    id: "C",
+                    title: "Option C: Emotional Intelligence - Science vs Pop Psychology",
+                    description: "Analyze media portrayals of 'emotional intelligence' and distinguish science from pop psychology claims.",
+                    instructions: "Collect 3-5 examples of 'emotional intelligence' claims from media, self-help books, or workplace training. Compare these claims to the actual research on emotional intelligence (Mayer-Salovey model, research evidence, measurement issues). Write a 2-3 page analysis that: (1) Summarizes popular claims, (2) Compares to scientific evidence, (3) Identifies what's accurate vs exaggerated, (4) Explains why pop psychology versions are appealing but potentially misleading.",
+                    gradingCriteria: [
+                        "Scientific research (8 pts) - Accurate understanding of EI research",
+                        "Critical comparison (6 pts) - Clear identification of science vs pseudoscience",
+                        "Analysis depth (6 pts) - Thoughtful explanation of discrepancies"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS6"]
+                }
+            ],
+            submissionFormat: "2-3 page written analysis uploaded to Canvas",
+            rubric: "Student Choice Activity Rubric (20 points total)"
+        }
     }
 };
 

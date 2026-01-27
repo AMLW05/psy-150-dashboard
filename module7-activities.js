@@ -87,22 +87,53 @@ const module7Activities = {
         }
     },
     la4: {
-        title: "Treatment Evaluation Activity",
-        instructions: "Choose one disorder. Compare evidence for different treatments (CBT, medication, alternative therapies). Identify pseudoscience red flags.",
-        disorders: ["Major Depression", "Anxiety Disorders", "PTSD", "OCD"],
-        evidenceBasedTreatments: [
-            "Cognitive-Behavioral Therapy (strong evidence)",
-            "Antidepressants (SSRIs, SNRIs - strong evidence)",
-            "Exposure therapy (for anxiety, OCD, PTSD)",
-            "Mindfulness-Based Cognitive Therapy"
-        ],
-        pseudoscienceRedFlags: [
-            "Claims to cure all mental illnesses with one method",
-            "No scientific research supporting effectiveness",
-            "Relies on testimonials rather than controlled studies",
-            "Promises quick, permanent cures",
-            "Rejects mainstream psychological science"
-        ]
+        studentChoice: {
+            title: "LA4: Student Choice Activity (20 points)",
+            description: "Choose ONE option that interests you most. Each option requires applying clinical psychology and health psychology research to real-world contexts.",
+            options: [
+                {
+                    id: "A",
+                    title: "Option A: Treatment Effectiveness Research Evaluation",
+                    description: "Evaluate treatment effectiveness research for one disorder (depression, anxiety, PTSD) - compare CBT, medication, and alternative therapies using evidence-based criteria.",
+                    instructions: "Select one psychological disorder (major depression, generalized anxiety, PTSD, OCD, etc.). Research the effectiveness of different treatment approaches: Cognitive-Behavioral Therapy (CBT), medication (SSRIs, etc.), and alternative therapies (mindfulness, exercise, etc.). Write a 2-3 page evidence-based review that: (1) Describes the disorder and its impact, (2) Evaluates research support for each treatment type using scientific criteria (randomized controlled trials, effect sizes, relapse rates), (3) Compares effectiveness, side effects, and costs, (4) Makes evidence-based recommendations for when each treatment is appropriate.",
+                    gradingCriteria: [
+                        "Research synthesis (8 pts) - Accurate understanding of treatment research",
+                        "Scientific evaluation (6 pts) - Proper assessment of evidence quality",
+                        "Practical recommendations (6 pts) - Thoughtful, evidence-based guidance"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS2"]
+                },
+                {
+                    id: "B",
+                    title: "Option B: Stress Management Application",
+                    description: "Apply stress management strategies to a personal scenario using research on coping effectiveness.",
+                    instructions: "Identify a significant source of stress in your life (academic, work, relationships, health, etc.). Research evidence-based stress management strategies: problem-focused coping, emotion-focused coping, mindfulness, exercise, social support, cognitive reappraisal, etc. Write a 2-3 page application paper that: (1) Describes the stressor using stress theory (primary/secondary appraisal, chronic vs acute), (2) Analyzes your current coping methods and their effectiveness, (3) Designs an evidence-based stress management plan using 3-4 research-supported strategies, (4) Explains why these strategies should work based on research.",
+                    gradingCriteria: [
+                        "Stress analysis (7 pts) - Accurate application of stress concepts",
+                        "Evidence-based strategies (7 pts) - Research-supported coping methods",
+                        "Personal application (6 pts) - Realistic, specific implementation plan"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS2", "PTS1"]
+                },
+                {
+                    id: "C",
+                    title: "Option C: DSM-5 Diagnostic Criteria Analysis",
+                    description: "Analyze the validity of DSM-5 diagnostic criteria for one disorder using research evidence and critical analysis.",
+                    instructions: "Select one psychological disorder with controversial diagnostic criteria (ADHD, depression, PTSD, autism spectrum, borderline personality, etc.). Research debates about how it's defined in DSM-5. Write a 2-3 page critical analysis that: (1) Explains the current DSM-5 criteria, (2) Analyzes strengths of these criteria (reliability, validity, clinical utility), (3) Identifies criticisms and limitations (over-diagnosis concerns, categorical vs dimensional issues, cultural considerations), (4) Proposes potential improvements based on research.",
+                    gradingCriteria: [
+                        "DSM understanding (8 pts) - Accurate knowledge of diagnostic criteria",
+                        "Critical analysis (6 pts) - Balanced evaluation of strengths and weaknesses",
+                        "Research-based reasoning (6 pts) - Evidence supporting arguments"
+                    ],
+                    linkedCLOs: ["CLO2", "CLO4"],
+                    linkedPTS: ["PTS1", "PTS6"]
+                }
+            ],
+            submissionFormat: "2-3 page written analysis uploaded to Canvas",
+            rubric: "Student Choice Activity Rubric (20 points total)"
+        }
     }
 };
 
