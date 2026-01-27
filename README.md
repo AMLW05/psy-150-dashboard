@@ -113,15 +113,15 @@ Each skill is introduced, practiced, and mastered across multiple modules.
 
 ## Course Learning Objectives (CLOs)
 
-**CLO1**: Explain the major concepts, theoretical perspectives and historical trends in psychology
+**CLO1**: Explain major psychological concepts, theoretical perspectives, and historical trends using discipline-specific terminology (Understand)
 
-**CLO2**: Identify basic research methods in psychology and distinguish evidence quality
+**CLO2**: Evaluate research methods and designs to determine appropriate use and validity in psychological investigations (Evaluate)
 
-**CLO3**: Demonstrate scientific analysis and critical evaluation of psychological claims
+**CLO3**: Analyze psychological phenomena and problems using scientific reasoning and evidence-based approaches (Analyze)
 
-**CLO4**: Apply psychology principles to personal, social, and organizational issues
+**CLO4**: Apply psychological principles to solve personal, social, and organizational problems (Apply)
 
-**CLO5**: Demonstrate understanding of biopsychosocial integration and ethical analysis
+**CLO5**: Synthesize biological, psychological, and social factors to explain human behavior and mental processes (Synthesize)
 
 ---
 
