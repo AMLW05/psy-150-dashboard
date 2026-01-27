@@ -482,11 +482,11 @@ function renderRubrics() {
 
 function renderSkills() {
     const c = document.getElementById('skills-container');
-    if (!courseData || !courseData.historicalThinkingSkills) return;
-    courseData.historicalThinkingSkills.forEach(s => {
+    if (!courseData || !courseData.psychologicalThinkingSkills) return;
+    courseData.psychologicalThinkingSkills.forEach(s => {
         const div = document.createElement('div');
-        div.className = 'activity-card' + (s.id === 'HTS6' ? ' featured' : '');
-        let html = '<div class="activity-header"><span class="activity-title">' + s.name + '</span>' + (s.id === 'HTS6' ? '<span class="badge badge-featured">NEW</span>' : '') + '</div><p style="margin:10px 0">' + s.description + '</p><div style="margin-top:15px;padding:15px;background:var(--gray-light);border-radius:6px"><strong>Progression:</strong><ul style="margin-left:20px;margin-top:10px;line-height:1.8">';
+        div.className = 'activity-card' + (s.id === 'PTS6' ? ' featured' : '');
+        let html = '<div class="activity-header"><span class="activity-title">' + s.name + '</span>' + (s.id === 'PTS6' ? '<span class="badge badge-featured">NEW</span>' : '') + '</div><p style="margin:10px 0">' + s.description + '</p><div style="margin-top:15px;padding:15px;background:var(--gray-light);border-radius:6px"><strong>Progression:</strong><ul style="margin-left:20px;margin-top:10px;line-height:1.8">';
         s.progression.forEach(p => html += '<li>' + p + '</li>');
         html += '</ul></div>';
         div.innerHTML = html;
