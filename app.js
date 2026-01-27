@@ -1,4 +1,4 @@
-// HIS-131 Dashboard - Interactive JavaScript
+// PSY-150 Dashboard - Interactive JavaScript
 // Dynamically renders collapsible modules from course-data.json
 
 let courseData = null;
@@ -245,45 +245,46 @@ function buildActivity(a, mn, idx) {
             details += '</div>';
         });
     }
-    // LA3: Timeline + Comparison OR Data Analysis OR Research Synthesis
+    // LA3: Student Choice Activities (Categorization, Timeline, Matching, Data Analysis, etc.)
     else if (idx === 2 && modAct.la3) {
-        if (modAct.la3.researchLiteracySynthesis) {
-            details += '<h4 style="margin-top:20px">' + modAct.la3.researchLiteracySynthesis.title + '</h4>';
-            details += '<p style="margin:10px 0">' + modAct.la3.researchLiteracySynthesis.description + '</p>';
-            details += '<div style="margin:15px 0;padding:15px;background:#f0f0f0;border-radius:4px"><pre style="white-space:pre-wrap;font-family:inherit;margin:0">' + modAct.la3.researchLiteracySynthesis.instructions + '</pre></div>';
-        } else if (modAct.la3.timelineBuilder) {
-            details += '<h4 style="margin-top:20px">Option A: Timeline Builder</h4>';
-            details += '<p style="margin:10px 0"><strong>' + modAct.la3.timelineBuilder.instructions + '</strong></p>';
-            details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Event</th><th style="width:20%">Date</th></tr></thead><tbody>';
-            modAct.la3.timelineBuilder.events.forEach((e, i) => {
-                details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + e.event + '</td><td>' + e.date + '</td></tr>';
-            });
-            details += '</tbody></table>';
-        }
+        details += '<h4 style="margin-top:20px">Student Choice Activity</h4>';
+        details += '<p style="margin:10px 0;font-style:italic">Students select between the following options:</p>';
 
-        if (modAct.la3.comparisonActivity) {
-            details += '<h4 style="margin-top:30px">Option B: Comparison Activity</h4>';
-            details += '<p style="margin:10px 0"><strong>' + modAct.la3.comparisonActivity.instructions + '</strong></p>';
-            if (modAct.la3.comparisonActivity.regions) {
-                details += '<p style="margin:10px 0;padding:10px;background:var(--gray-light);border-radius:4px"><strong>Categories:</strong> ' + modAct.la3.comparisonActivity.regions.join(' | ') + '</p>';
+        // Iterate through all properties in la3 to find activity options
+        let optionCount = 1;
+        Object.keys(modAct.la3).forEach(key => {
+            const activity = modAct.la3[key];
+
+            // Render timeline activities
+            if (key.includes('timeline') || key.includes('Timeline')) {
+                details += '<div style="margin:20px 0;padding:15px;background:#f8f9fa;border-left:4px solid var(--accent);border-radius:4px">';
+                details += '<h5 style="margin:0 0 10px 0;color:var(--accent)">Option ' + String.fromCharCode(64 + optionCount) + ': Timeline Builder</h5>';
+                if (activity.events) {
+                    details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Event</th><th style="width:20%">Date</th></tr></thead><tbody>';
+                    activity.events.forEach((e, i) => {
+                        details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + e.event + '</td><td>' + e.date + '</td></tr>';
+                    });
+                    details += '</tbody></table>';
+                }
+                details += '</div>';
+                optionCount++;
             }
-            details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Characteristic</th><th style="width:35%">Answer</th></tr></thead><tbody>';
-            modAct.la3.comparisonActivity.characteristics.forEach((c, i) => {
-                details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + c.text + '</td><td><span class="badge badge-auto" style="display:inline-block">' + c.answer + '</span></td></tr>';
-            });
-            details += '</tbody></table>';
-        }
-
-        if (modAct.la3.dataAnalysis) {
-            details += '<h4 style="margin-top:30px">📊 Data Analysis Activity</h4>';
-            details += '<p style="margin:10px 0"><strong>' + modAct.la3.dataAnalysis.instructions + '</strong></p>';
-            details += '<div style="margin:20px 0;padding:20px;background:#f8f9fa;border-radius:8px;border:2px solid var(--accent-light)"><h5>' + modAct.la3.dataAnalysis.chartData.title + '</h5><p style="margin-top:10px;font-style:italic">Chart would be displayed here in Canvas using Chart.js or similar visualization</p></div>';
-            details += '<h5 style="margin-top:20px">Analysis Questions:</h5><ol style="margin-left:20px;line-height:2">';
-            modAct.la3.dataAnalysis.questions.forEach(q => {
-                details += '<li><strong>Q:</strong> ' + q.q + '<br><em>A:</em> ' + q.a + '</li>';
-            });
-            details += '</ol>';
-        }
+            // Render matching/categorization activities
+            else if (activity.scenarios || activity.examples || activity.structures || activity.descriptions || activity.techniques || activity.concepts || activity.cases) {
+                const items = activity.scenarios || activity.examples || activity.structures || activity.descriptions || activity.techniques || activity.concepts || activity.cases;
+                details += '<div style="margin:20px 0;padding:15px;background:#f8f9fa;border-left:4px solid var(--accent);border-radius:4px">';
+                details += '<h5 style="margin:0 0 10px 0;color:var(--accent)">Option ' + String.fromCharCode(64 + optionCount) + ': ' + key.replace(/([A-Z])/g, ' $1').trim() + '</h5>';
+                details += '<p style="margin:10px 0">Match or categorize the following items:</p>';
+                details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Item</th><th style="width:35%">Answer/Category</th></tr></thead><tbody>';
+                items.forEach((item, i) => {
+                    const itemText = item.text || item.scenario || item.behavior || item.symptom || item.symptoms || item.situation || item.description || item.strategy || item.name || JSON.stringify(item);
+                    const answer = item.answer || item.type || item.stage || item.neurotransmitter || item.disorder || item.field || item.theory || item.approach || item.function || '';
+                    details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + itemText + '</td><td><span class="badge badge-auto" style="display:inline-block">' + answer + '</span></td></tr>';
+                });
+                details += '</tbody></table></div>';
+                optionCount++;
+            }
+        });
     }
     // LA4: Additional activities (Module 3 has LA4)
     else if (idx === 3 && modAct.la4) {
@@ -316,16 +317,16 @@ function buildAssessment(a, mn) {
     const id = 'm' + mn + '-assess-' + (a.type === 'Discussion Board' ? 'disc' : a.type === 'Project Checkpoint' ? 'checkpoint' : a.type === 'Midterm Exam' ? 'midterm' : a.type === 'Final Exam' ? 'final' : a.type === 'Final Project' ? 'finalproject' : 'quiz');
     let details = '';
 
-    // Get module-specific data (discussions, checkpoints, projects, quizzes, exams)
+    // Get module-specific data (discussions, checkpoints, quizzes, exams)
     const moduleData = {
-        1: { project: typeof module1Project !== 'undefined' ? module1Project : null, quiz: typeof module1Quiz !== 'undefined' ? module1Quiz : null },
-        2: { discussion: typeof module2Discussion !== 'undefined' ? module2Discussion : null, project: typeof module2Project !== 'undefined' ? module2Project : null, quiz: typeof module2Quiz !== 'undefined' ? module2Quiz : null },
-        3: { project: typeof module3Project !== 'undefined' ? module3Project : null, quiz: typeof module3Quiz !== 'undefined' ? module3Quiz : null },
-        4: { discussion: typeof module4Discussion !== 'undefined' ? module4Discussion : null, project: typeof module4Project !== 'undefined' ? module4Project : null, quiz: typeof module4Quiz !== 'undefined' ? module4Quiz : null, midterm: typeof module4Midterm !== 'undefined' ? module4Midterm : null },
-        5: { project: typeof module5Project !== 'undefined' ? module5Project : null, quiz: typeof module5Quiz !== 'undefined' ? module5Quiz : null },
-        6: { discussion: typeof module6Discussion !== 'undefined' ? module6Discussion : null, project: typeof module6Project !== 'undefined' ? module6Project : null, quiz: typeof module6Quiz !== 'undefined' ? module6Quiz : null },
-        7: { finalPortfolio: typeof module7FinalPortfolio !== 'undefined' ? module7FinalPortfolio : null, quiz: typeof module7Quiz !== 'undefined' ? module7Quiz : null },
-        8: { discussion: typeof module8Discussion !== 'undefined' ? module8Discussion : null, quiz: typeof module8Quiz !== 'undefined' ? module8Quiz : null, finalExam: typeof finalExam !== 'undefined' ? finalExam : null }
+        1: { checkpoint: typeof module1Checkpoint !== 'undefined' ? module1Checkpoint : null, quiz: typeof module1Quiz !== 'undefined' ? module1Quiz : null },
+        2: { discussion: typeof module2Discussion !== 'undefined' ? module2Discussion : null, quiz: typeof module2Quiz !== 'undefined' ? module2Quiz : null },
+        3: { checkpoint: typeof module3Checkpoint !== 'undefined' ? module3Checkpoint : null, quiz: typeof module3Quiz !== 'undefined' ? module3Quiz : null },
+        4: { discussion: typeof module4Discussion !== 'undefined' ? module4Discussion : null, quiz: typeof module4Quiz !== 'undefined' ? module4Quiz : null },
+        5: { checkpoint: typeof module5Checkpoint !== 'undefined' ? module5Checkpoint : null, quiz: typeof module5Quiz !== 'undefined' ? module5Quiz : null },
+        6: { discussion: typeof module6Discussion !== 'undefined' ? module6Discussion : null, quiz: typeof module6Quiz !== 'undefined' ? module6Quiz : null },
+        7: { checkpoint: typeof module7Checkpoint !== 'undefined' ? module7Checkpoint : null, quiz: typeof module7Quiz !== 'undefined' ? module7Quiz : null },
+        8: { discussion: typeof module8Discussion !== 'undefined' ? module8Discussion : null, quiz: typeof module8Quiz !== 'undefined' ? module8Quiz : null }
     };
 
     const modData = moduleData[mn];
@@ -334,53 +335,24 @@ function buildAssessment(a, mn) {
     if (a.type === 'Discussion Board' && modData && modData.discussion) {
         const disc = modData.discussion;
         details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<h4 style="margin-top:0;color:var(--accent)">Discussion Prompt</h4>';
-        details += '<div style="white-space:pre-wrap;line-height:1.8">' + disc.prompt + '</div>';
-        if (disc.pointsBreakdown) {
-            details += '<h4 style="margin-top:20px;color:var(--accent)">Points Breakdown</h4><ul>';
-            Object.keys(disc.pointsBreakdown).forEach(key => {
-                details += '<li><strong>' + key.replace(/([A-Z])/g, ' $1').trim() + ':</strong> ' + disc.pointsBreakdown[key] + ' points</li>';
+        details += '<h4 style="margin-top:0;color:var(--accent)">' + disc.title + '</h4>';
+        details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + disc.prompt + '</div>';
+        if (disc.requirements) {
+            details += '<h4 style="margin-top:20px;color:var(--accent)">Requirements</h4><ul style="margin-left:20px;line-height:1.8">';
+            disc.requirements.forEach(req => {
+                details += '<li>' + req + '</li>';
             });
             details += '</ul>';
         }
-        details += '<p style="margin-top:15px"><strong>Rubric:</strong> ' + disc.rubric + '</p></div>';
+        details += '<p style="margin-top:15px;font-style:italic">See Canvas for full rubric and grading criteria.</p></div>';
     }
-    // Portfolio Project Component (What is America?)
-    else if (a.type === 'Project Checkpoint' && modData && modData.project) {
-        const proj = modData.project;
+    // Thread Project Checkpoint
+    else if (a.type === 'Project Checkpoint' && modData && modData.checkpoint) {
+        const checkpoint = modData.checkpoint;
         details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<div style="white-space:pre-wrap;line-height:1.8">' + proj.instructions + '</div>';
-        if (proj.scaffolding) {
-            details += '<h4 style="margin-top:20px;color:var(--accent)">Scaffolding & Tips</h4>';
-            if (proj.scaffolding.thesisTemplates) {
-                details += '<h5>Thesis Templates:</h5><ul>';
-                proj.scaffolding.thesisTemplates.forEach(t => details += '<li>' + t + '</li>');
-                details += '</ul>';
-            }
-            if (proj.scaffolding.commonMistakes) {
-                details += '<h5 style="margin-top:15px">Common Mistakes:</h5><ul>';
-                proj.scaffolding.commonMistakes.forEach(m => details += '<li>' + m + '</li>');
-                details += '</ul>';
-            }
-            if (proj.scaffolding.primarySourceQuestions) {
-                details += '<h5 style="margin-top:15px">Primary Source Analysis Questions:</h5><ul>';
-                proj.scaffolding.primarySourceQuestions.forEach(q => details += '<li>' + q + '</li>');
-                details += '</ul>';
-            }
-        }
-        details += '<p style="margin-top:15px"><strong>Rubric:</strong> ' + proj.rubric + '</p></div>';
-    }
-    // Final Portfolio (Module 7)
-    else if ((a.type === 'Final Project' || (a.title && a.title.includes('Final Portfolio'))) && modData && modData.finalPortfolio) {
-        const portfolio = modData.finalPortfolio;
-        details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<div style="white-space:pre-wrap;line-height:1.8">' + portfolio.instructions + '</div>';
-        if (portfolio.exampleTopics) {
-            details += '<h4 style="margin-top:20px;color:var(--accent)">Example Topics</h4><ul>';
-            portfolio.exampleTopics.forEach(t => details += '<li>' + t + '</li>');
-            details += '</ul>';
-        }
-        details += '<p style="margin-top:15px"><strong>Rubric:</strong> ' + portfolio.rubric + '</p></div>';
+        details += '<h4 style="margin-top:0;color:var(--accent)">' + checkpoint.title + '</h4>';
+        details += '<div style="white-space:pre-wrap;line-height:1.8">' + checkpoint.instructions + '</div>';
+        details += '<p style="margin-top:15px;font-style:italic">See Canvas for full rubric and grading criteria.</p></div>';
     }
     // Module Quiz
     else if (a.type === 'Module Quiz' && modData && modData.quiz) {

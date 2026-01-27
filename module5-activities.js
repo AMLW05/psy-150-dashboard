@@ -1,130 +1,88 @@
-// Module 5: Cognition, Emotion & Motivation
-// Complete Activity Data
-
+// Module 5: Motivation, Emotion & Stress
 const module5Activities = {
     la1: {
         questions: [
-            { term: "Cognition", def: "Mental activities associated with thinking, knowing, remembering, and communicating" },
-            { term: "Language", def: "System of communication using sounds or symbols according to grammatical rules" },
-            { term: "Phonemes", def: "The smallest units of sound in a language" },
-            { term: "Morphemes", def: "The smallest units of meaning in a language" },
-            { term: "Intelligence", def: "The ability to learn from experience, solve problems, and use knowledge to adapt" },
-            { term: "IQ (Intelligence Quotient)", def: "A measure of intelligence calculated from standardized test scores" },
-            { term: "Multiple Intelligences", def: "Gardner's theory that intelligence comes in different forms (linguistic, logical-mathematical, spatial, etc.)" },
-            { term: "Emotional Intelligence", def: "The ability to perceive, understand, manage, and use emotions" },
-            { term: "Flynn Effect", def: "The finding that IQ scores have gradually increased over generations" },
-            { term: "Intrinsic Motivation", def: "Desire to perform a behavior for its own sake or for internal rewards" },
-            { term: "Extrinsic Motivation", def: "Desire to perform a behavior for external rewards or to avoid punishment" },
-            { term: "Self-Determination Theory", def: "Theory that we need autonomy, competence, and relatedness for optimal motivation" },
-            { term: "Maslow's Hierarchy", def: "Theory that needs are arranged in a pyramid from basic (physiological) to higher (self-actualization)" },
-            { term: "James-Lange Theory", def: "Theory that emotion results from physiological arousal (we feel afraid because our heart races)" },
-            { term: "Two-Factor Theory", def: "Theory that emotion requires both physiological arousal AND cognitive label" }
+            { term: "Motivation", def: "Internal process initiating, guiding, and maintaining behavior toward goals" },
+            { term: "Drive-Reduction Theory", def: "Behavior motivated by biological needs creating drives to restore homeostasis" },
+            { term: "Incentive Theory", def: "External rewards and goals motivate behavior" },
+            { term: "Intrinsic Motivation", def: "Engaging in behavior for inherent satisfaction" },
+            { term: "Extrinsic Motivation", def: "Engaging in behavior for external rewards" },
+            { term: "Self-Determination Theory", def: "Autonomy, competence, and relatedness drive motivation" },
+            { term: "Maslow's Hierarchy", def: "Five-level pyramid: physiological, safety, love, esteem, self-actualization" },
+            { term: "James-Lange Theory", def: "Physiological arousal causes emotion (afraid because heart races)" },
+            { term: "Cannon-Bard Theory", def: "Emotion and arousal occur simultaneously and independently" },
+            { term: "Schachter-Singer Theory", def: "Two-factor: arousal plus cognitive label creates emotion" },
+            { term: "General Adaptation Syndrome", def: "Selye's three stress stages: alarm, resistance, exhaustion" },
+            { term: "Eustress", def: "Positive stress that motivates (challenge, excitement)" },
+            { term: "Problem-Focused Coping", def: "Addressing stressor directly to reduce or eliminate it" },
+            { term: "Emotion-Focused Coping", def: "Managing emotional response to stressor" },
+            { term: "Type A Personality", def: "Competitive, time-urgent, hostile; higher heart disease risk" }
         ]
     },
     la2: {
-        intelligenceControversies: [
-            { topic: "Nature vs Nurture", question: "Is intelligence more influenced by genes or environment?", evidence: "Twin studies show heritability around 50%, but environment (education, nutrition, stimulation) significantly impacts IQ" },
-            { topic: "Multiple Intelligences", question: "Is there one general intelligence or many types?", evidence: "G-factor research vs Gardner's theory; debate continues about whether 'intelligences' are truly independent" },
-            { topic: "IQ Testing Bias", question: "Are IQ tests culturally fair?", evidence: "Tests can reflect cultural knowledge and test-taking experience; group differences may reflect opportunity gaps, not innate ability" },
-            { topic: "Flynn Effect", question: "Why have IQ scores risen over time?", evidence: "Better nutrition, more education, test familiarity, environmental complexity all likely contribute" }
+        questions: [
+            { q: "Student studies for enjoyment of learning. This is:", answers: ["Extrinsic motivation", "Intrinsic motivation ✓", "Drive reduction", "Incentive theory"], correct: 1 },
+            { q: "According to Maslow, before seeking self-actualization, one must satisfy:", answers: ["Only physiological needs", "Lower-level needs first ✓", "No prerequisites", "Esteem only"], correct: 1 },
+            { q: "Overjustification effect occurs when:", answers: ["Intrinsic motivation increases", "Extrinsic rewards decrease intrinsic motivation ✓", "No motivation", "Only extrinsic exists"], correct: 1 },
+            { q: "Schachter-Singer two-factor theory requires:", answers: ["Only arousal", "Arousal and cognitive interpretation ✓", "Only cognition", "No arousal needed"], correct: 1 },
+            { q: "Facial feedback hypothesis suggests:", answers: ["Emotions cause expressions only", "Facial expressions can influence emotional experience ✓", "No connection", "Only biology matters"], correct: 1 },
+            { q: "General Adaptation Syndrome resistance stage:", answers: ["Initial stress response", "Body adapts and copes with stressor ✓", "Resources depleted", "No stress"], correct: 1 },
+            { q: "Problem-focused coping is most effective when:", answers: ["Stressor is uncontrollable", "Stressor is controllable ✓", "Never effective", "Always better than emotion-focused"], correct: 1 },
+            { q: "Social support helps stress by:", answers: ["Eliminating stressors", "Buffering effects, providing resources and perspective ✓", "Making stress worse", "No effect"], correct: 1 },
+            { q: "Leptin signals the brain about:", answers: ["Glucose levels", "Fat stores and satiety ✓", "Water needs", "Stress levels"], correct: 1 },
+            { q: "Self-efficacy (Bandura) refers to:", answers: ["Actual ability", "Belief in one's ability to succeed ✓", "External control", "Fixed traits"], correct: 1 }
         ]
     },
     la3: {
-        dataAnalysis: {
-            title: "The Flynn Effect Data Analysis",
-            chartData: { title: "IQ Score Changes Over Time (1940-2020)" },
-            questions: [
-                { q: "By how many points have average IQ scores increased per decade?", a: "Approximately 3 points per decade" },
-                { q: "What are three possible explanations for this increase?", a: "Better education, improved nutrition, test-taking familiarity, more cognitively demanding environments, reduced childhood diseases" },
-                { q: "Does this mean people are becoming more intelligent genetically?", a: "No; likely reflects environmental improvements, not genetic changes" }
+        emotionTheoryMatching: {
+            scenarios: [
+                { scenario: "Heart races, THEN feel afraid", theory: "James-Lange" },
+                { scenario: "Heart races AND feel afraid simultaneously", theory: "Cannon-Bard" },
+                { scenario: "Heart races, interpret as fear due to dark alley context", theory: "Schachter-Singer (Two-Factor)" },
+                { scenario: "Smiling makes you feel happier", theory: "Facial Feedback Hypothesis" },
+                { scenario: "See bear → Run away → Realize you're afraid", theory: "James-Lange" },
+                { scenario: "Thalamus sends signals to cortex and body at same time", theory: "Cannon-Bard" },
+                { scenario: "Arousal from exercise misattributed as attraction", theory: "Schachter-Singer" },
+                { scenario: "Emotion is appraisal of arousal's meaning", theory: "Schachter-Singer (Cognitive Appraisal)" },
+                { scenario: "Physiological changes are sufficient for emotion", theory: "James-Lange" },
+                { scenario: "Different emotions can have similar arousal patterns", theory: "Challenges James-Lange, supports Schachter-Singer" }
             ]
-        }
-    },
-    la4: {
-        studentChoice: {
-            title: "LA4: Student Choice Activity (20 points)",
-            description: "Choose ONE option that interests you most. Each option requires applying cognition and motivation research to real-world contexts.",
-            options: [
-                {
-                    id: "A",
-                    title: "Option A: Intelligence Testing Controversies",
-                    description: "Evaluate intelligence testing controversies (cultural bias, nature vs nurture, multiple intelligences) using scientific evidence and create an informed position.",
-                    instructions: "Research the major controversies in intelligence testing: cultural bias in IQ tests, nature vs nurture debate, validity of multiple intelligences theory, or stereotype threat effects. Analyze research evidence from multiple perspectives. Write a 2-3 page position paper that: (1) Presents the controversy fairly, (2) Evaluates the scientific evidence, (3) Takes an informed position supported by research.",
-                    gradingCriteria: [
-                        "Research quality (8 pts) - Accurate understanding of multiple perspectives",
-                        "Critical evaluation (6 pts) - Assessment of evidence quality and limitations",
-                        "Reasoned position (6 pts) - Well-supported conclusion based on evidence"
-                    ],
-                    linkedCLOs: ["CLO2", "CLO4"],
-                    linkedPTS: ["PTS1", "PTS6"]
-                },
-                {
-                    id: "B",
-                    title: "Option B: Workplace Motivation Design",
-                    description: "Apply motivation theories to a workplace scenario - design a motivation strategy for employee engagement using research-based principles.",
-                    instructions: "Choose a workplace motivation challenge (low engagement, high turnover, resistance to change, etc.). Apply 2-3 motivation theories (Self-Determination Theory, Goal-Setting Theory, Intrinsic vs Extrinsic motivation, etc.) to design an evidence-based intervention. Write a 2-3 page proposal including: problem analysis, theoretical foundation, specific strategies, and expected outcomes.",
-                    gradingCriteria: [
-                        "Theoretical foundation (7 pts) - Accurate application of motivation theories",
-                        "Strategy design (7 pts) - Practical, research-based interventions",
-                        "Justification (6 pts) - Clear explanation of why strategies should work"
-                    ],
-                    linkedCLOs: ["CLO2", "CLO4"],
-                    linkedPTS: ["PTS2", "PTS1"]
-                },
-                {
-                    id: "C",
-                    title: "Option C: Emotional Intelligence - Science vs Pop Psychology",
-                    description: "Analyze media portrayals of 'emotional intelligence' and distinguish science from pop psychology claims.",
-                    instructions: "Collect 3-5 examples of 'emotional intelligence' claims from media, self-help books, or workplace training. Compare these claims to the actual research on emotional intelligence (Mayer-Salovey model, research evidence, measurement issues). Write a 2-3 page analysis that: (1) Summarizes popular claims, (2) Compares to scientific evidence, (3) Identifies what's accurate vs exaggerated, (4) Explains why pop psychology versions are appealing but potentially misleading.",
-                    gradingCriteria: [
-                        "Scientific research (8 pts) - Accurate understanding of EI research",
-                        "Critical comparison (6 pts) - Clear identification of science vs pseudoscience",
-                        "Analysis depth (6 pts) - Thoughtful explanation of discrepancies"
-                    ],
-                    linkedCLOs: ["CLO2", "CLO4"],
-                    linkedPTS: ["PTS1", "PTS6"]
-                }
-            ],
-            submissionFormat: "2-3 page written analysis uploaded to Canvas",
-            rubric: "Student Choice Activity Rubric (20 points total)"
+        },
+        copingStrategyCategorization: {
+            examples: [
+                { strategy: "Studying for exam you're anxious about", type: "Problem-Focused Coping" },
+                { strategy: "Meditating to calm down before presentation", type: "Emotion-Focused Coping" },
+                { strategy: "Creating budget to address financial stress", type: "Problem-Focused Coping" },
+                { strategy: "Venting feelings to friend after bad day", type: "Emotion-Focused Coping" },
+                { strategy: "Scheduling time management plan for busy week", type: "Problem-Focused Coping" },
+                { strategy: "Reframing situation to see positive aspects", type: "Emotion-Focused Coping" },
+                { strategy: "Seeking medical help for health concern", type: "Problem-Focused Coping" },
+                { strategy: "Exercise to relieve stress", type: "Emotion-Focused Coping" },
+                { strategy: "Confronting person causing conflict", type: "Problem-Focused Coping" },
+                { strategy: "Accepting unchangeable situation", type: "Emotion-Focused Coping" }
+            ]
         }
     }
 };
 
 const module5Quiz = {
     questions: [
-        { q: "The smallest unit of sound in a language is a:", answers: ["Morpheme", "Phoneme ✓", "Syntax", "Semantic"], correct: 1 },
-        { q: "According to Gardner's theory, intelligence:", answers: ["Is a single general ability", "Comes in multiple independent forms ✓", "Cannot be measured", "Only includes math and language skills"], correct: 1 },
-        { q: "Emotional intelligence includes:", answers: ["Only understanding your own emotions", "Perceiving, understanding, managing, and using emotions ✓", "Having high IQ", "Suppressing emotions"], correct: 1 },
-        { q: "The Flynn Effect refers to:", answers: ["Intelligence declining over time", "IQ scores gradually increasing over generations ✓", "The difference between fluid and crystallized intelligence", "The effect of test anxiety on performance"], correct: 1 },
-        { q: "Intrinsic motivation means:", answers: ["Doing something for external rewards", "Doing something for its own sake or internal satisfaction ✓", "Doing something to avoid punishment", "Doing something because others expect it"], correct: 1 },
-        { q: "According to self-determination theory, we need:", answers: ["Money, status, and power", "Autonomy, competence, and relatedness ✓", "Challenge, variety, and feedback", "Security, love, and esteem"], correct: 1 },
-        { q: "According to James-Lange theory:", answers: ["Physiological arousal and emotion occur simultaneously", "Physiological arousal CAUSES emotion ✓", "Cognitive interpretation causes emotion", "Emotion causes physiological arousal"], correct: 1 },
-        { q: "Two-factor theory states that emotion requires:", answers: ["Only physiological arousal", "Only cognitive interpretation", "Both physiological arousal AND cognitive label ✓", "Neither arousal nor cognition"], correct: 2 },
-        { q: "At the top of Maslow's hierarchy is:", answers: ["Safety needs", "Love and belonging", "Esteem", "Self-actualization ✓"], correct: 3 },
-        { q: "Which is an example of extrinsic motivation?", answers: ["Reading a book because you enjoy it", "Studying to earn a good grade ✓", "Playing music because you love it", "Exercising because it feels good"], correct: 1 },
-        { q: "The ability to delay gratification is related to:", answers: ["IQ only", "Emotional intelligence only", "Both cognitive and emotional regulation ✓", "Neither intelligence nor emotion"], correct: 2 },
-        { q: "Cultural differences in IQ scores are BEST explained by:", answers: ["Genetic differences between races", "Environmental factors like education and opportunity ✓", "Language differences only", "Test administration errors"], correct: 1 },
-        { q: "Problem-solving that involves a sudden realization is called:", answers: ["Algorithm", "Heuristic", "Insight ✓", "Trial and error"], correct: 2 },
-        { q: "Which factor does NOT explain the Flynn Effect?", answers: ["Better nutrition", "More education", "Genetic evolution ✓", "Environmental complexity"], correct: 2 },
-        { q: "Stereotype threat refers to:", answers: ["Creating stereotypes about groups", "Anxiety that one's performance will confirm a negative stereotype ✓", "Positive stereotypes helping performance", "Stereotypes being always accurate"], correct: 1 }
+        { q: "Achievement motivation includes:", answers: ["Only fear of failure", "Desire to excel and meet high standards ✓", "No goals", "External rewards only"], correct: 1 },
+        { q: "Set-point theory explains:", answers: ["No weight regulation", "Body maintains relatively stable weight ✓", "Only eating behavior", "No biological factors"], correct: 1 },
+        { q: "Ekman's research found:", answers: ["Emotions are entirely cultural", "Universal facial expressions for basic emotions ✓", "No biological basis", "Only learned expressions"], correct: 1 },
+        { q: "Yerkes-Dodson law states:", answers: ["More arousal always better", "Moderate arousal optimal for performance ✓", "No arousal needed", "Arousal irrelevant"], correct: 1 },
+        { q: "Approach-avoidance conflict involves:", answers: ["Two positive options", "Single goal with both positive and negative aspects ✓", "Two negative options", "No conflict"], correct: 1 },
+        { q: "Cortisol is released during stress by:", answers: ["Hippocampus", "Adrenal glands ✓", "Thyroid", "Pituitary only"], correct: 1 },
+        { q: "Psychoneuroimmunology studies:", answers: ["Neurons only", "Interaction between psychological factors, nervous system, and immune function ✓", "Immunity only", "No connections"], correct: 1 },
+        { q: "Daily hassles research shows:", answers: ["Only major life events cause stress", "Cumulative minor stressors significantly affect health ✓", "No health impact", "Hassles help health"], correct: 1 },
+        { q: "Resilience involves:", answers: ["Never experiencing stress", "Adapting well despite adversity ✓", "Avoiding all challenges", "Fixed trait cannot change"], correct: 1 },
+        { q: "Arousal theory suggests optimal motivation requires:", answers: ["Minimal arousal", "Optimal level varies by task complexity ✓", "Maximum arousal always", "No arousal"], correct: 1 }
     ]
 };
 
-const module5Discussion = {
-    prompt: `**Discussion: Emotional Intelligence & Success**
+const module5Discussion = null;
 
-Research suggests emotional intelligence (EQ) may predict life success as much as or more than IQ. Reflect on a time when EQ was critical. Which components of EQ were involved? Can EQ be learned?
-
-**Initial Post:** 300+ words
-**Peer Responses:** 150+ words each, 2 peers
-
-**Grading:** 50 points`,
-    rubric: "Discussion Rubric"
-};
-
-const module5Portfolio = {
-    title: "Portfolio Piece #5: Cognitive Analysis",
-    instructions: `Analyze thinking errors, problem-solving, or decision-making in a real scenario using multiple cognitive theories. 2 pages. (40 points)`,
-    rubric: "Portfolio Rubric"
+const module5Checkpoint = {
+    title: "Thread Project Checkpoint #3: Data Analysis & Results (50 pts)",
+    instructions: "Collect and analyze data for your psychological investigation (simulated or real with IRB approval). Create data visualizations (graphs, charts). Interpret findings in relation to your hypothesis. Discuss limitations and potential confounds. See Canvas for full rubric."
 };

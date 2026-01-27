@@ -1,115 +1,88 @@
 // Module 3: Learning & Memory
-// Complete Activity Data
-
 const module3Activities = {
     la1: {
         questions: [
-            { term: "Classical Conditioning", def: "Learning through association; a neutral stimulus comes to elicit a response after being paired with a stimulus that naturally elicits that response" },
-            { term: "Unconditioned Stimulus (UCS)", def: "A stimulus that naturally and automatically triggers a response without prior learning" },
-            { term: "Conditioned Stimulus (CS)", def: "An originally neutral stimulus that, after association with an unconditioned stimulus, comes to trigger a conditioned response" },
-            { term: "Operant Conditioning", def: "Learning through consequences; behaviors followed by rewards increase, those followed by punishment decrease" },
-            { term: "Reinforcement", def: "Any consequence that increases the likelihood of a behavior" },
-            { term: "Positive Reinforcement", def: "Adding a desirable stimulus to increase behavior" },
-            { term: "Negative Reinforcement", def: "Removing an aversive stimulus to increase behavior" },
-            { term: "Punishment", def: "Any consequence that decreases the likelihood of a behavior" },
-            { term: "Observational Learning", def: "Learning by watching others (modeling)" },
-            { term: "Encoding", def: "The process of getting information into memory" },
-            { term: "Storage", def: "The process of retaining information in memory over time" },
-            { term: "Retrieval", def: "The process of getting information out of memory" },
-            { term: "Working Memory", def: "Short-term memory system that actively processes and manipulates information" },
-            { term: "Long-Term Memory", def: "Relatively permanent storage of information" },
-            { term: "Misinformation Effect", def: "Incorporating misleading information into one's memory of an event" }
+            { term: "Classical Conditioning", def: "Learning through association of neutral stimulus with reflexive response (Pavlov)" },
+            { term: "Unconditioned Stimulus", def: "Stimulus naturally triggering response without learning (e.g., food)" },
+            { term: "Conditioned Response", def: "Learned response to previously neutral stimulus" },
+            { term: "Operant Conditioning", def: "Learning through consequences: reinforcement and punishment (Skinner)" },
+            { term: "Positive Reinforcement", def: "Adding pleasant stimulus to increase behavior" },
+            { term: "Negative Reinforcement", def: "Removing unpleasant stimulus to increase behavior" },
+            { term: "Punishment", def: "Consequence that decreases behavior" },
+            { term: "Observational Learning", def: "Learning by watching others (Bandura's social learning)" },
+            { term: "Working Memory", def: "Temporary storage and manipulation of information (formerly short-term)" },
+            { term: "Long-Term Potentiation", def: "Strengthening of synaptic connections with repeated activation" },
+            { term: "Episodic Memory", def: "Memory for personal experiences and events" },
+            { term: "Semantic Memory", def: "Memory for facts and general knowledge" },
+            { term: "Encoding", def: "Converting information into memory form" },
+            { term: "Retrieval", def: "Accessing stored information from memory" },
+            { term: "Interference", def: "When other information disrupts memory retrieval" }
         ]
     },
     la2: {
-        scenarios: [
-            { text: "A child hears a loud noise every time they see a dog. Now they cry when they see a dog.", type: "Classical Conditioning" },
-            { text: "A student studies hard and gets an A, so they continue studying hard.", type: "Operant Conditioning (Positive Reinforcement)" },
-            { text: "A rat presses a lever to turn off an electric shock.", type: "Operant Conditioning (Negative Reinforcement)" },
-            { text: "A teenager watches their older sibling get praised for cleaning their room, so they start cleaning their room too.", type: "Observational Learning" },
-            { text: "A driver speeds and gets a ticket, so they stop speeding.", type: "Operant Conditioning (Positive Punishment)" },
-            { text: "You smell cookies baking and immediately feel happy because it reminds you of your grandmother's house.", type: "Classical Conditioning" },
-            { text: "A child watches a cooking show and later tries to make the recipe themselves.", type: "Observational Learning" },
-            { term: "A parent takes away video game privileges when a child misbehaves.", type: "Operant Conditioning (Negative Punishment)" },
-            { text: "Your mouth waters when you hear the ice cream truck music.", type: "Classical Conditioning" },
-            { text: "You check your phone frequently because sometimes there are interesting notifications.", type: "Operant Conditioning (Variable Ratio Schedule)" }
+        questions: [
+            { q: "Dog salivates to bell after pairing with food. Bell is:", answers: ["Unconditioned stimulus", "Conditioned stimulus ✓", "Unconditioned response", "Neutral stimulus"], correct: 1 },
+            { q: "Parent gives child dessert for eating vegetables. This is:", answers: ["Positive reinforcement ✓", "Negative reinforcement", "Positive punishment", "Negative punishment"], correct: 0 },
+            { q: "Taking aspirin removes headache, increases aspirin use. This is:", answers: ["Positive reinforcement", "Negative reinforcement ✓", "Punishment", "Extinction"], correct: 1 },
+            { q: "Little Albert experiment demonstrated:", answers: ["Operant conditioning", "Classical conditioning of fear ✓", "Observational learning", "Memory consolidation"], correct: 1 },
+            { q: "Continuous vs partial reinforcement:", answers: ["Continuous creates faster extinction ✓", "Same effect", "Partial is faster to learn", "No difference"], correct: 0 },
+            { q: "Elaborative rehearsal improves memory by:", answers: ["Simple repetition", "Connecting to existing knowledge ✓", "Fast review", "Cramming"], correct: 1 },
+            { q: "Retroactive interference means:", answers: ["Old memories disrupt new learning", "New learning disrupts old memories ✓", "No interference", "Only during sleep"], correct: 1 },
+            { q: "Flashbulb memories are:", answers: ["Always perfectly accurate", "Vivid but can contain errors ✓", "Never emotional", "Only visual"], correct: 1 },
+            { q: "Hippocampus damage (H.M. case) impaired:", answers: ["All memory types", "Forming new long-term memories ✓", "Short-term memory", "Procedural memory"], correct: 1 },
+            { q: "Best way to study according to memory research:", answers: ["Cramming night before", "Distributed practice over time ✓", "Reading only", "Highlighting"], correct: 1 }
         ]
     },
     la3: {
-        memoryExperiments: {
-            title: "Memory Systems Interactive Lab",
-            tasks: [
-                { name: "Serial Position Effect", description: "Demonstrates primacy and recency effects in memory" },
-                { name: "Levels of Processing", description: "Shallow vs deep processing affects memory" },
-                { name: "Chunking", description: "Grouping information improves memory capacity" }
+        conditioningScenarios: {
+            scenarios: [
+                { text: "Child cleans room, parents remove chores for day", type: "Negative Reinforcement" },
+                { text: "Employee receives bonus for sales target", type: "Positive Reinforcement" },
+                { text: "Student loses phone for breaking curfew", type: "Negative Punishment" },
+                { text: "Dog gets shocked by invisible fence", type: "Positive Punishment" },
+                { text: "Dentist drill sound causes anxiety", type: "Classical Conditioning" },
+                { text: "Rat presses lever, gets food pellet", type: "Positive Reinforcement (Operant)" },
+                { text: "Toddler imitates older sibling's behavior", type: "Observational Learning" },
+                { text: "Nausea after food poisoning creates aversion", type: "Classical Conditioning (Taste Aversion)" },
+                { text: "Teenager loses car privileges for bad grades", type: "Negative Punishment" },
+                { text: "Worker wears seatbelt to stop annoying beep", type: "Negative Reinforcement" }
             ]
-        }
-    },
-    la4: {
-        studentChoice: {
-            title: "LA4: Student Choice Activity (20 points)",
-            description: "Choose ONE option that interests you most. Each option requires applying learning and memory research to real-world contexts.",
-            options: [
-                {
-                    id: "A",
-                    title: "Option A: Eyewitness Testimony Research Evaluation",
-                    description: "Evaluate the research validity on eyewitness testimony and memory reliability. Create a policy recommendation for courts based on scientific evidence.",
-                    instructions: "Review research on factors affecting eyewitness accuracy (stress, weapon focus, leading questions, confidence-accuracy relationship). Analyze 2-3 key studies. Write a 2-3 page policy brief recommending how courts should handle eyewitness testimony. Use scientific evidence to support recommendations.",
-                    gradingCriteria: [
-                        "Research synthesis (8 pts) - Accuracy and depth of research understanding",
-                        "Critical evaluation (6 pts) - Assessment of study validity and limitations",
-                        "Application (6 pts) - Practical, evidence-based policy recommendations"
-                    ],
-                    linkedCLOs: ["CLO2", "CLO4"],
-                    linkedPTS: ["PTS1", "PTS2"]
-                },
-                {
-                    id: "B",
-                    title: "Option B: Personal Study Strategy Experiment",
-                    description: "Design and test a personal study strategy based on memory research (spacing effect, testing effect, elaborative encoding). Conduct a mini self-experiment.",
-                    instructions: "Choose one memory principle from research (spacing, testing effect, elaborative encoding, etc.). Design a 2-week personal experiment testing it with your own studying. Track your performance. Write a 2-3 page report including: hypothesis, method, results, and reflection on effectiveness. Compare to your usual study methods.",
-                    gradingCriteria: [
-                        "Research foundation (7 pts) - Correct understanding of memory principle",
-                        "Experiment design (7 pts) - Clear method, appropriate measurement",
-                        "Analysis & reflection (6 pts) - Thoughtful evaluation of results and implications"
-                    ],
-                    linkedCLOs: ["CLO2", "CLO4"],
-                    linkedPTS: ["PTS1", "PTS2"]
-                },
-                {
-                    id: "C",
-                    title: "Option C: 'Learning Styles' Myth Analysis",
-                    description: "Analyze the 'Learning Styles' myth using scientific evidence. Explain why it persists in education despite being scientifically debunked.",
-                    instructions: "Research the scientific evidence against 'learning styles' (visual/auditory/kinesthetic). Analyze why this myth persists in education. Write a 2-3 page analysis including: What the research shows, why the myth is appealing but wrong, what educators should do instead based on actual memory research.",
-                    gradingCriteria: [
-                        "Scientific evidence (8 pts) - Accurate research on learning styles myth",
-                        "Critical analysis (6 pts) - Explanation of why myth persists",
-                        "Practical recommendations (6 pts) - Evidence-based alternatives for educators"
-                    ],
-                    linkedCLOs: ["CLO2", "CLO4"],
-                    linkedPTS: ["PTS1", "PTS6"]
-                }
-            ],
-            submissionFormat: "2-3 page written analysis uploaded to Canvas",
-            rubric: "Student Choice Activity Rubric (20 points total)"
+        },
+        memoryStageMatching: {
+            examples: [
+                { scenario: "Reading phone number and immediately dialing", stage: "Working Memory" },
+                { scenario: "Remembering your high school graduation", stage: "Episodic Long-Term Memory" },
+                { scenario: "Knowing Paris is capital of France", stage: "Semantic Long-Term Memory" },
+                { scenario: "Riding bicycle without thinking", stage: "Procedural Long-Term Memory" },
+                { scenario: "Brief visual image after looking away", stage: "Sensory Memory" },
+                { scenario: "Solving math problem by holding numbers in mind", stage: "Working Memory" },
+                { scenario: "First kiss memory", stage: "Episodic Long-Term Memory" },
+                { scenario: "Understanding language grammar rules", stage: "Semantic Long-Term Memory" },
+                { scenario: "Typing without looking at keyboard", stage: "Procedural Long-Term Memory" },
+                { scenario: "Echo of sound just heard", stage: "Sensory Memory (Echoic)" }
+            ]
         }
     }
 };
 
-const module3Discussion = {
-    prompt: `**Discussion: Learning in the Real World**
-
-**Part 1: Initial Post (300+ words)**
-Describe a skill or habit you learned through classical conditioning, operant conditioning, or observational learning. Analyze the key elements and how the principles could be used to UNLEARN or change the behavior. Connect to at least 3 course concepts.
-
-**Part 2: Peer Responses (150+ words each, 2 peers)**
-
-**Grading:** 50 points`,
-    rubric: "Discussion Rubric"
+const module3Quiz = {
+    questions: [
+        { q: "Difference between classical and operant conditioning:", answers: ["No difference", "Classical: involuntary associations; Operant: voluntary behaviors with consequences ✓", "Classical uses punishment", "Operant doesn't work"], correct: 1 },
+        { q: "Extinction occurs when:", answers: ["CS presented without US (classical) or behavior without reinforcement (operant) ✓", "Punishment is used", "Learning happens", "Memory fades"], correct: 0 },
+        { q: "Bandura's Bobo doll study showed:", answers: ["Classical conditioning", "Children imitate aggressive models ✓", "Punishment effectiveness", "Memory formation"], correct: 1 },
+        { q: "Primacy effect (remembering first items) suggests:", answers: ["Recency effect", "Rehearsal transferred to long-term memory ✓", "Working memory unlimited", "Interference"], correct: 1 },
+        { q: "Misinformation effect demonstrates:", answers: ["Memory is perfect recording", "Memories can be altered by post-event information ✓", "Only children affected", "Visual memory only"], correct: 1 },
+        { q: "Implicit memory includes:", answers: ["Episodic memory", "Procedural skills and priming ✓", "Semantic knowledge", "Working memory"], correct: 1 },
+        { q: "Context-dependent memory means:", answers: ["Memory better in same environment as encoding ✓", "Context doesn't matter", "Only emotional contexts", "Sleep improves memory"], correct: 0 },
+        { q: "Fixed-ratio reinforcement schedule:", answers: ["Time-based reinforcement", "Reinforcement after set number of responses ✓", "Random reinforcement", "No reinforcement"], correct: 1 },
+        { q: "Forgetting curve (Ebbinghaus) shows:", answers: ["Linear forgetting", "Rapid initial forgetting, then leveling ✓", "No forgetting with rehearsal", "Forgetting increases over time linearly"], correct: 1 },
+        { q: "Spacing effect supports:", answers: ["Cramming", "Distributed practice over massed practice ✓", "One long study session", "No review needed"], correct: 1 }
+    ]
 };
 
-const module3Portfolio = {
-    title: "Portfolio Piece #3: Behavior Change Plan",
-    instructions: `Design a 1-week behavior change plan using operant conditioning principles. Track results and reflect on effectiveness. (40 points)`,
-    rubric: "Portfolio Rubric"
+const module3Discussion = null;
+
+const module3Checkpoint = {
+    title: "Thread Project Checkpoint #2: Literature Review & Hypothesis (50 pts)",
+    instructions: "Review 3-5 empirical studies related to your research question. Synthesize findings, identify gaps, and develop specific hypothesis. Justify your methodology choice based on literature. Include APA-formatted references. See Canvas for full rubric."
 };
