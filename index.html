@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSY-150: General Psychology | Course Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PSY-150: General Psychology</h1>
+            <p>Scientific Study of Human Behavior & Mental Processes • Spring 2026 • FTCC</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Modules</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">32</div>
+                <div class="stat-label">Activities</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50%</div>
+                <div class="stat-label">Auto-Graded</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2,000</div>
+                <div class="stat-label">Total Points</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Complete</div>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview')">Overview</button>
+            <button class="nav-tab" onclick="showTab('modules')">Modules</button>
+            <button class="nav-tab" onclick="showTab('rubrics')">Rubrics</button>
+            <button class="nav-tab" onclick="showTab('skills')">Thinking Skills</button>
+            <button class="nav-tab" onclick="showTab('resources')">Resources</button>
+        </div>
+
+        <div id="overview" class="tab-content active">
+            <h2 class="section-title">Course Overview</h2>
+            <div class="clo-grid">
+                <div class="clo-card">
+                    <div class="clo-number">1</div>
+                    <p>Explain the major concepts, theoretical perspectives and historical trends in psychology</p>
+                </div>
+                <div class="clo-card">
+                    <div class="clo-number">2</div>
+                    <p>Identify basic research methods in psychology and distinguish evidence quality</p>
+                </div>
+                <div class="clo-card">
+                    <div class="clo-number">3</div>
+                    <p>Demonstrate scientific analysis and critical evaluation of psychological claims</p>
+                </div>
+                <div class="clo-card">
+                    <div class="clo-number">4</div>
+                    <p>Apply psychology principles to personal, social, and organizational issues</p>
+                </div>
+                <div class="clo-card">
+                    <div class="clo-number">5</div>
+                    <p>Demonstrate understanding of biopsychosocial integration and ethical analysis</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modules" class="tab-content">
+            <h2 class="section-title">Course Modules</h2>
+            <p class="instruction-text">Click any module to expand and view activities, questions, and assessments.</p>
+            <div id="modules-container"></div>
+        </div>
+
+        <div id="rubrics" class="tab-content">
+            <h2 class="section-title">Course Rubrics</h2>
+            <div id="rubrics-container"></div>
+        </div>
+
+        <div id="skills" class="tab-content">
+            <h2 class="section-title">Psychological Thinking Skills</h2>
+            <div id="skills-container"></div>
+        </div>
+
+        <div id="resources" class="tab-content">
+            <h2 class="section-title">Course Resources</h2>
+            <p class="instruction-text">Essential materials, guides, and tools to support your learning throughout the semester.</p>
+            <div id="resources-container"></div>
+        </div>
+    </div>
+
+    <script src="module1-activities.js"></script>
+    <script src="module2-activities.js"></script>
+    <script src="module3-activities.js"></script>
+    <script src="module4-activities.js"></script>
+    <script src="module5-activities.js"></script>
+    <script src="module6-activities.js"></script>
+    <script src="module7-activities.js"></script>
+    <script src="module8-activities.js"></script>
+    <script src="resources.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
