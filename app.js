@@ -245,9 +245,13 @@ function buildActivity(a, mn, idx) {
             details += '</div>';
         });
     }
-    // LA3: Timeline + Comparison OR Data Analysis
+    // LA3: Timeline + Comparison OR Data Analysis OR Research Synthesis
     else if (idx === 2 && modAct.la3) {
-        if (modAct.la3.timelineBuilder) {
+        if (modAct.la3.researchLiteracySynthesis) {
+            details += '<h4 style="margin-top:20px">' + modAct.la3.researchLiteracySynthesis.title + '</h4>';
+            details += '<p style="margin:10px 0">' + modAct.la3.researchLiteracySynthesis.description + '</p>';
+            details += '<div style="margin:15px 0;padding:15px;background:#f0f0f0;border-radius:4px"><pre style="white-space:pre-wrap;font-family:inherit;margin:0">' + modAct.la3.researchLiteracySynthesis.instructions + '</pre></div>';
+        } else if (modAct.la3.timelineBuilder) {
             details += '<h4 style="margin-top:20px">Option A: Timeline Builder</h4>';
             details += '<p style="margin:10px 0"><strong>' + modAct.la3.timelineBuilder.instructions + '</strong></p>';
             details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Event</th><th style="width:20%">Date</th></tr></thead><tbody>';
@@ -283,13 +287,26 @@ function buildActivity(a, mn, idx) {
     }
     // LA4: Additional activities (Module 3 has LA4)
     else if (idx === 3 && modAct.la4) {
-        details += '<h4 style="margin-top:20px">' + modAct.la4.title + '</h4>';
-        details += '<p style="margin:10px 0"><strong>' + modAct.la4.instructions + '</strong></p>';
-        details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Item</th><th style="width:30%">Answer</th></tr></thead><tbody>';
-        modAct.la4.items.forEach((item, i) => {
-            details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + item.text + '</td><td><span class="badge badge-auto" style="display:inline-block">' + item.answer + '</span></td></tr>';
-        });
-        details += '</tbody></table>';
+        if (modAct.la4.studentChoice) {
+            details += '<h4 style="margin-top:20px">' + modAct.la4.studentChoice.title + '</h4>';
+            details += '<p style="margin:10px 0">' + modAct.la4.studentChoice.description + '</p>';
+            modAct.la4.studentChoice.options.forEach((opt, i) => {
+                details += '<div style="margin:20px 0;padding:15px;background:#f8f9fa;border-left:4px solid #4a90e2;border-radius:4px">';
+                details += '<h5 style="margin:0 0 10px 0;color:#4a90e2">' + opt.title + '</h5>';
+                details += '<p style="margin:5px 0"><strong>Description:</strong> ' + opt.description + '</p>';
+                details += '<p style="margin:5px 0"><strong>Instructions:</strong> ' + opt.instructions + '</p>';
+                details += '</div>';
+            });
+            details += '<p style="margin-top:15px"><strong>Format:</strong> ' + modAct.la4.studentChoice.submissionFormat + '</p>';
+        } else if (modAct.la4.items) {
+            details += '<h4 style="margin-top:20px">' + modAct.la4.title + '</h4>';
+            details += '<p style="margin:10px 0"><strong>' + modAct.la4.instructions + '</strong></p>';
+            details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Item</th><th style="width:30%">Answer</th></tr></thead><tbody>';
+            modAct.la4.items.forEach((item, i) => {
+                details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + item.text + '</td><td><span class="badge badge-auto" style="display:inline-block">' + item.answer + '</span></td></tr>';
+            });
+            details += '</tbody></table>';
+        }
     }
 
     return '<div class="activity-card' + feat + '" onclick="toggleActivity(\'' + id + '\')"><div class="activity-header"><div><span class="activity-title">' + a.title + '</span>' + (a.autoGraded ? '<span class="badge badge-auto">Auto-Graded</span>' : '') + '<span class="badge badge-points">' + a.points + ' pts</span>' + (a.featured ? '<span class="badge badge-featured">Featured</span>' : '') + '</div><div><button class="copy-btn" onclick="copyActivity(' + mn + ',' + idx + ', event)" title="Copy to clipboard for Canvas">📋 Copy</button><span class="toggle-icon">▼</span></div></div><div class="activity-meta">' + a.format + ' • ' + a.timeLimit + ' min • ' + a.attempts + ' attempts</div><div id="activity-details-' + id + '" class="activity-details">' + details + '</div></div>';
