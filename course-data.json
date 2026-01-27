@@ -108,6 +108,43 @@
       ]
     }
   ],
+  "clos": [
+    {
+      "id": "CLO1",
+      "number": 1,
+      "text": "Explain major psychological concepts, theoretical perspectives, and historical trends using discipline-specific terminology",
+      "bloomsLevel": "Understand",
+      "category": "Foundational Knowledge"
+    },
+    {
+      "id": "CLO2",
+      "number": 2,
+      "text": "Evaluate research methods and designs to determine appropriate use and validity in psychological investigations",
+      "bloomsLevel": "Evaluate",
+      "category": "Scientific Literacy"
+    },
+    {
+      "id": "CLO3",
+      "number": 3,
+      "text": "Analyze psychological phenomena and problems using scientific reasoning and evidence-based approaches",
+      "bloomsLevel": "Analyze",
+      "category": "Critical Thinking"
+    },
+    {
+      "id": "CLO4",
+      "number": 4,
+      "text": "Apply psychological principles to solve personal, social, and organizational problems",
+      "bloomsLevel": "Apply",
+      "category": "Real-World Application"
+    },
+    {
+      "id": "CLO5",
+      "number": 5,
+      "text": "Synthesize biological, psychological, and social factors to explain human behavior and mental processes",
+      "bloomsLevel": "Synthesize",
+      "category": "Biopsychosocial Integration"
+    }
+  ],
   "modules": [
     {
       "number": 1,
