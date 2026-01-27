@@ -269,6 +269,23 @@ function buildActivity(a, mn, idx) {
                 details += '</div>';
                 optionCount++;
             }
+            // Special handling for integratedConceptApplication (Module 8)
+            else if (key === 'integratedConceptApplication' && activity.cases) {
+                details += '<div style="margin:20px 0;padding:15px;background:#f8f9fa;border-left:4px solid var(--accent);border-radius:4px">';
+                details += '<h5 style="margin:0 0 10px 0;color:var(--accent)">Option ' + String.fromCharCode(64 + optionCount) + ': Biopsychosocial Case Analysis</h5>';
+                details += '<p style="margin:10px 0">Analyze each scenario using the biopsychosocial model:</p>';
+                activity.cases.forEach((c, i) => {
+                    details += '<div style="margin:15px 0;padding:12px;background:white;border-radius:4px">';
+                    details += '<p style="margin:0 0 8px 0"><strong>Case ' + (i+1) + ':</strong> ' + c.scenario + '</p>';
+                    details += '<ul style="margin-left:20px;line-height:1.6">';
+                    details += '<li><strong>Biological:</strong> ' + c.biological + '</li>';
+                    details += '<li><strong>Psychological:</strong> ' + c.psychological + '</li>';
+                    details += '<li><strong>Social:</strong> ' + c.social + '</li>';
+                    details += '</ul></div>';
+                });
+                details += '</div>';
+                optionCount++;
+            }
             // Render matching/categorization activities
             else if (activity.scenarios || activity.examples || activity.structures || activity.descriptions || activity.techniques || activity.concepts || activity.cases) {
                 const items = activity.scenarios || activity.examples || activity.structures || activity.descriptions || activity.techniques || activity.concepts || activity.cases;
@@ -277,9 +294,11 @@ function buildActivity(a, mn, idx) {
                 details += '<p style="margin:10px 0">Match or categorize the following items:</p>';
                 details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Item</th><th style="width:35%">Answer/Category</th></tr></thead><tbody>';
                 items.forEach((item, i) => {
-                    const itemText = item.text || item.scenario || item.behavior || item.symptom || item.symptoms || item.situation || item.description || item.strategy || item.name || JSON.stringify(item);
+                    const itemText = item.text || item.scenario || item.behavior || item.symptom || item.symptoms || item.situation || item.description || item.strategy || item.name || '';
                     const answer = item.answer || item.type || item.stage || item.neurotransmitter || item.disorder || item.field || item.theory || item.approach || item.function || '';
-                    details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + itemText + '</td><td><span class="badge badge-auto" style="display:inline-block">' + answer + '</span></td></tr>';
+                    if (itemText && answer) {
+                        details += '<tr><td><strong>' + (i+1) + '</strong></td><td>' + itemText + '</td><td><span class="badge badge-auto" style="display:inline-block">' + answer + '</span></td></tr>';
+                    }
                 });
                 details += '</tbody></table></div>';
                 optionCount++;
