@@ -305,10 +305,23 @@ function buildActivity(a, mn, idx) {
             }
         });
     }
-    // LA4: Additional activities (Module 3 has LA4)
+    // LA4: Higher Bloom's Level Activities (all modules have LA4)
     else if (idx === 3 && modAct.la4) {
-        if (modAct.la4.studentChoice) {
-            details += '<h4 style="margin-top:20px">' + modAct.la4.studentChoice.title + '</h4>';
+        details += '<h4 style="margin-top:20px">' + modAct.la4.title + '</h4>';
+
+        // Questions format (multiple choice, like LA2)
+        if (modAct.la4.questions) {
+            details += '<p style="margin:10px 0;font-style:italic;color:#666">Higher-order thinking: Analyze, Evaluate, Apply</p>';
+            modAct.la4.questions.forEach((q, i) => {
+                details += '<div class="question-block"><div class="question-text">Q' + (i+1) + ': ' + q.q + '</div>';
+                q.answers.forEach((ans, aidx) => {
+                    details += '<div class="answer-option' + (aidx === q.correct ? ' correct' : '') + '">' + String.fromCharCode(97+aidx) + ') ' + ans + '</div>';
+                });
+                details += '</div>';
+            });
+        }
+        // Student choice format (legacy)
+        else if (modAct.la4.studentChoice) {
             details += '<p style="margin:10px 0">' + modAct.la4.studentChoice.description + '</p>';
             modAct.la4.studentChoice.options.forEach((opt, i) => {
                 details += '<div style="margin:20px 0;padding:15px;background:#f8f9fa;border-left:4px solid #4a90e2;border-radius:4px">';
@@ -318,8 +331,9 @@ function buildActivity(a, mn, idx) {
                 details += '</div>';
             });
             details += '<p style="margin-top:15px"><strong>Format:</strong> ' + modAct.la4.studentChoice.submissionFormat + '</p>';
-        } else if (modAct.la4.items) {
-            details += '<h4 style="margin-top:20px">' + modAct.la4.title + '</h4>';
+        }
+        // Items format (matching/categorization)
+        else if (modAct.la4.items) {
             details += '<p style="margin:10px 0"><strong>' + modAct.la4.instructions + '</strong></p>';
             details += '<table style="margin-top:10px"><thead><tr><th style="width:10%">#</th><th>Item</th><th style="width:30%">Answer</th></tr></thead><tbody>';
             modAct.la4.items.forEach((item, i) => {
