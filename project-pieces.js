@@ -71,7 +71,7 @@ Record a short video "pitching" your research idea to classmates.
 - **Justification** (30 sec): Why is this method appropriate? One strength, one limitation
 - **Ethics** (30 sec): How will you protect participants?
 
-**Tools**: Phone video, Zoom recording, Loom, Flip (video discussion platform)
+**Tools**: Phone video, Zoom recording, Loom, Kaltura (Canvas video tool), or VoiceThread
 
 ---
 
