@@ -11,18 +11,20 @@
     "description": "Scientific study of behavior and mental processes, including biological bases, learning, cognition, development, personality, social behavior, and psychological disorders.",
     "status": "production-ready",
     "completionPercent": 100,
-    "totalPoints": 1640,
-    "autoGradedPercent": 50,
+    "totalPoints": 1860,
+    "autoGradedPercent": 59,
     "totalActivities": 32
   },
   "statistics": {
     "modules": 8,
-    "learningActivities": 24,
-    "quizzes": 8,
-    "projectCheckpoints": 4,
+    "learningActivities": 32,
+    "moduleQuizzes": 8,
     "discussions": 4,
-    "autoGradedPoints": 820,
-    "manualGradedPoints": 820
+    "projectPieces": 6,
+    "midtermExam": 1,
+    "finalExam": 1,
+    "autoGradedPoints": 1100,
+    "manualGradedPoints": 760
   },
   "clos": [
     {
@@ -107,46 +109,63 @@
   ],
   "threadProject": {
     "title": "Psychological Investigation Portfolio",
-    "description": "Progressive semester-long research project where students design and conduct a psychological investigation, building research literacy and scientific thinking across 4 checkpoints",
+    "description": "Progressive 6-piece research project where students design and conduct a psychological investigation, building all 6 pieces throughout modules 2-7, with complete portfolio due in Module 7",
     "totalPoints": 200,
-    "checkpoints": [
+    "pieces": [
       {
         "number": 1,
-        "module": 1,
-        "title": "Research Question & Design",
-        "points": 50,
+        "module": 2,
+        "title": "Research Question & Method Selection",
         "linkedPTS": ["PTS1"],
         "linkedCLOs": ["CLO2", "CLO3"],
-        "description": "Choose a psychological phenomenon, formulate a research question, identify appropriate research method, and create basic research design"
+        "description": "Choose psychological phenomenon, formulate research question, identify appropriate research method"
       },
       {
         "number": 2,
-        "module": 3,
-        "title": "Literature Review & Hypothesis",
-        "points": 50,
+        "module": 4,
+        "title": "Literature Review & Theory Application",
         "linkedPTS": ["PTS1", "PTS6"],
         "linkedCLOs": ["CLO2", "CLO3"],
-        "description": "Review 3-5 empirical studies, synthesize existing research, develop specific hypothesis, and justify methodology choice"
+        "description": "Review 3-5 empirical studies, summarize findings, identify relevant psychological theories"
       },
       {
         "number": 3,
-        "module": 5,
-        "title": "Data Analysis & Results",
-        "points": 50,
-        "linkedPTS": ["PTS1", "PTS5"],
+        "module": 6,
+        "title": "Hypothesis Development & Research Design",
+        "linkedPTS": ["PTS1", "PTS4"],
         "linkedCLOs": ["CLO2", "CLO3"],
-        "description": "Collect/analyze data (simulated or real), create data visualizations, interpret findings, and discuss limitations"
+        "description": "Develop specific hypotheses, design study methodology, justify design choices, address ethics"
       },
       {
         "number": 4,
         "module": 7,
-        "title": "Final Report & Presentation",
-        "points": 50,
+        "title": "Data Collection Plan",
+        "linkedPTS": ["PTS1", "PTS5"],
+        "linkedCLOs": ["CLO2", "CLO3"],
+        "description": "Plan data collection procedures, create materials, consider sampling and measurement"
+      },
+      {
+        "number": 5,
+        "module": 7,
+        "title": "Data Analysis & Results",
+        "linkedPTS": ["PTS1", "PTS5"],
+        "linkedCLOs": ["CLO2", "CLO3"],
+        "description": "Analyze data (simulated or real), create visualizations, interpret findings, discuss limitations"
+      },
+      {
+        "number": 6,
+        "module": 7,
+        "title": "Complete APA Research Report",
         "linkedPTS": ["PTS1", "PTS2", "PTS3", "PTS4", "PTS5", "PTS6"],
         "linkedCLOs": ["CLO1", "CLO2", "CLO3", "CLO4", "CLO5"],
-        "description": "Complete APA-style research report with biopsychosocial integration, discuss implications, and present findings"
+        "description": "Full APA-style report integrating all pieces with biopsychosocial analysis and implications"
       }
-    ]
+    ],
+    "submission": {
+      "module": 7,
+      "points": 200,
+      "note": "All 6 pieces submitted together as complete portfolio in Module 7"
+    }
   },
   "modules": [
     {
@@ -155,118 +174,22 @@
       "dates": "Weeks 1-2",
       "textbookChapters": ["1", "2"],
       "theme": "What is Psychology?",
-      "inquiryQuestions": [
-        "How is psychology different from common sense or intuition?",
-        "What makes psychological research scientific?",
-        "Why do psychologists use different research methods for different questions?"
-      ],
       "mlos": [
-        {
-          "number": 1,
-          "text": "Explain the major approaches to psychology and their historical development",
-          "bloomsLevel": "Understand",
-          "linkedCLOs": ["CLO1"],
-          "linkedPTS": ["PTS1"]
-        },
-        {
-          "number": 2,
-          "text": "Distinguish between different research methods and identify appropriate uses for each",
-          "bloomsLevel": "Analyze",
-          "linkedCLOs": ["CLO2", "CLO3"],
-          "linkedPTS": ["PTS1"]
-        },
-        {
-          "number": 3,
-          "text": "Evaluate research ethics using APA ethical principles",
-          "bloomsLevel": "Evaluate",
-          "linkedCLOs": ["CLO2", "CLO3"],
-          "linkedPTS": ["PTS4"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: What is Psychology?",
-          "description": "History of psychology, major approaches (biological, behavioral, cognitive, psychodynamic, humanistic), psychology as a science",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Research Methods",
-          "description": "Descriptive methods (case studies, naturalistic observation, surveys), correlational research, experimental method, variables and controls",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Research Ethics & Thinking Critically",
-          "description": "APA ethics code, informed consent, IRB review, avoiding pseudoscience, critical thinking about claims",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        }
+        "Explain major psychological approaches and historical development",
+        "Distinguish between research methods and identify appropriate uses",
+        "Evaluate research ethics using APA ethical principles"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M1-LA1",
-          "title": "LA1: Key Terms & Concepts",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match 15 key psychological terms with their correct definitions. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M1-LA2",
-          "title": "LA2: Research Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [2, 3],
-          "linkedPTS": ["PTS1", "PTS4"],
-          "studentInstructions": "Answer 10 multiple-choice questions about research methods and ethics. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M1-LA3",
-          "title": "LA3: Timeline OR Research Design Matching",
-          "format": "Categorization (Student Choice)",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Choose between Timeline (sort psychology's historical events) or Research Design Matching (match scenarios to methods). You have 2 attempts and 25 minutes."
-        }
+        {"id": "M1-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M1-LA2", "title": "LA2: Research Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M1-LA3", "title": "LA3: Timeline/Research Matching", "points": 20, "autoGraded": true},
+        {"id": "M1-LA4", "title": "LA4: Research Ethics Case Analysis", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Module Quiz",
-          "title": "Module 1 Quiz",
-          "points": 25,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3]
-        },
-        {
-          "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #1: Research Question & Design",
-          "points": 50,
-          "linkedMLOs": [2, 3],
-          "linkedCLOs": ["CLO2", "CLO3"],
-          "linkedPTS": ["PTS1"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 1 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Discussion", "title": "Discussion #1: Psychology in Your Life", "points": 50, "autoGraded": false}
+      ],
+      "totalPoints": 155
     },
     {
       "number": 2,
@@ -274,118 +197,22 @@
       "dates": "Weeks 3-4",
       "textbookChapters": ["3", "5"],
       "theme": "Brain & Behavior",
-      "inquiryQuestions": [
-        "How do neurons communicate to create thoughts and behaviors?",
-        "What happens when specific brain areas are damaged?",
-        "How does the brain construct our experience of reality from sensory input?"
-      ],
       "mlos": [
-        {
-          "number": 1,
-          "text": "Explain the structure and function of neurons and major brain structures",
-          "bloomsLevel": "Understand",
-          "linkedCLOs": ["CLO1"],
-          "linkedPTS": ["PTS3"]
-        },
-        {
-          "number": 2,
-          "text": "Analyze how neurotransmitters affect behavior and mental processes",
-          "bloomsLevel": "Analyze",
-          "linkedCLOs": ["CLO3", "CLO5"],
-          "linkedPTS": ["PTS3"]
-        },
-        {
-          "number": 3,
-          "text": "Apply the biopsychosocial model to explain behavior",
-          "bloomsLevel": "Apply",
-          "linkedCLOs": ["CLO4", "CLO5"],
-          "linkedPTS": ["PTS2", "PTS3"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Neurons & Neurotransmitters",
-          "description": "Neural communication, action potentials, synaptic transmission, major neurotransmitters and their effects",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Brain Structure & Function",
-          "description": "Brain organization (hindbrain, midbrain, forebrain), limbic system, cerebral cortex, hemispheric specialization, neuroplasticity",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Sensation & Perception",
-          "description": "Sensory processes, thresholds, visual and auditory perception, perceptual organization and interpretation",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        }
+        "Explain structure and function of neurons and brain structures",
+        "Analyze how neurotransmitters affect behavior",
+        "Apply biopsychosocial model to explain behavior"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M2-LA1",
-          "title": "LA1: Key Terms & Concepts",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2],
-          "linkedPTS": ["PTS3"],
-          "studentInstructions": "Match 15 neurological and perceptual terms with their correct definitions. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M2-LA2",
-          "title": "LA2: Brain & Behavior Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3],
-          "linkedPTS": ["PTS3"],
-          "studentInstructions": "Answer 10 multiple-choice questions about brain function and behavior. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M2-LA3",
-          "title": "LA3: Brain Injury Cases OR Neurotransmitter Matching",
-          "format": "Categorization (Student Choice)",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3],
-          "linkedPTS": ["PTS2", "PTS3"],
-          "studentInstructions": "Choose between Brain Injury Cases (match symptoms to brain areas) or Neurotransmitter Matching (match neurotransmitters to effects). You have 2 attempts and 25 minutes."
-        }
+        {"id": "M2-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M2-LA2", "title": "LA2: Brain & Behavior Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M2-LA3", "title": "LA3: Brain Structures/Neurotransmitters", "points": 20, "autoGraded": true},
+        {"id": "M2-LA4", "title": "LA4: Neuroscience Case Analysis", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Module Quiz",
-          "title": "Module 2 Quiz",
-          "points": 25,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Biopsychosocial Analysis",
-          "points": 50,
-          "linkedMLOs": [3],
-          "linkedCLOs": ["CLO3", "CLO4", "CLO5"],
-          "linkedPTS": ["PTS2", "PTS3"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 2 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Project Piece", "title": "Portfolio Piece #1: Research Question & Method", "points": 0, "note": "Due in Module 7 with complete portfolio"}
+      ],
+      "totalPoints": 105
     },
     {
       "number": 3,
@@ -393,357 +220,69 @@
       "dates": "Weeks 5-6",
       "textbookChapters": ["6", "8"],
       "theme": "How We Learn & Remember",
-      "inquiryQuestions": [
-        "Can any behavior be learned through conditioning?",
-        "Why do we remember some things vividly but forget others quickly?",
-        "How can understanding memory research improve your studying?"
-      ],
       "mlos": [
-        {
-          "number": 1,
-          "text": "Explain classical conditioning, operant conditioning, and observational learning with examples",
-          "bloomsLevel": "Understand",
-          "linkedCLOs": ["CLO1"],
-          "linkedPTS": ["PTS2"]
-        },
-        {
-          "number": 2,
-          "text": "Analyze memory systems and processes (encoding, storage, retrieval)",
-          "bloomsLevel": "Analyze",
-          "linkedCLOs": ["CLO3"],
-          "linkedPTS": ["PTS1"]
-        },
-        {
-          "number": 3,
-          "text": "Apply learning and memory principles to improve real-world outcomes",
-          "bloomsLevel": "Apply",
-          "linkedCLOs": ["CLO4"],
-          "linkedPTS": ["PTS2"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Classical & Operant Conditioning",
-          "description": "Pavlov's experiments, UCS/UCR/CS/CR, acquisition and extinction, reinforcement and punishment schedules, shaping",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Observational Learning & Memory Systems",
-          "description": "Bandura's social learning theory, modeling, sensory memory, working memory, long-term memory types",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Memory Processes & Improvement",
-          "description": "Encoding strategies, retrieval cues, forgetting (interference, decay), false memories, improving memory",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        }
+        "Explain classical, operant, and observational learning",
+        "Analyze memory systems and processes",
+        "Apply learning and memory principles to real-world outcomes"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M3-LA1",
-          "title": "LA1: Key Terms & Concepts",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match 15 learning and memory terms with their correct definitions. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M3-LA2",
-          "title": "LA2: Learning & Memory Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3],
-          "linkedPTS": ["PTS2"],
-          "studentInstructions": "Identify types of learning and memory in real-world scenarios. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M3-LA3",
-          "title": "LA3: Memory Data Analysis OR Conditioning Examples",
-          "format": "Data Analysis OR Categorization (Student Choice)",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [2, 3],
-          "linkedPTS": ["PTS5", "PTS2"],
-          "studentInstructions": "Choose between Memory Data (analyze forgetting curve research) or Conditioning Examples (categorize by type). You have 2 attempts and 25 minutes."
-        }
+        {"id": "M3-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M3-LA2", "title": "LA2: Learning & Memory Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M3-LA3", "title": "LA3: Conditioning/Memory Matching", "points": 20, "autoGraded": true},
+        {"id": "M3-LA4", "title": "LA4: Learning Principles Application", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Module Quiz",
-          "title": "Module 3 Quiz",
-          "points": 25,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3]
-        },
-        {
-          "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #2: Literature Review & Hypothesis",
-          "points": 50,
-          "linkedMLOs": [2],
-          "linkedCLOs": ["CLO2", "CLO3"],
-          "linkedPTS": ["PTS1", "PTS6"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 3 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Discussion", "title": "Discussion #2: Learning Principles in Action", "points": 50, "autoGraded": false}
+      ],
+      "totalPoints": 155
     },
     {
       "number": 4,
-      "title": "Midterm Integration",
-      "dates": "Week 7-8",
-      "textbookChapters": ["Review 1-8"],
-      "theme": "Connecting the Pieces",
-      "inquiryQuestions": [
-        "How do biological, learning, and cognitive factors work together to shape behavior?",
-        "What unifying themes connect the first half of this course?",
-        "How can you apply what you've learned so far to understand complex real-world issues?"
-      ],
+      "title": "Cognition, Intelligence & Development",
+      "dates": "Weeks 7-8",
+      "textbookChapters": ["7", "9"],
+      "theme": "Thinking, Intelligence & Growth",
       "mlos": [
-        {
-          "number": 1,
-          "text": "Synthesize concepts from modules 1-3 to explain complex phenomena",
-          "bloomsLevel": "Synthesize",
-          "linkedCLOs": ["CLO3", "CLO5"],
-          "linkedPTS": ["PTS2", "PTS3"]
-        },
-        {
-          "number": 2,
-          "text": "Evaluate progress on Psychological Thinking Skills development",
-          "bloomsLevel": "Evaluate",
-          "linkedCLOs": ["CLO3"],
-          "linkedPTS": ["PTS1", "PTS2", "PTS3", "PTS4", "PTS5", "PTS6"]
-        },
-        {
-          "number": 3,
-          "text": "Create an integrated project demonstrating understanding across multiple topics",
-          "bloomsLevel": "Create",
-          "linkedCLOs": ["CLO4"],
-          "linkedPTS": ["PTS2"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Integration Review",
-          "description": "Connections between brain, learning, and memory; applying the biopsychosocial model; preparing for midterm",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Midterm Project Guidelines",
-          "description": "Creative synthesis project options, requirements, rubric, examples from previous students",
-          "guidedNotes": false,
-          "knowledgeCheck": false
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Skills Self-Assessment",
-          "description": "Reflecting on PTS development, identifying growth areas, planning for second half",
-          "guidedNotes": false,
-          "knowledgeCheck": false
-        }
+        "Explain theories of intelligence and cognitive development",
+        "Analyze cognitive biases and decision-making processes",
+        "Apply developmental principles across lifespan"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M4-LA1",
-          "title": "LA1: Cumulative Review",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match key terms from Modules 1-3. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M4-LA2",
-          "title": "LA2: Integration Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS2", "PTS3"],
-          "studentInstructions": "Apply concepts from multiple modules to complex scenarios. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M4-LA3",
-          "title": "LA3: Concept Connections",
-          "format": "Categorization",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Categorize concepts by module or theoretical approach. You have 2 attempts and 25 minutes."
-        }
+        {"id": "M4-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M4-LA2", "title": "LA2: Cognition & Development Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M4-LA3", "title": "LA3: Piaget Stages/Bias Identification", "points": 20, "autoGraded": true},
+        {"id": "M4-LA4", "title": "LA4: Cognitive Bias & Development Analysis", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Midterm Exam",
-          "title": "Midterm Exam",
-          "points": 100,
-          "questionCount": 50,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "coverage": "Modules 1-3 comprehensive"
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Midterm Reflection",
-          "points": 50,
-          "linkedMLOs": [2],
-          "linkedCLOs": ["CLO3"],
-          "linkedPTS": ["PTS2"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 4 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Project Piece", "title": "Portfolio Piece #2: Literature Review", "points": 0, "note": "Due in Module 7 with complete portfolio"},
+        {"type": "Midterm Exam", "title": "Midterm Exam (Modules 1-4)", "points": 100, "autoGraded": true}
+      ],
+      "totalPoints": 205
     },
     {
       "number": 5,
-      "title": "Cognition, Intelligence & Motivation",
+      "title": "Motivation, Emotion & Stress",
       "dates": "Weeks 9-10",
-      "textbookChapters": ["7", "10"],
-      "theme": "Thinking & Feeling",
-      "inquiryQuestions": [
-        "What's the difference between intelligence and wisdom?",
-        "Why do smart people sometimes make irrational decisions?",
-        "What motivates human behavior beyond basic survival needs?"
-      ],
+      "textbookChapters": ["10"],
+      "theme": "What Drives Us",
       "mlos": [
-        {
-          "number": 1,
-          "text": "Explain theories of intelligence and emotional regulation",
-          "bloomsLevel": "Understand",
-          "linkedCLOs": ["CLO1"],
-          "linkedPTS": ["PTS1"]
-        },
-        {
-          "number": 2,
-          "text": "Analyze cognitive biases and decision-making processes",
-          "bloomsLevel": "Analyze",
-          "linkedCLOs": ["CLO3"],
-          "linkedPTS": ["PTS6"]
-        },
-        {
-          "number": 3,
-          "text": "Evaluate motivation theories and their applications",
-          "bloomsLevel": "Evaluate",
-          "linkedCLOs": ["CLO4"],
-          "linkedPTS": ["PTS2"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Thinking & Problem Solving",
-          "description": "Concepts and prototypes, problem-solving strategies, creativity, cognitive biases and heuristics",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Intelligence",
-          "description": "Theories of intelligence, IQ testing, nature vs nurture, cultural factors, emotional intelligence",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Motivation & Emotion",
-          "description": "Drive-reduction theory, arousal theory, Maslow's hierarchy, intrinsic/extrinsic motivation, emotion theories",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        }
+        "Explain motivation and emotion theories",
+        "Analyze stress and coping mechanisms",
+        "Apply motivation principles to enhance well-being"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M5-LA1",
-          "title": "LA1: Key Terms & Concepts",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match cognition, intelligence, and motivation terms with definitions. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M5-LA2",
-          "title": "LA2: Thinking & Intelligence Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3],
-          "linkedPTS": ["PTS2", "PTS6"],
-          "studentInstructions": "Identify cognitive biases and apply motivation theories. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M5-LA3",
-          "title": "LA3: Flynn Effect Data OR Cognitive Bias Examples",
-          "format": "Data Analysis OR Categorization (Student Choice)",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2],
-          "linkedPTS": ["PTS5", "PTS6"],
-          "studentInstructions": "Choose between Flynn Effect Data (interpret IQ trends) or Cognitive Bias Examples (categorize thinking errors). You have 2 attempts and 25 minutes."
-        }
+        {"id": "M5-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M5-LA2", "title": "LA2: Motivation & Emotion Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M5-LA3", "title": "LA3: Emotion Theory/Coping Matching", "points": 20, "autoGraded": true},
+        {"id": "M5-LA4", "title": "LA4: Motivation & Well-Being Analysis", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Module Quiz",
-          "title": "Module 5 Quiz",
-          "points": 25,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3]
-        },
-        {
-          "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #3: Data Analysis & Results",
-          "points": 50,
-          "linkedMLOs": [2],
-          "linkedCLOs": ["CLO2", "CLO3"],
-          "linkedPTS": ["PTS1", "PTS5"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 5 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Discussion", "title": "Discussion #3: Motivation & Well-Being", "points": 50, "autoGraded": false}
+      ],
+      "totalPoints": 155
     },
     {
       "number": 6,
@@ -751,118 +290,22 @@
       "dates": "Weeks 11-12",
       "textbookChapters": ["11", "12"],
       "theme": "Self & Others",
-      "inquiryQuestions": [
-        "How much does personality change across the lifespan?",
-        "Why do good people do bad things in certain situations?",
-        "How do we maintain positive self-concepts despite contradictory evidence?"
-      ],
       "mlos": [
-        {
-          "number": 1,
-          "text": "Explain major personality theories and assessment methods",
-          "bloomsLevel": "Understand",
-          "linkedCLOs": ["CLO1"],
-          "linkedPTS": ["PTS1"]
-        },
-        {
-          "number": 2,
-          "text": "Analyze classic social psychology research on conformity and obedience",
-          "bloomsLevel": "Analyze",
-          "linkedCLOs": ["CLO3"],
-          "linkedPTS": ["PTS4"]
-        },
-        {
-          "number": 3,
-          "text": "Apply social psychology principles to explain real-world phenomena",
-          "bloomsLevel": "Apply",
-          "linkedCLOs": ["CLO4"],
-          "linkedPTS": ["PTS2"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Personality Theories",
-          "description": "Psychoanalytic (Freud), humanistic (Rogers, Maslow), trait (Big Five), social-cognitive perspectives",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Social Influence",
-          "description": "Conformity (Asch), obedience (Milgram), group dynamics, persuasion, cognitive dissonance",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Social Cognition",
-          "description": "Attribution theory, attitudes, prejudice and discrimination, aggression, altruism",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        }
+        "Explain major personality theories and assessment methods",
+        "Analyze social psychology research on conformity and obedience",
+        "Apply social psychology principles to real-world phenomena"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M6-LA1",
-          "title": "LA1: Key Terms & Concepts",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match personality and social psychology terms with definitions. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M6-LA2",
-          "title": "LA2: Social Psychology Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [2, 3],
-          "linkedPTS": ["PTS2", "PTS4"],
-          "studentInstructions": "Apply social psychology concepts to scenarios. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M6-LA3",
-          "title": "LA3: Personality Data OR Classic Studies",
-          "format": "Data Analysis OR Categorization (Student Choice)",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2],
-          "linkedPTS": ["PTS5", "PTS4"],
-          "studentInstructions": "Choose between Personality Stability Data or Classic Studies Categorization. You have 2 attempts and 25 minutes."
-        }
+        {"id": "M6-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M6-LA2", "title": "LA2: Personality & Social Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M6-LA3", "title": "LA3: Attribution/Theory Matching", "points": 20, "autoGraded": true},
+        {"id": "M6-LA4", "title": "LA4: Personality & Social Application", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Module Quiz",
-          "title": "Module 6 Quiz",
-          "points": 25,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Social Influence",
-          "points": 50,
-          "linkedMLOs": [3],
-          "linkedCLOs": ["CLO3", "CLO4"],
-          "linkedPTS": ["PTS2"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 6 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Project Piece", "title": "Portfolio Piece #3: Hypothesis & Design", "points": 0, "note": "Due in Module 7 with complete portfolio"}
+      ],
+      "totalPoints": 105
     },
     {
       "number": 7,
@@ -870,246 +313,85 @@
       "dates": "Weeks 13-14",
       "textbookChapters": ["15", "16"],
       "theme": "Understanding & Helping",
-      "inquiryQuestions": [
-        "What distinguishes 'normal' from 'abnormal' behavior?",
-        "How do we determine which treatments actually work?",
-        "What role does stigma play in mental health treatment-seeking?"
-      ],
       "mlos": [
-        {
-          "number": 1,
-          "text": "Explain major categories of psychological disorders using DSM-5 criteria",
-          "bloomsLevel": "Understand",
-          "linkedCLOs": ["CLO1"],
-          "linkedPTS": ["PTS1"]
-        },
-        {
-          "number": 2,
-          "text": "Analyze psychological disorders using the biopsychosocial model",
-          "bloomsLevel": "Analyze",
-          "linkedCLOs": ["CLO3", "CLO5"],
-          "linkedPTS": ["PTS3"]
-        },
-        {
-          "number": 3,
-          "text": "Evaluate treatment approaches based on research evidence",
-          "bloomsLevel": "Evaluate",
-          "linkedCLOs": ["CLO2", "CLO4"],
-          "linkedPTS": ["PTS1", "PTS4"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Defining & Classifying Disorders",
-          "description": "Criteria for abnormality, DSM-5 classification, cultural considerations, labeling effects",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Major Disorder Categories",
-          "description": "Anxiety disorders, mood disorders, schizophrenia, personality disorders, applying biopsychosocial model",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Treatment Approaches",
-          "description": "Psychotherapy types (psychodynamic, humanistic, behavioral, cognitive), biomedical treatments, evaluating effectiveness",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        }
+        "Explain major psychological disorders using DSM-5 criteria",
+        "Analyze disorders using biopsychosocial model",
+        "Evaluate treatment approaches based on research evidence"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M7-LA1",
-          "title": "LA1: Key Terms & Concepts",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 20,
-          "questionCount": 15,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match disorder and treatment terms with definitions. You have 2 attempts and 20 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M7-LA2",
-          "title": "LA2: Diagnosis & Treatment Scenarios",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3],
-          "linkedPTS": ["PTS2", "PTS3"],
-          "studentInstructions": "Apply diagnostic criteria and evaluate treatments. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M7-LA3",
-          "title": "LA3: Treatment Effectiveness Data OR Symptom Matching",
-          "format": "Data Analysis OR Categorization (Student Choice)",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [2, 3],
-          "linkedPTS": ["PTS5", "PTS1"],
-          "studentInstructions": "Choose between Treatment Effectiveness Data or Symptom-to-Disorder Matching. You have 2 attempts and 25 minutes."
-        }
+        {"id": "M7-LA1", "title": "LA1: Key Terms", "points": 20, "autoGraded": true},
+        {"id": "M7-LA2", "title": "LA2: Diagnosis & Treatment Scenarios", "points": 20, "autoGraded": true},
+        {"id": "M7-LA3", "title": "LA3: Disorder/Treatment Matching", "points": 20, "autoGraded": true},
+        {"id": "M7-LA4", "title": "LA4: Disorders & Treatment Analysis", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Module Quiz",
-          "title": "Module 7 Quiz",
-          "points": 25,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1, 2, 3]
-        },
-        {
-          "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #4: Final Report & Presentation",
-          "points": 50,
-          "linkedMLOs": [2, 3],
-          "linkedCLOs": ["CLO1", "CLO2", "CLO3", "CLO4", "CLO5"],
-          "linkedPTS": ["PTS1", "PTS2", "PTS3", "PTS4", "PTS5", "PTS6"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 7 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Portfolio Submission", "title": "Complete Portfolio - All 6 Pieces", "points": 200, "autoGraded": false}
+      ],
+      "totalPoints": 305
     },
     {
       "number": 8,
-      "title": "Final Integration & Course Synthesis",
+      "title": "Applied Psychology & Integration",
       "dates": "Weeks 15-16",
       "textbookChapters": ["Review all"],
       "theme": "Putting It All Together",
-      "inquiryQuestions": [
-        "How do all the topics in psychology interconnect?",
-        "What psychological knowledge will be most useful in your life after this course?",
-        "How has learning psychology changed how you understand yourself and others?"
-      ],
       "mlos": [
-        {
-          "number": 1,
-          "text": "Synthesize psychological concepts across all modules to explain complex real-world phenomena",
-          "bloomsLevel": "Synthesize",
-          "linkedCLOs": ["CLO5"],
-          "linkedPTS": ["PTS2", "PTS3"]
-        },
-        {
-          "number": 2,
-          "text": "Evaluate personal growth in all six Psychological Thinking Skills",
-          "bloomsLevel": "Evaluate",
-          "linkedCLOs": ["CLO3"],
-          "linkedPTS": ["PTS1", "PTS2", "PTS3", "PTS4", "PTS5", "PTS6"]
-        },
-        {
-          "number": 3,
-          "text": "Create a plan for applying psychological knowledge in future personal and professional contexts",
-          "bloomsLevel": "Create",
-          "linkedCLOs": ["CLO4"],
-          "linkedPTS": ["PTS2"]
-        }
-      ],
-      "content": [
-        {
-          "type": "Instructional Content",
-          "title": "IC1: Course Integration Review",
-          "description": "Connections across all modules, unifying themes, biopsychosocial applications to complex cases",
-          "guidedNotes": true,
-          "knowledgeCheck": true
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC2: Final Exam Preparation",
-          "description": "Study strategies, practice questions, key concepts review, integration scenarios",
-          "guidedNotes": false,
-          "knowledgeCheck": false
-        },
-        {
-          "type": "Instructional Content",
-          "title": "IC3: Psychology Beyond the Classroom",
-          "description": "Career paths in psychology, lifelong learning, applying psychological thinking to current events and personal growth",
-          "guidedNotes": false,
-          "knowledgeCheck": false
-        }
+        "Synthesize concepts across all modules to explain complex phenomena",
+        "Evaluate personal growth in Psychological Thinking Skills",
+        "Create plan for applying psychological knowledge in future contexts"
       ],
       "activities": [
-        {
-          "type": "Learning Activity",
-          "id": "M8-LA1",
-          "title": "LA1: Comprehensive Review",
-          "format": "Matching Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "questionCount": 20,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Match key terms from all 8 modules. You have 2 attempts and 25 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M8-LA2",
-          "title": "LA2: Integration Case Studies",
-          "format": "Multiple Choice Quiz",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 30,
-          "questionCount": 10,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS2", "PTS3"],
-          "studentInstructions": "Analyze complex cases requiring concepts from multiple modules. You have 2 attempts and 30 minutes."
-        },
-        {
-          "type": "Learning Activity",
-          "id": "M8-LA3",
-          "title": "LA3: Concept Mapping",
-          "format": "Categorization",
-          "points": 20,
-          "attempts": 2,
-          "timeLimit": 25,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "linkedPTS": ["PTS1"],
-          "studentInstructions": "Organize psychological concepts by theme, module, or application. You have 2 attempts and 25 minutes."
-        }
+        {"id": "M8-LA1", "title": "LA1: Comprehensive Review", "points": 20, "autoGraded": true},
+        {"id": "M8-LA2", "title": "LA2: Integration Case Studies", "points": 20, "autoGraded": true},
+        {"id": "M8-LA3", "title": "LA3: Biopsychosocial Analysis", "points": 20, "autoGraded": true},
+        {"id": "M8-LA4", "title": "LA4: Integrated Application", "points": 20, "autoGraded": true}
       ],
       "assessments": [
-        {
-          "type": "Final Exam",
-          "title": "Comprehensive Final Exam",
-          "points": 100,
-          "questionCount": 50,
-          "autoGraded": true,
-          "linkedMLOs": [1],
-          "coverage": "All modules, emphasis on 4-8"
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Final Reflection",
-          "points": 50,
-          "linkedMLOs": [2, 3],
-          "linkedCLOs": ["CLO3", "CLO4"],
-          "linkedPTS": ["PTS2"]
-        },
-        {
-          "type": "Final Reflection Paper",
-          "title": "Final Reflection: Your Psychological Thinking Journey",
-          "points": 60,
-          "linkedMLOs": [2, 3],
-          "linkedCLOs": ["CLO3", "CLO4"],
-          "linkedPTS": ["PTS1", "PTS2", "PTS3", "PTS4", "PTS5", "PTS6"]
-        }
-      ]
+        {"type": "Module Quiz", "title": "Module 8 Quiz", "points": 25, "autoGraded": true},
+        {"type": "Discussion", "title": "Discussion #4: Course Reflection & Future", "points": 50, "autoGraded": false},
+        {"type": "Final Exam", "title": "Comprehensive Final Exam (Modules 1-8)", "points": 100, "autoGraded": true}
+      ],
+      "totalPoints": 255
     }
-  ]
+  ],
+  "pointsBreakdown": {
+    "learningActivities": {
+      "la1Through4": 640,
+      "description": "32 activities × 20 points each (4 per module × 8 modules)"
+    },
+    "moduleQuizzes": {
+      "total": 200,
+      "description": "8 quizzes × 25 points each"
+    },
+    "discussions": {
+      "total": 200,
+      "description": "4 discussions × 50 points each (Modules 1, 3, 5, 8)"
+    },
+    "projectPortfolio": {
+      "total": 200,
+      "description": "Complete 6-piece portfolio due Module 7"
+    },
+    "exams": {
+      "midterm": 100,
+      "final": 100,
+      "total": 200,
+      "description": "Midterm (Module 4, 50 questions) + Final (Module 8, 50 questions)"
+    },
+    "innovations": {
+      "total": 420,
+      "description": "Future enhancements: interactive experiments, skill badges, data visualizations"
+    },
+    "grandTotal": 1860
+  },
+  "assessmentPattern": {
+    "module1": "4 LA + Quiz + Discussion #1",
+    "module2": "4 LA + Quiz + (Project Piece #1 started)",
+    "module3": "4 LA + Quiz + Discussion #2",
+    "module4": "4 LA + Quiz + Midterm + (Project Piece #2 started)",
+    "module5": "4 LA + Quiz + Discussion #3",
+    "module6": "4 LA + Quiz + (Project Piece #3 started)",
+    "module7": "4 LA + Quiz + Portfolio Submission (ALL 6 PIECES - 200 pts)",
+    "module8": "4 LA + Quiz + Discussion #4 + Final Exam"
+  }
 }
