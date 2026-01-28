@@ -62,6 +62,21 @@ const module4Activities = {
                 { scenario: "Using coin only as money, not as screwdriver", bias: "Functional Fixedness" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Cognitive Bias & Development Analysis",
+        questions: [
+            { q: "Person overestimates shark attack risk after watching Shark Week. This demonstrates:", answers: ["Confirmation bias", "Availability heuristic ✓", "Hindsight bias", "Functional fixedness"], correct: 1 },
+            { q: "Investor loses $1000 on stock but won't sell because 'already invested so much.' This is:", answers: ["Functional fixedness", "Sunk cost fallacy ✓", "Overconfidence", "Framing effect"], correct: 1 },
+            { q: "Only reading news sources that support your political views demonstrates:", answers: ["Critical thinking", "Confirmation bias ✓", "Availability heuristic", "Anchoring"], correct: 1 },
+            { q: "After accident, person says 'I knew that would happen.' This is:", answers: ["Confirmation bias", "Hindsight bias ✓", "Availability heuristic", "Representativeness"], correct: 1 },
+            { q: "Child (age 2) sees parent hide toy under blanket and searches for it. Child has achieved:", answers: ["Conservation", "Object permanence ✓", "Abstract thinking", "Reversibility"], correct: 1 },
+            { q: "Child (age 4) thinks moon follows them when walking. This demonstrates:", answers: ["Animism and egocentrism ✓", "Concrete operations", "Formal operations", "Conservation"], correct: 0 },
+            { q: "Child (age 7) understands water amount stays same when poured into different shaped glass. This is:", answers: ["Object permanence", "Conservation ✓", "Centration", "Egocentrism"], correct: 1 },
+            { q: "Adolescent believes 'everyone is watching me' (spotlight effect) and 'no one understands me' (personal fable). This is:", answers: ["Concrete thinking", "Adolescent egocentrism ✓", "Identity crisis", "Role confusion"], correct: 1 },
+            { q: "According to Kohlberg, reasoning 'it's wrong because you'll get caught' represents:", answers: ["Preconventional morality ✓", "Conventional morality", "Postconventional morality", "No moral development"], correct: 0 },
+            { q: "Child learns new word after hearing it once. This rapid vocabulary growth (age 2-6) is called:", answers: ["Telegraphic speech", "Language explosion ✓", "Overregularization", "Babbling"], correct: 1 }
+        ]
     }
 };
 
@@ -80,15 +95,16 @@ const module4Quiz = {
     ]
 };
 
-const module4Discussion = {
-    title: "Discussion Board: Midterm Reflection - Learning & Memory Applications (50 pts)",
-    prompt: "Reflect on your learning strategies based on memory research from Modules 1-4. What study techniques have you been using? How can you apply research on encoding, retrieval, spacing effect, and metacognition to improve your learning? Discuss how cognitive biases might affect your studying.",
-    requirements: [
-        "Initial post: 300+ words with specific research connections",
-        "Identify at least 3 evidence-based study strategies",
-        "Discuss personal applications and planned changes",
-        "Respond to 2 peers (150+ words each) with additional suggestions"
-    ]
+const module4Discussion = null;
+
+const module4Checkpoint = {
+    title: "Project Piece #2: Literature Review & Theory Application",
+    instructions: "Building on your research question from Piece #1, conduct a literature review. Find and summarize 3-5 peer-reviewed sources relevant to your topic. Identify the main psychological theories that apply to your phenomenon. This is Piece #2 of your 6-piece portfolio - all pieces due together in Module 7. See project-pieces.js for complete instructions."
 };
 
-const module4Checkpoint = null;
+const module4Midterm = {
+    title: "Midterm Exam (Modules 1-4)",
+    points: 100,
+    questions: 50,
+    note: "Covers all Module 1-4 content. See exams.js for complete exam content."
+};

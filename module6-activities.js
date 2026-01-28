@@ -62,6 +62,21 @@ const module6Activities = {
                 { description: "Personality develops through psychosexual stages", theory: "Psychodynamic (Freud)" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Personality & Social Psychology Application",
+        questions: [
+            { q: "Person consistently late to work. Boss thinks 'lazy and irresponsible' (ignoring childcare issues). This is:", answers: ["Accurate assessment", "Fundamental attribution error ✓", "Self-serving bias", "Correct attribution"], correct: 1 },
+            { q: "You fail exam: 'Test was unfair.' Friend fails: 'They didn't study enough.' This demonstrates:", answers: ["Accurate assessment", "Actor-observer bias ✓", "No bias", "Situational attribution"], correct: 1 },
+            { q: "Person volunteers regularly. Using Big Five, they likely score high in:", answers: ["Neuroticism", "Agreeableness and conscientiousness ✓", "Only openness", "Extraversion only"], correct: 1 },
+            { q: "After buying expensive item, person focuses on positive features and ignores negatives. This is:", answers: ["Rational thinking", "Cognitive dissonance reduction ✓", "No bias", "Perfect decision"], correct: 1 },
+            { q: "Group of friends all agree to risky plan despite individual doubts. This demonstrates:", answers: ["Good decision-making", "Groupthink ✓", "Conformity only", "Obedience"], correct: 1 },
+            { q: "Analyzing prejudice using social psychology: stereotype threat could:", answers: ["Improve performance", "Harm performance of stereotyped group ✓", "Have no effect", "Only help"], correct: 1 },
+            { q: "Salesperson gets you to agree to small request, then asks for larger commitment. This is:", answers: ["Door-in-the-face", "Foot-in-the-door technique ✓", "Low-ball technique", "No technique"], correct: 1 },
+            { q: "Emergency situation with many bystanders present. You are:", answers: ["More likely to get help", "Less likely to get help (bystander effect) ✓", "Same likelihood", "Guaranteed help"], correct: 1 },
+            { q: "Person high in neuroticism (Big Five) more likely to experience:", answers: ["Stable moods", "Anxiety and emotional instability ✓", "No emotions", "Only positive emotions"], correct: 1 },
+            { q: "To reduce prejudice between groups, contact hypothesis suggests:", answers: ["Avoiding contact", "Equal status contact with cooperation toward common goals ✓", "Competition", "Segregation"], correct: 1 }
+        ]
     }
 };
 
@@ -80,15 +95,9 @@ const module6Quiz = {
     ]
 };
 
-const module6Discussion = {
-    title: "Discussion Board: Social Psychology in Action (50 pts)",
-    prompt: "Analyze a real-world example of social influence, conformity, obedience, or prejudice. Connect to classic research studies (Milgram, Asch, Zimbardo, etc.). Discuss ethical implications and how understanding these phenomena can promote positive social change. Consider biopsychosocial factors.",
-    requirements: [
-        "Initial post: 300+ words with research connections",
-        "Cite at least 2 sources (classic study + current example)",
-        "Include ethical analysis",
-        "Respond to 2 peers (150+ words each) with additional perspectives"
-    ]
-};
+const module6Discussion = null;
 
-const module6Checkpoint = null;
+const module6Checkpoint = {
+    title: "Project Piece #3: Hypothesis Development & Research Design",
+    instructions: "Based on your literature review, develop specific hypotheses for your psychological investigation. Design your study methodology (participants, materials, procedures). Justify design choices using research principles. Consider potential confounds and ethical issues. This is Piece #3 of your 6-piece portfolio - all pieces due together in Module 7. See project-pieces.js for complete instructions."
+};

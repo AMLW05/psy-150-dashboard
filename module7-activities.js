@@ -62,6 +62,21 @@ const module7Activities = {
                 { description: "Prescribe medication targeting neurotransmitters", approach: "Biomedical/Psychopharmacology" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Psychological Disorders & Treatment Analysis",
+        questions: [
+            { q: "Person has persistent sad mood, loss of interest, sleep/appetite changes, worthlessness for 3 weeks. Most likely diagnosis:", answers: ["Bipolar disorder", "Major depressive disorder ✓", "Generalized anxiety", "Schizophrenia"], correct: 1 },
+            { q: "Patient experiences panic attacks, avoids places where escape difficult. Likely diagnosis:", answers: ["Social anxiety", "Panic disorder with agoraphobia ✓", "Specific phobia", "GAD"], correct: 1 },
+            { q: "Using diathesis-stress model, depression results from:", answers: ["Only genetic factors", "Genetic vulnerability + environmental stressors ✓", "Only stress", "No biological factors"], correct: 1 },
+            { q: "Person has intrusive thoughts about contamination, washes hands 50+ times daily. Best treatment approach:", answers: ["Medication only", "CBT with exposure and response prevention ✓", "Psychoanalysis only", "No treatment works"], correct: 1 },
+            { q: "Cognitive therapy for depression (Beck) focuses on:", answers: ["Unconscious conflicts", "Identifying and challenging negative automatic thoughts ✓", "Only behavior", "Medication"], correct: 1 },
+            { q: "SSRIs work by:", answers: ["Blocking dopamine", "Increasing serotonin availability at synapse ✓", "Sedation", "Affecting GABA only"], correct: 1 },
+            { q: "Patient experiences hallucinations (hearing voices) and delusions (belief in conspiracy). Likely diagnosis:", answers: ["Major depression", "Schizophrenia ✓", "Bipolar disorder", "Anxiety disorder"], correct: 1 },
+            { q: "Systematic desensitization for phobias involves:", answers: ["Immediate intense exposure", "Gradual exposure with relaxation ✓", "Medication only", "Psychoanalysis"], correct: 1 },
+            { q: "Difference between psychologist and psychiatrist:", answers: ["No difference", "Psychiatrists are MDs who can prescribe; psychologists typically PhD/PsyD ✓", "Psychologists prescribe", "Same training"], correct: 1 },
+            { q: "Evidence-based practice in mental health means:", answers: ["Only using research", "Integrating research, clinical expertise, and patient values ✓", "Ignoring research", "One treatment for all"], correct: 1 }
+        ]
     }
 };
 
@@ -83,6 +98,6 @@ const module7Quiz = {
 const module7Discussion = null;
 
 const module7Checkpoint = {
-    title: "Thread Project Checkpoint #4: Final Report & Presentation (50 pts)",
-    instructions: "Complete full APA-style research report including Introduction, Method, Results, Discussion. Integrate biopsychosocial perspective. Discuss implications for understanding psychological phenomena. Present findings in written report or video presentation. See Canvas for full rubric and grading criteria."
+    title: "Psychological Investigation Portfolio - ALL 6 PIECES DUE (200 points)",
+    instructions: "Submit your complete 6-piece Psychological Investigation Portfolio: Piece #1 (Research Question & Method), Piece #2 (Literature Review), Piece #3 (Hypothesis & Design), Piece #4 (Data Collection Plan), Piece #5 (Data Analysis & Results), and Piece #6 (Complete APA Report). All pieces have been progressively developed throughout Modules 2-7. This is your culminating research experience demonstrating mastery of psychological thinking skills. See project-pieces.js for complete details and rubric."
 };

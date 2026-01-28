@@ -62,6 +62,21 @@ const module3Activities = {
                 { scenario: "Echo of sound just heard", stage: "Sensory Memory (Echoic)" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Learning Principles Application Scenarios",
+        questions: [
+            { q: "Child cleans room, parents remove the chore of washing dishes for a week. This is:", answers: ["Positive reinforcement", "Negative reinforcement ✓", "Positive punishment", "Negative punishment"], correct: 1 },
+            { q: "Dog gets shocked by invisible fence when approaching boundary. Dog stops approaching. This is:", answers: ["Negative reinforcement", "Positive punishment ✓", "Negative punishment", "Extinction"], correct: 1 },
+            { q: "Teen loses phone for breaking curfew. This is:", answers: ["Positive punishment", "Negative punishment ✓", "Positive reinforcement", "Negative reinforcement"], correct: 1 },
+            { q: "Worker receives paycheck every two weeks (regardless of hours worked that week). This is:", answers: ["Variable interval", "Fixed interval ✓", "Fixed ratio", "Variable ratio"], correct: 1 },
+            { q: "Slot machine pays out unpredictably. This is:", answers: ["Fixed ratio", "Variable ratio ✓", "Fixed interval", "Variable interval"], correct: 1 },
+            { q: "After chemotherapy causes nausea, patient develops aversion to hospital. This demonstrates:", answers: ["Operant conditioning", "Classical conditioning (taste/context aversion) ✓", "Observational learning", "Habituation"], correct: 1 },
+            { q: "To improve exam memory, student should:", answers: ["Cram night before", "Study distributed over several days with self-testing ✓", "Highlight only", "Read once carefully"], correct: 1 },
+            { q: "Forgetting password due to interference from new password demonstrates:", answers: ["Decay", "Retroactive interference ✓", "Proactive interference", "Encoding failure"], correct: 1 },
+            { q: "Therapist treating phobia uses gradual exposure to feared object while client is relaxed. This is:", answers: ["Flooding", "Systematic desensitization ✓", "Aversion therapy", "Token economy"], correct: 1 },
+            { q: "Eyewitness given misleading information after crime alters memory. This demonstrates:", answers: ["Encoding failure", "Misinformation effect ✓", "Decay", "Source amnesia"], correct: 1 }
+        ]
     }
 };
 
@@ -80,9 +95,15 @@ const module3Quiz = {
     ]
 };
 
-const module3Discussion = null;
-
-const module3Checkpoint = {
-    title: "Thread Project Checkpoint #2: Literature Review & Hypothesis (50 pts)",
-    instructions: "Review 3-5 empirical studies related to your research question. Synthesize findings, identify gaps, and develop specific hypothesis. Justify your methodology choice based on literature. Include APA-formatted references. See Canvas for full rubric."
+const module3Discussion = {
+    title: "Discussion #2: Learning Principles in Action",
+    prompt: "Choose ONE scenario (Parenting & Discipline, Classroom Management, Workplace Motivation, or Personal Habit Change). Analyze using operant conditioning principles (positive/negative reinforcement, punishment, extinction, schedules). Evaluate effectiveness and recommend improvements using psychological research. Cite at least ONE source beyond textbook.",
+    requirements: [
+        "Initial post: 350+ words with detailed scenario analysis",
+        "Identify learning principles accurately",
+        "Include research citation beyond textbook (APA format)",
+        "Respond to 2 peers (150+ words each) with additional insights"
+    ]
 };
+
+const module3Checkpoint = null;

@@ -82,6 +82,21 @@ const module8Activities = {
                 }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Integrated Biopsychosocial Analysis",
+        questions: [
+            { q: "College student with test anxiety. Biological factor most relevant:", answers: ["Only thoughts", "Sympathetic nervous system activation, cortisol release ✓", "No biological factors", "Only social factors"], correct: 1 },
+            { q: "Same student's test anxiety - psychological factor:", answers: ["Only biology", "Negative thoughts, fear of failure, catastrophizing ✓", "No psychological factors", "Only physical symptoms"], correct: 1 },
+            { q: "Same student's test anxiety - social factor:", answers: ["Only individual factors", "Family expectations, peer comparison, academic culture ✓", "No social factors", "Biology only"], correct: 1 },
+            { q: "Best intervention integrating biopsychosocial model:", answers: ["Medication only", "Relaxation (bio), CBT (psych), study groups (social) ✓", "Ignore all factors", "One factor only"], correct: 1 },
+            { q: "Patient with chronic pain. Biopsychosocial analysis should include:", answers: ["Only pain medication", "Biological (nerves, gate-control), psychological (perception, coping), social (support, beliefs) ✓", "Only physical factors", "Ignore psychology"], correct: 1 },
+            { q: "Psychology contributes to public health by:", answers: ["Only treating individuals", "Understanding behavior change, prevention, policy implications ✓", "No public health role", "Only medication"], correct: 1 },
+            { q: "Critical thinking about psychology news requires:", answers: ["Accepting all claims", "Evaluating evidence, considering alternatives, checking sources ✓", "Rejecting all science", "No questions needed"], correct: 1 },
+            { q: "Applying psychology to your career means:", answers: ["No applications", "Understanding human behavior, communication, motivation, well-being ✓", "Only for therapists", "Memorizing theories only"], correct: 1 },
+            { q: "Most important psychological thinking skill developed in course:", answers: ["Memorizing disorders", "Analyzing behavior from multiple perspectives ✓", "One right answer exists", "Ignoring context"], correct: 1 },
+            { q: "Future of psychology includes:", answers: ["No changes", "Neuroscience integration, technology, cultural diversity, interdisciplinary collaboration ✓", "Abandoning science", "Only medication"], correct: 1 }
+        ]
     }
 };
 
@@ -112,3 +127,10 @@ const module8Discussion = {
 };
 
 const module8Checkpoint = null;
+
+const module8FinalExam = {
+    title: "Comprehensive Final Exam (Modules 1-8)",
+    points: 100,
+    questions: 50,
+    note: "Cumulative exam covering all course content with emphasis on Modules 5-8. Includes 15 review questions from Modules 1-4 and 35 new questions. See exams.js for complete exam content."
+};

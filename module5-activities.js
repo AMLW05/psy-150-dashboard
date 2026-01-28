@@ -62,6 +62,21 @@ const module5Activities = {
                 { strategy: "Accepting unchangeable situation", type: "Emotion-Focused Coping" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Motivation & Well-Being Application Analysis",
+        questions: [
+            { q: "Student only studies to get grades and parental approval, never for interest. According to self-determination theory, this threatens:", answers: ["Extrinsic motivation", "Intrinsic motivation and autonomy ✓", "No impact", "Improves motivation"], correct: 1 },
+            { q: "Company offers bonuses for creative projects. This could:", answers: ["Always increase creativity", "Undermine intrinsic motivation (overjustification effect) ✓", "Have no effect", "Only help"], correct: 1 },
+            { q: "Person experiences racing heart at party. Interprets as excitement (not anxiety) due to context. This demonstrates:", answers: ["James-Lange theory", "Schachter-Singer two-factor theory ✓", "Cannon-Bard theory", "No theory"], correct: 1 },
+            { q: "Employee facing impossible deadline (can't control stressor). Best coping strategy:", answers: ["Problem-focused only", "Emotion-focused coping (acceptance, reframing, support) ✓", "Avoidance", "Denial"], correct: 1 },
+            { q: "Person with high intrinsic motivation for painting starts selling art and loses enjoyment. This is:", answers: ["Incentive theory", "Overjustification effect ✓", "Drive reduction", "Self-actualization"], correct: 1 },
+            { q: "Analyzing personal well-being using Maslow's hierarchy, currently struggling with loneliness. Priority need:", answers: ["Self-actualization", "Love and belonging ✓", "Safety", "Esteem"], correct: 1 },
+            { q: "Athlete uses pre-competition anxiety (arousal) to enhance focus and performance. This demonstrates:", answers: ["Distress", "Eustress (positive stress) ✓", "Burnout", "Exhaustion stage"], correct: 1 },
+            { q: "Person in GAS exhaustion stage most at risk for:", answers: ["Improved performance", "Illness and breakdown ✓", "Peak functioning", "No effects"], correct: 1 },
+            { q: "Research shows social support helps stress by:", answers: ["Eliminating stressors", "Buffering effects and providing coping resources ✓", "Making stress worse", "No real impact"], correct: 1 },
+            { q: "To increase student intrinsic motivation, teacher should:", answers: ["Offer more rewards", "Provide autonomy, competence support, and meaningful tasks ✓", "Use only punishment", "Increase pressure"], correct: 1 }
+        ]
     }
 };
 
@@ -80,9 +95,15 @@ const module5Quiz = {
     ]
 };
 
-const module5Discussion = null;
-
-const module5Checkpoint = {
-    title: "Thread Project Checkpoint #3: Data Analysis & Results (50 pts)",
-    instructions: "Collect and analyze data for your psychological investigation (simulated or real with IRB approval). Create data visualizations (graphs, charts). Interpret findings in relation to your hypothesis. Discuss limitations and potential confounds. See Canvas for full rubric."
+const module5Discussion = {
+    title: "Discussion #3: Motivation & Well-Being in Your Life",
+    prompt: "Analyze your own motivation and stress using course concepts. Choose ONE area (academic motivation, work, health behavior, or stress management). Apply relevant theories (self-determination theory, Maslow's hierarchy, emotion theories, GAS, coping strategies). Discuss how understanding these concepts can help you enhance well-being and achieve goals. Connect to biopsychosocial model.",
+    requirements: [
+        "Initial post: 300+ words with theory applications",
+        "Cite textbook and at least 1 additional source",
+        "Include specific personal examples and planned changes",
+        "Respond to 2 peers (150+ words each) with additional insights"
+    ]
 };
+
+const module5Checkpoint = null;
