@@ -351,41 +351,90 @@ function buildAssessment(a, mn) {
     let details = '';
 
     // Get module-specific data (discussions, checkpoints, quizzes, exams)
+    // Pattern: Discussions in 1,3,5,8 | Checkpoints in 2,4,6,7 | Midterm in 4 | Final in 8
     const moduleData = {
-        1: { checkpoint: typeof module1Checkpoint !== 'undefined' ? module1Checkpoint : null, quiz: typeof module1Quiz !== 'undefined' ? module1Quiz : null },
-        2: { discussion: typeof module2Discussion !== 'undefined' ? module2Discussion : null, quiz: typeof module2Quiz !== 'undefined' ? module2Quiz : null },
-        3: { checkpoint: typeof module3Checkpoint !== 'undefined' ? module3Checkpoint : null, quiz: typeof module3Quiz !== 'undefined' ? module3Quiz : null },
-        4: { discussion: typeof module4Discussion !== 'undefined' ? module4Discussion : null, quiz: typeof module4Quiz !== 'undefined' ? module4Quiz : null },
-        5: { checkpoint: typeof module5Checkpoint !== 'undefined' ? module5Checkpoint : null, quiz: typeof module5Quiz !== 'undefined' ? module5Quiz : null },
-        6: { discussion: typeof module6Discussion !== 'undefined' ? module6Discussion : null, quiz: typeof module6Quiz !== 'undefined' ? module6Quiz : null },
+        1: { discussion: typeof module1Discussion !== 'undefined' ? module1Discussion : null, quiz: typeof module1Quiz !== 'undefined' ? module1Quiz : null },
+        2: { checkpoint: typeof module2Checkpoint !== 'undefined' ? module2Checkpoint : null, quiz: typeof module2Quiz !== 'undefined' ? module2Quiz : null },
+        3: { discussion: typeof module3Discussion !== 'undefined' ? module3Discussion : null, quiz: typeof module3Quiz !== 'undefined' ? module3Quiz : null },
+        4: { checkpoint: typeof module4Checkpoint !== 'undefined' ? module4Checkpoint : null, midterm: typeof module4Midterm !== 'undefined' ? module4Midterm : null, quiz: typeof module4Quiz !== 'undefined' ? module4Quiz : null },
+        5: { discussion: typeof module5Discussion !== 'undefined' ? module5Discussion : null, quiz: typeof module5Quiz !== 'undefined' ? module5Quiz : null },
+        6: { checkpoint: typeof module6Checkpoint !== 'undefined' ? module6Checkpoint : null, quiz: typeof module6Quiz !== 'undefined' ? module6Quiz : null },
         7: { checkpoint: typeof module7Checkpoint !== 'undefined' ? module7Checkpoint : null, quiz: typeof module7Quiz !== 'undefined' ? module7Quiz : null },
-        8: { discussion: typeof module8Discussion !== 'undefined' ? module8Discussion : null, quiz: typeof module8Quiz !== 'undefined' ? module8Quiz : null }
+        8: { discussion: typeof module8Discussion !== 'undefined' ? module8Discussion : null, finalExam: typeof module8FinalExam !== 'undefined' ? module8FinalExam : null, quiz: typeof module8Quiz !== 'undefined' ? module8Quiz : null }
     };
 
     const modData = moduleData[mn];
 
-    // Discussion Board
-    if (a.type === 'Discussion Board' && modData && modData.discussion) {
-        const disc = modData.discussion;
-        details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<h4 style="margin-top:0;color:var(--accent)">' + disc.title + '</h4>';
-        details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + disc.prompt + '</div>';
-        if (disc.requirements) {
-            details += '<h4 style="margin-top:20px;color:var(--accent)">Requirements</h4><ul style="margin-left:20px;line-height:1.8">';
-            disc.requirements.forEach(req => {
-                details += '<li>' + req + '</li>';
-            });
-            details += '</ul>';
+    // Discussion Board - Get data from discussions.js
+    if (a.type === 'Discussion Board') {
+        const discussionsData = (typeof discussionBoards !== 'undefined') ? discussionBoards : null;
+        const moduleKey = 'module' + mn;
+        let disc = null;
+
+        if (discussionsData && discussionsData[moduleKey]) {
+            disc = discussionsData[moduleKey];
         }
-        details += '<p style="margin-top:15px;font-style:italic">See Canvas for full rubric and grading criteria.</p></div>';
+
+        if (disc) {
+            details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
+            details += '<h4 style="margin-top:0;color:var(--accent)">' + disc.title + '</h4>';
+            details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + disc.prompt + '</div>';
+            if (disc.requirements && disc.requirements.length > 0) {
+                details += '<h5 style="margin-top:20px;color:var(--accent)">Requirements:</h5><ul style="margin-left:20px;line-height:1.8">';
+                disc.requirements.forEach(req => details += '<li>' + req + '</li>');
+                details += '</ul>';
+            }
+            if (disc.rubric) {
+                details += '<h5 style="margin-top:20px;color:var(--accent)">Grading Rubric:</h5>';
+                details += '<table style="width:100%;margin-top:10px;border-collapse:collapse"><thead><tr style="background:#e9ecef"><th style="padding:10px;text-align:left;border:1px solid #dee2e6">Criterion</th><th style="padding:10px;text-align:center;border:1px solid #dee2e6;width:80px">Points</th></tr></thead><tbody>';
+                disc.rubric.forEach(item => {
+                    details += '<tr><td style="padding:10px;border:1px solid #dee2e6">' + item.criterion + '</td><td style="padding:10px;text-align:center;border:1px solid #dee2e6">' + item.points + '</td></tr>';
+                });
+                details += '</tbody></table>';
+            }
+            details += '<p style="margin-top:15px;font-style:italic">Copy/paste ready for Canvas. See discussions.js for complete content.</p></div>';
+        }
     }
-    // Thread Project Checkpoint
-    else if (a.type === 'Project Checkpoint' && modData && modData.checkpoint) {
-        const checkpoint = modData.checkpoint;
-        details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<h4 style="margin-top:0;color:var(--accent)">' + checkpoint.title + '</h4>';
-        details += '<div style="white-space:pre-wrap;line-height:1.8">' + checkpoint.instructions + '</div>';
-        details += '<p style="margin-top:15px;font-style:italic">See Canvas for full rubric and grading criteria.</p></div>';
+    // Thread Project Checkpoint - Get data from project-pieces.js
+    else if (a.type === 'Project Checkpoint') {
+        const projectData = (typeof psychologicalInvestigationPortfolio !== 'undefined') ? psychologicalInvestigationPortfolio : null;
+        let piece = null;
+
+        // Map module to piece number
+        const pieceMap = { 2: 'piece1', 4: 'piece2', 6: 'piece3', 7: 'module7Submission' };
+        const pieceKey = pieceMap[mn];
+
+        if (projectData && pieceKey) {
+            piece = projectData[pieceKey];
+        }
+
+        if (piece) {
+            details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
+            details += '<h4 style="margin-top:0;color:var(--accent)">' + piece.title + '</h4>';
+
+            // For Module 7 (full portfolio submission)
+            if (mn === 7) {
+                details += '<p style="margin:10px 0;font-weight:bold;color:var(--accent)">⭐ ALL 6 PIECES DUE TOGETHER (200 points total)</p>';
+                details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + piece.description + '</div>';
+                if (piece.submissionRequirements) {
+                    details += '<h5 style="margin-top:20px">Submission Requirements:</h5><ul style="margin-left:20px;line-height:1.8">';
+                    piece.submissionRequirements.forEach(req => details += '<li>' + req + '</li>');
+                    details += '</ul>';
+                }
+                details += '<p style="margin-top:15px;font-style:italic">See project-pieces.js for complete instructions for all 6 pieces.</p>';
+            }
+            // For individual pieces (Modules 2, 4, 6)
+            else {
+                details += '<p style="margin:10px 0;font-style:italic;color:#666">⚠️ NOTE: This piece is built progressively but all 6 pieces are submitted together in Module 7</p>';
+                details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + piece.instructions + '</div>';
+                if (piece.tips && piece.tips.length > 0) {
+                    details += '<h5 style="margin-top:20px">💡 Tips for Success:</h5><ul style="margin-left:20px;line-height:1.8">';
+                    piece.tips.forEach(tip => details += '<li>' + tip + '</li>');
+                    details += '</ul>';
+                }
+            }
+            details += '</div>';
+        }
     }
     // Module Quiz
     else if (a.type === 'Module Quiz' && modData && modData.quiz) {
@@ -402,38 +451,43 @@ function buildAssessment(a, mn) {
         details += '</div>';
     }
     // Midterm Exam
-    else if (a.type === 'Midterm Exam' && modData && modData.midterm) {
-        const exam = modData.midterm;
-        details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<h4 style="margin-top:0;color:var(--accent)">' + exam.title + '</h4>';
-        details += '<p style="margin:10px 0;font-style:italic">' + exam.instructions + '</p>';
-        details += '<h5 style="margin-top:20px">Exam Questions (' + exam.questions.length + ' total):</h5>';
-        exam.questions.forEach((q, i) => {
-            details += '<div class="question-block" style="margin-top:15px;padding:15px;background:white;border-radius:4px;border-left:4px solid var(--success)"><div class="question-text"><strong>Q' + (i+1) + ':</strong> ' + q.q;
-            if (q.type) details += ' <span style="font-size:0.85em;color:var(--gray)">(' + q.type + ')</span>';
-            details += '</div>';
-            q.answers.forEach((ans, aidx) => {
-                details += '<div class="answer-option' + (aidx === q.correct ? ' correct' : '') + '" style="margin:8px 0 8px 20px">' + String.fromCharCode(97+aidx) + ') ' + ans + '</div>';
+    else if (a.type === 'Midterm Exam') {
+        const exam = (typeof midtermExam !== 'undefined') ? midtermExam : null;
+        if (exam && exam.questions) {
+            details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
+            details += '<h4 style="margin-top:0;color:var(--accent)">Midterm Exam (Modules 1-4)</h4>';
+            details += '<p style="margin:10px 0"><strong>Format:</strong> 50 multiple-choice questions covering all content from Modules 1-4</p>';
+            details += '<p style="margin:10px 0"><strong>Points:</strong> 100 points (2 points per question)</p>';
+            details += '<h5 style="margin-top:20px">Exam Questions Preview (' + exam.questions.length + ' total):</h5>';
+            exam.questions.forEach((q, i) => {
+                details += '<div class="question-block" style="margin-top:15px;padding:15px;background:white;border-radius:4px;border-left:4px solid var(--success)"><div class="question-text"><strong>Q' + (i+1) + ':</strong> ' + q.q + '</div>';
+                q.answers.forEach((ans, aidx) => {
+                    details += '<div class="answer-option' + (aidx === q.correct ? ' correct' : '') + '" style="margin:8px 0 8px 20px">' + String.fromCharCode(97+aidx) + ') ' + ans + '</div>';
+                });
+                details += '</div>';
             });
-            details += '</div>';
-        });
-        details += '</div>';
+            details += '<p style="margin-top:15px;font-style:italic">See exams.js for complete exam with all 50 questions.</p></div>';
+        }
     }
     // Final Exam
-    else if (a.type === 'Final Exam' && modData && modData.finalExam) {
-        const exam = modData.finalExam;
-        details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-        details += '<h4 style="margin-top:0;color:var(--accent)">' + exam.title + '</h4>';
-        details += '<p style="margin:10px 0;font-style:italic">' + exam.instructions + '</p>';
-        details += '<h5 style="margin-top:20px">Comprehensive Final Exam Questions (' + exam.questions.length + ' total):</h5>';
-        exam.questions.forEach((q, i) => {
-            details += '<div class="question-block" style="margin-top:15px;padding:15px;background:white;border-radius:4px;border-left:4px solid var(--warning)"><div class="question-text"><strong>Q' + (i+1) + ':</strong> ' + q.q + '</div>';
-            q.answers.forEach((ans, aidx) => {
-                details += '<div class="answer-option' + (aidx === q.correct ? ' correct' : '') + '" style="margin:8px 0 8px 20px">' + String.fromCharCode(97+aidx) + ') ' + ans + '</div>';
+    else if (a.type === 'Final Exam') {
+        const exam = (typeof finalExam !== 'undefined') ? finalExam : null;
+        if (exam && exam.questions) {
+            details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
+            details += '<h4 style="margin-top:0;color:var(--accent)">Comprehensive Final Exam (Modules 1-8)</h4>';
+            details += '<p style="margin:10px 0"><strong>Format:</strong> 50 multiple-choice questions covering all course content</p>';
+            details += '<p style="margin:10px 0"><strong>Coverage:</strong> Cumulative with emphasis on Modules 5-8 (15 review questions from 1-4, 35 new questions from 5-8)</p>';
+            details += '<p style="margin:10px 0"><strong>Points:</strong> 100 points (2 points per question)</p>';
+            details += '<h5 style="margin-top:20px">Final Exam Questions Preview (' + exam.questions.length + ' total):</h5>';
+            exam.questions.forEach((q, i) => {
+                details += '<div class="question-block" style="margin-top:15px;padding:15px;background:white;border-radius:4px;border-left:4px solid var(--warning)"><div class="question-text"><strong>Q' + (i+1) + ':</strong> ' + q.q + '</div>';
+                q.answers.forEach((ans, aidx) => {
+                    details += '<div class="answer-option' + (aidx === q.correct ? ' correct' : '') + '" style="margin:8px 0 8px 20px">' + String.fromCharCode(97+aidx) + ') ' + ans + '</div>';
+                });
+                details += '</div>';
             });
-            details += '</div>';
-        });
-        details += '</div>';
+            details += '<p style="margin-top:15px;font-style:italic">See exams.js for complete exam with all 50 questions.</p></div>';
+        }
     }
 
     // Build the card with consistent button handling
