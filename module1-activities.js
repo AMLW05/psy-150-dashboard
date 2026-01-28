@@ -62,6 +62,19 @@ const module1Activities = {
                 { text: "Observe primates in habitat", answer: "Naturalistic Observation" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Research Ethics Case Analysis",
+        questions: [
+            { q: "Researcher tells participants the study is about 'learning' but actually measures prejudice. At the end, explains the deception and true purpose. This is:", answers: ["Unethical - deception never allowed", "Ethical if debriefing occurs and no harm ✓", "Unethical - must tell truth always", "Ethical - no debriefing needed"], correct: 1 },
+            { q: "Study on stress exposes participants to loud noises causing temporary discomfort but provides no lasting effects. Participants consent and can withdraw. This is:", answers: ["Unethical - any discomfort prohibited", "Ethical if benefits outweigh minimal risk ✓", "Unethical - loud noises never allowed", "Ethical only if paid highly"], correct: 1 },
+            { q: "Researcher observes children's playground behavior without asking permission. This is ethical if:", answers: ["Never ethical without consent", "Behavior is public and anonymous ✓", "Children don't notice", "Parents are nearby"], correct: 1 },
+            { q: "Tuskegee syphilis study (1932-1972) violated ethics by:", answers: ["Using African Americans", "Withholding treatment and deceiving participants ✓", "Lasting too long", "Using government funding"], correct: 1 },
+            { q: "Researcher must stop study if:", answers: ["Results aren't significant", "Participant shows distress and wants to withdraw ✓", "Hypothesis is wrong", "Data is messy"], correct: 1 },
+            { q: "Confidentiality in research means:", answers: ["No one sees data ever", "Participant identity protected in reports ✓", "Anonymous and confidential are same", "Researchers can't know who participated"], correct: 1 },
+            { q: "IRB (Institutional Review Board) primarily protects:", answers: ["Researcher reputation", "Participant welfare and rights ✓", "University from lawsuits", "Research funding"], correct: 1 },
+            { q: "Study finds treatment X helps Group A but harms Group B. Ethical action:", answers: ["Publish only Group A results", "Report both findings honestly ✓", "Hide Group B data", "Stop all treatment X use"], correct: 1 }
+        ]
     }
 };
 
@@ -80,9 +93,15 @@ const module1Quiz = {
     ]
 };
 
-const module1Discussion = null;
-
-const module1Checkpoint = {
-    title: "Thread Project Checkpoint #1: Research Question & Design (50 pts)",
-    instructions: "Choose psychological phenomenon, formulate research question, identify appropriate method, create basic design. See Canvas for full rubric."
+const module1Discussion = {
+    title: "Discussion #1: Psychology in Your Life",
+    prompt: "Choose ONE psychological principle from Module 1 (Confirmation Bias, Bystander Effect, or Classical/Operant Conditioning). Describe the principle in your own words (cite textbook), share a personal example from your own life where you've observed this principle in action, analyze the example using psychological terminology, and reflect on why understanding this principle is useful.",
+    requirements: [
+        "Initial post: 300+ words with specific example",
+        "Cite textbook when defining psychological terms",
+        "Respond to 2 peers (150+ words each) who chose different principles",
+        "Be respectful and constructive in responses"
+    ]
 };
+
+const module1Checkpoint = null;

@@ -62,6 +62,19 @@ const module2Activities = {
                 { symptom: "Learning, memory, excitatory transmission", neurotransmitter: "Glutamate" }
             ]
         }
+    },
+    la4: {
+        title: "LA4: Neuroscience Case Analysis",
+        questions: [
+            { q: "Patient can understand speech but cannot speak fluently (knows what to say but can't form words). Most likely damage:", answers: ["Wernicke's area", "Broca's area ✓", "Hippocampus", "Amygdala"], correct: 1 },
+            { q: "Patient cannot form new long-term memories but remembers childhood (like H.M.). Damage likely in:", answers: ["Frontal lobe", "Hippocampus ✓", "Cerebellum", "Occipital lobe"], correct: 1 },
+            { q: "Patient has tremors, difficulty initiating movement, and slowed movement. Low levels of which neurotransmitter most likely:", answers: ["Serotonin", "Dopamine ✓", "Acetylcholine", "GABA"], correct: 1 },
+            { q: "After amygdala damage, patient would most likely show:", answers: ["Memory loss", "Reduced fear response ✓", "Language problems", "Motor impairment"], correct: 1 },
+            { q: "Split-brain patient sees image of spoon in LEFT visual field. They will:", answers: ["Say 'spoon'", "Point with left hand but not verbally name it ✓", "See nothing", "Name it normally"], correct: 1 },
+            { q: "Person feels anxious. SSRIs (like Prozac) would help by:", answers: ["Decreasing serotonin", "Increasing serotonin availability ✓", "Blocking dopamine", "Reducing GABA"], correct: 1 },
+            { q: "After frontal lobe damage (Phineas Gage case), changes occur in:", answers: ["Memory only", "Personality and impulse control ✓", "Vision", "Hearing"], correct: 1 },
+            { q: "Person experiences phantom limb pain (pain in amputated limb). This demonstrates:", answers: ["Imaginary pain", "Brain creates pain perception without physical limb ✓", "Malingering", "Nerve damage only"], correct: 1 }
+        ]
     }
 };
 
@@ -80,15 +93,9 @@ const module2Quiz = {
     ]
 };
 
-const module2Discussion = {
-    title: "Discussion Board: Biopsychosocial Analysis of Behavior (50 pts)",
-    prompt: "Choose a behavior or psychological phenomenon (e.g., anxiety, addiction, aggression, attraction). Analyze it from all three levels: biological (brain structures, neurotransmitters, genetics), psychological (thoughts, emotions, perceptions), and social (culture, relationships, environment). Explain how these factors interact. Cite at least one research study.",
-    requirements: [
-        "Initial post: 300+ words with biopsychosocial integration",
-        "Include at least one cited source (APA format)",
-        "Respond to 2 peers (150+ words each)",
-        "Demonstrate critical thinking about interactions between levels"
-    ]
-};
+const module2Discussion = null;
 
-const module2Checkpoint = null;
+const module2Checkpoint = {
+    title: "Project Piece #1: Research Question & Method Selection",
+    instructions: "Choose a psychological phenomenon that interests you and develop a researchable question. This is the foundation of your semester-long investigation project. Create a 1-2 page document including: (1) Research Topic - what phenomenon and why it's important, (2) Research Question - specific, measurable question, (3) Research Method - Experimental, Correlational, or Descriptive with justification, (4) Method details (IV/DV or variables to measure), (5) Ethical Considerations. Full instructions in Canvas assignment. This is Piece #1 of your portfolio - all 6 pieces due together in Module 7."
+};
