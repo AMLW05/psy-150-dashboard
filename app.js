@@ -351,16 +351,16 @@ function buildAssessment(a, mn) {
     let details = '';
 
     // Get module-specific data (discussions, checkpoints, quizzes, exams)
-    // Pattern: Discussions in 1,3,5,8 | Checkpoints in 2,4,6,7 | Midterm in 4 | Final in 8
+    // HIS-131 ALTERNATING PATTERN: Checkpoints in M1,3,5 | Discussions in M2,4,6,8 | Midterm in M4 | Portfolio in M7 | Final in M8
     const moduleData = {
-        1: { discussion: typeof module1Discussion !== 'undefined' ? module1Discussion : null, quiz: typeof module1Quiz !== 'undefined' ? module1Quiz : null },
-        2: { checkpoint: typeof module2Checkpoint !== 'undefined' ? module2Checkpoint : null, quiz: typeof module2Quiz !== 'undefined' ? module2Quiz : null },
-        3: { discussion: typeof module3Discussion !== 'undefined' ? module3Discussion : null, quiz: typeof module3Quiz !== 'undefined' ? module3Quiz : null },
-        4: { checkpoint: typeof module4Checkpoint !== 'undefined' ? module4Checkpoint : null, midterm: typeof module4Midterm !== 'undefined' ? module4Midterm : null, quiz: typeof module4Quiz !== 'undefined' ? module4Quiz : null },
-        5: { discussion: typeof module5Discussion !== 'undefined' ? module5Discussion : null, quiz: typeof module5Quiz !== 'undefined' ? module5Quiz : null },
-        6: { checkpoint: typeof module6Checkpoint !== 'undefined' ? module6Checkpoint : null, quiz: typeof module6Quiz !== 'undefined' ? module6Quiz : null },
-        7: { checkpoint: typeof module7Checkpoint !== 'undefined' ? module7Checkpoint : null, quiz: typeof module7Quiz !== 'undefined' ? module7Quiz : null },
-        8: { discussion: typeof module8Discussion !== 'undefined' ? module8Discussion : null, finalExam: typeof module8FinalExam !== 'undefined' ? module8FinalExam : null, quiz: typeof module8Quiz !== 'undefined' ? module8Quiz : null }
+        1: { checkpoint: typeof module1Checkpoint !== 'undefined' ? module1Checkpoint : null, quiz: typeof module1Quiz !== 'undefined' ? module1Quiz : null },
+        2: { discussion: typeof module2Discussion !== 'undefined' ? module2Discussion : null, quiz: typeof module2Quiz !== 'undefined' ? module2Quiz : null },
+        3: { checkpoint: typeof module3Checkpoint !== 'undefined' ? module3Checkpoint : null, quiz: typeof module3Quiz !== 'undefined' ? module3Quiz : null },
+        4: { discussion: typeof module4Discussion !== 'undefined' ? module4Discussion : null, midterm: typeof midtermExam !== 'undefined' ? midtermExam : null, quiz: typeof module4Quiz !== 'undefined' ? module4Quiz : null },
+        5: { checkpoint: typeof module5Checkpoint !== 'undefined' ? module5Checkpoint : null, quiz: typeof module5Quiz !== 'undefined' ? module5Quiz : null },
+        6: { discussion: typeof module6Discussion !== 'undefined' ? module6Discussion : null, quiz: typeof module6Quiz !== 'undefined' ? module6Quiz : null },
+        7: { finalPortfolio: typeof module7Checkpoint !== 'undefined' ? module7Checkpoint : null, quiz: typeof module7Quiz !== 'undefined' ? module7Quiz : null },
+        8: { discussion: typeof module8Discussion !== 'undefined' ? module8Discussion : null, finalExam: typeof finalExam !== 'undefined' ? finalExam : null, quiz: typeof module8Quiz !== 'undefined' ? module8Quiz : null }
     };
 
     const modData = moduleData[mn];

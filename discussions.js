@@ -1,8 +1,8 @@
-// DISCUSSION BOARDS - Complete Prompts (50 pts each)
-// Modules 1, 3, 5, 8
+// DISCUSSION BOARDS - Complete Prompts (100 pts each)
+// HIS-131 Alternating Pattern: Modules 2, 4, 6, 8
 
 const discussionBoards = {
-    module1: {
+    module2: {
         title: "Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work",
         points: 100,
         prompt: `# Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work
@@ -106,15 +106,15 @@ I'm still looking for articles that examine *different types* of music (classica
 ✓ Post early so classmates can respond to you
 
 ## Submission
-- Initial post due: Wednesday of Module 1
-- Peer responses due: Sunday of Module 1
-- Submit in Module 1 Discussion Board`,
+- Initial post due: Wednesday of Module 2
+- Peer responses due: Sunday of Module 2
+- Submit in Module 2 Discussion Board`,
         linkedMLOs: ["Module 1 MLO1", "Module 1 MLO3"],
         linkedPTS: ["PTS2"],
         linkedCLOs: ["CLO1", "CLO4"]
     },
 
-    module3: {
+    module4: {
         title: "Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work",
         points: 100,
         prompt: `# Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work
@@ -216,15 +216,15 @@ My concern: How do I control for prior music preferences? Should I screen partic
 ✓ Include proper citations
 
 ## Submission
-- Initial post due: Wednesday of Module 3
-- Peer responses due: Sunday of Module 3
-- Submit in Module 3 Discussion Board`,
+- Initial post due: Wednesday of Module 4
+- Peer responses due: Sunday of Module 4
+- Submit in Module 4 Discussion Board`,
         linkedMLOs: ["Module 3 MLO1", "Module 3 MLO2"],
         linkedPTS: ["PTS2", "PTS6"],
         linkedCLOs: ["CLO3", "CLO4"]
     },
 
-    module5: {
+    module6: {
         title: "Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work",
         points: 100,
         prompt: `# Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work
@@ -337,9 +337,9 @@ Timeline: Hoping to collect data over 2 weeks. Concerned about participant reten
 ✓ Think critically about competing theories
 
 ## Submission
-- Initial post due: Wednesday of Module 5
-- Peer responses due: Sunday of Module 5
-- Submit in Module 5 Discussion Board`,
+- Initial post due: Wednesday of Module 6
+- Peer responses due: Sunday of Module 6
+- Submit in Module 6 Discussion Board`,
         linkedMLOs: ["Module 5 MLO1", "Module 5 MLO2"],
         linkedPTS: ["PTS2", "PTS3"],
         linkedCLOs: ["CLO3", "CLO4", "CLO5"]

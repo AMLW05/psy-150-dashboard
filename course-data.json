@@ -68,7 +68,7 @@
     {
       "id": "PTS1",
       "name": "Scientific Reasoning & Research Literacy",
-      "badge": "🔬 SCIENTIFIC REASONING",
+      "badge": "\ud83d\udd2c SCIENTIFIC REASONING",
       "description": "Evaluate research quality, understand methods, apply scientific thinking to psychological claims",
       "progression": [
         "Module 1: Identify research methods",
@@ -80,7 +80,7 @@
     {
       "id": "PTS2",
       "name": "Application of Psychological Principles",
-      "badge": "🧩 REAL-WORLD APPLICATION",
+      "badge": "\ud83e\udde9 REAL-WORLD APPLICATION",
       "description": "Transfer abstract psychological concepts to personal, social, and organizational contexts",
       "progression": [
         "Module 1: Identify applications",
@@ -91,7 +91,7 @@
     {
       "id": "PTS3",
       "name": "Biopsychosocial Integration",
-      "badge": "🧠🤝🌍 BIOPSYCHOSOCIAL",
+      "badge": "\ud83e\udde0\ud83e\udd1d\ud83c\udf0d BIOPSYCHOSOCIAL",
       "description": "Analyze phenomena using biological, psychological, and social lenses simultaneously",
       "progression": [
         "Module 2: Introduce model",
@@ -103,7 +103,7 @@
     {
       "id": "PTS4",
       "name": "Ethical Analysis & Professional Standards",
-      "badge": "⚖️ ETHICS",
+      "badge": "\u2696\ufe0f ETHICS",
       "description": "Identify ethical issues and apply APA principles across research, treatment, and assessment contexts",
       "progression": [
         "Module 1: Learn APA ethics code",
@@ -114,7 +114,7 @@
     {
       "id": "PTS5",
       "name": "Data Literacy & Visual Analysis",
-      "badge": "📊 DATA LITERACY",
+      "badge": "\ud83d\udcca DATA LITERACY",
       "description": "Interpret graphs, statistics, and quantitative findings from psychological research",
       "progression": [
         "Module 1: Read basic graphs",
@@ -126,7 +126,7 @@
     {
       "id": "PTS6",
       "name": "Critical Evaluation of Psychological Claims",
-      "badge": "🔍 CRITICAL EVALUATION",
+      "badge": "\ud83d\udd0d CRITICAL EVALUATION",
       "description": "Distinguish science from pseudoscience, evaluate popular psychology claims using evidence",
       "progression": [
         "Module 1: Learn pseudoscience hallmarks",
@@ -395,23 +395,6 @@
           "linkedPTS": [
             "PTS1"
           ]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work",
-          "points": 100,
-          "rubric": "RUBRIC_1_Discussion_Boards",
-          "linkedMLOs": [
-            1,
-            2
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4"
-          ],
-          "linkedPTS": [
-            "PTS2"
-          ]
         }
       ]
     },
@@ -583,6 +566,23 @@
             1,
             2,
             3
+          ]
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
+          "linkedMLOs": [
+            1,
+            2
+          ],
+          "linkedCLOs": [
+            "CLO3",
+            "CLO4"
+          ],
+          "linkedPTS": [
+            "PTS2"
           ]
         }
       ]
@@ -768,25 +768,6 @@
             "PTS1",
             "PTS6"
           ]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work",
-          "points": 100,
-          "rubric": "RUBRIC_1_Discussion_Boards",
-          "linkedMLOs": [
-            1,
-            2,
-            3
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4"
-          ],
-          "linkedPTS": [
-            "PTS2",
-            "PTS6"
-          ]
         }
       ]
     },
@@ -968,6 +949,25 @@
             1
           ],
           "coverage": "Modules 1-3 comprehensive"
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
+          "linkedMLOs": [
+            1,
+            2,
+            3
+          ],
+          "linkedCLOs": [
+            "CLO3",
+            "CLO4"
+          ],
+          "linkedPTS": [
+            "PTS2",
+            "PTS6"
+          ]
         }
       ]
     },
@@ -1152,26 +1152,6 @@
             "PTS1",
             "PTS4"
           ]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work",
-          "points": 100,
-          "rubric": "RUBRIC_1_Discussion_Boards",
-          "linkedMLOs": [
-            1,
-            2,
-            3
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4",
-            "CLO5"
-          ],
-          "linkedPTS": [
-            "PTS2",
-            "PTS3"
-          ]
         }
       ]
     },
@@ -1337,6 +1317,26 @@
             1,
             2,
             3
+          ]
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
+          "linkedMLOs": [
+            1,
+            2,
+            3
+          ],
+          "linkedCLOs": [
+            "CLO3",
+            "CLO4",
+            "CLO5"
+          ],
+          "linkedPTS": [
+            "PTS2",
+            "PTS3"
           ]
         }
       ]
@@ -1702,29 +1702,6 @@
             1,
             2,
             3
-          ]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion Board #4: Course Reflection & Psychology in Your Future",
-          "points": 100,
-          "rubric": "RUBRIC_1_Discussion_Boards",
-          "linkedMLOs": [
-            2,
-            3
-          ],
-          "linkedCLOs": [
-            "CLO1",
-            "CLO2",
-            "CLO3",
-            "CLO4",
-            "CLO5"
-          ],
-          "linkedPTS": [
-            "PTS1",
-            "PTS2",
-            "PTS3",
-            "PTS6"
           ]
         },
         {
