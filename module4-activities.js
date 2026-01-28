@@ -21,16 +21,16 @@ const module4Activities = {
     },
     la2: {
         questions: [
-            { q: "Representative heuristic can lead to:", answers: ["Perfect decisions", "Stereotyping and ignoring base rates ✓", "Functional fixedness", "Confirmation bias"], correct: 1 },
-            { q: "Sternberg's triarchic theory includes:", answers: ["Only IQ", "Analytical, creative, and practical intelligence ✓", "Fluid only", "One type"], correct: 1 },
-            { q: "Flynn effect shows:", answers: ["IQ scores declining", "IQ scores rising over generations ✓", "No change", "Genetics only matter"], correct: 1 },
-            { q: "Child in Piaget's preoperational stage (2-7 years) struggles with:", answers: ["Object permanence", "Conservation and egocentrism ✓", "Abstract thinking", "Attachment"], correct: 1 },
-            { q: "Harlow's monkey studies showed:", answers: ["Food is primary attachment factor", "Contact comfort more important than food ✓", "No attachment needed", "Punishment works best"], correct: 1 },
-            { q: "Authoritative parenting is characterized by:", answers: ["High demands, low responsiveness", "High demands and high responsiveness ✓", "Low demands, low responsiveness", "No rules"], correct: 1 },
-            { q: "Adolescent egocentrism includes:", answers: ["Concrete thinking", "Imaginary audience and personal fable ✓", "No self-awareness", "Object permanence issues"], correct: 1 },
-            { q: "Erikson's identity vs role confusion stage occurs:", answers: ["Infancy", "Early childhood", "Adolescence ✓", "Late adulthood"], correct: 2 },
-            { q: "Availability heuristic means judging likelihood by:", answers: ["Statistics", "How easily examples come to mind ✓", "Logic only", "Expert opinion"], correct: 1 },
-            { q: "Vygotsky emphasized role of:", answers: ["Stages only", "Social interaction and culture in development ✓", "Genetics only", "Individual discovery"], correct: 1 }
+            { q: "The representativeness heuristic, which judges probability based on how typical something seems, can lead people to:", answers: ["Make perfect rational decisions", "Engage in stereotyping and ignore statistical base rates ✓", "Experience functional fixedness", "Display confirmation bias"], correct: 1 },
+            { q: "Robert Sternberg's triarchic theory of intelligence proposes that intelligence consists of:", answers: ["Only a single IQ score", "Analytical, creative, and practical components ✓", "Fluid intelligence only", "One uniform type"], correct: 1 },
+            { q: "The Flynn effect, observed across many countries over the past century, demonstrates that:", answers: ["IQ scores have been steadily declining", "IQ scores have been rising across generations ✓", "IQ scores show no change over time", "Only genetic factors determine intelligence"], correct: 1 },
+            { q: "According to Piaget's theory, a child in the preoperational stage (ages 2-7) typically struggles with:", answers: ["Object permanence", "Conservation tasks and overcoming egocentrism ✓", "Abstract hypothetical thinking", "Forming secure attachments"], correct: 1 },
+            { q: "Harry Harlow's famous studies with infant monkeys and surrogate mothers demonstrated that:", answers: ["Food is the primary factor in attachment formation", "Contact comfort is more important than food for attachment ✓", "Infant monkeys do not need attachment figures", "Punishment is the most effective parenting approach"], correct: 1 },
+            { q: "The authoritative parenting style is characterized by which combination of dimensions?", answers: ["High demands with low responsiveness", "High demands combined with high responsiveness ✓", "Low demands with low responsiveness", "Complete absence of rules and structure"], correct: 1 },
+            { q: "Adolescent egocentrism, as described in developmental psychology, includes which phenomena?", answers: ["Concrete operational thinking", "Imaginary audience and personal fable beliefs ✓", "Complete absence of self-awareness", "Difficulties with object permanence"], correct: 1 },
+            { q: "Erik Erikson's psychosocial crisis of identity versus role confusion primarily occurs during which developmental period?", answers: ["Infancy", "Early childhood", "Adolescence ✓", "Late adulthood"], correct: 2 },
+            { q: "The availability heuristic involves judging the likelihood of events based on:", answers: ["Carefully analyzed statistical data", "How easily examples come to mind ✓", "Pure logical reasoning only", "Expert opinion exclusively"], correct: 1 },
+            { q: "Lev Vygotsky's sociocultural theory emphasized the important role of:", answers: ["Universal developmental stages only", "Social interaction and culture in cognitive development ✓", "Genetic factors exclusively", "Individual discovery without social influence"], correct: 1 }
         ]
     },
     la3: {
@@ -66,32 +66,32 @@ const module4Activities = {
     la4: {
         title: "LA4: Cognitive Bias & Development Analysis",
         questions: [
-            { q: "Person overestimates shark attack risk after watching Shark Week. This demonstrates:", answers: ["Confirmation bias", "Availability heuristic ✓", "Hindsight bias", "Functional fixedness"], correct: 1 },
-            { q: "Investor loses $1000 on stock but won't sell because 'already invested so much.' This is:", answers: ["Functional fixedness", "Sunk cost fallacy ✓", "Overconfidence", "Framing effect"], correct: 1 },
-            { q: "Only reading news sources that support your political views demonstrates:", answers: ["Critical thinking", "Confirmation bias ✓", "Availability heuristic", "Anchoring"], correct: 1 },
-            { q: "After accident, person says 'I knew that would happen.' This is:", answers: ["Confirmation bias", "Hindsight bias ✓", "Availability heuristic", "Representativeness"], correct: 1 },
-            { q: "Child (age 2) sees parent hide toy under blanket and searches for it. Child has achieved:", answers: ["Conservation", "Object permanence ✓", "Abstract thinking", "Reversibility"], correct: 1 },
-            { q: "Child (age 4) thinks moon follows them when walking. This demonstrates:", answers: ["Animism and egocentrism ✓", "Concrete operations", "Formal operations", "Conservation"], correct: 0 },
-            { q: "Child (age 7) understands water amount stays same when poured into different shaped glass. This is:", answers: ["Object permanence", "Conservation ✓", "Centration", "Egocentrism"], correct: 1 },
-            { q: "Adolescent believes 'everyone is watching me' (spotlight effect) and 'no one understands me' (personal fable). This is:", answers: ["Concrete thinking", "Adolescent egocentrism ✓", "Identity crisis", "Role confusion"], correct: 1 },
-            { q: "According to Kohlberg, reasoning 'it's wrong because you'll get caught' represents:", answers: ["Preconventional morality ✓", "Conventional morality", "Postconventional morality", "No moral development"], correct: 0 },
-            { q: "Child learns new word after hearing it once. This rapid vocabulary growth (age 2-6) is called:", answers: ["Telegraphic speech", "Language explosion ✓", "Overregularization", "Babbling"], correct: 1 }
+            { q: "After watching extensive media coverage during Shark Week, a person significantly overestimates the risk of shark attacks. Which cognitive bias is being demonstrated?", answers: ["Confirmation bias", "Availability heuristic ✓", "Hindsight bias", "Functional fixedness"], correct: 1 },
+            { q: "An investor has lost $1,000 on a particular stock but refuses to sell because they have 'already invested so much.' Which decision-making error is this?", answers: ["Functional fixedness", "Sunk cost fallacy ✓", "Overconfidence bias", "Framing effect"], correct: 1 },
+            { q: "A person exclusively reads news sources that align with and support their existing political views. Which cognitive bias does this exemplify?", answers: ["Critical thinking skills", "Confirmation bias ✓", "Availability heuristic", "Anchoring bias"], correct: 1 },
+            { q: "After a car accident occurs, an observer claims 'I knew that intersection was dangerous all along.' Which bias is this person displaying?", answers: ["Confirmation bias", "Hindsight bias ✓", "Availability heuristic", "Representativeness heuristic"], correct: 1 },
+            { q: "A 2-year-old child watches as a parent hides a toy under a blanket, then successfully searches for and retrieves the toy. Which Piagetian milestone has this child achieved?", answers: ["Conservation", "Object permanence ✓", "Abstract hypothetical thinking", "Reversibility"], correct: 1 },
+            { q: "A 4-year-old child believes that the moon is following them as they walk down the street. Which preoperational characteristics does this demonstrate?", answers: ["Animism and egocentrism ✓", "Concrete operational thinking", "Formal operational reasoning", "Conservation"], correct: 0 },
+            { q: "A 7-year-old understands that the amount of water remains the same even when poured from a short wide glass into a tall narrow glass. Which cognitive achievement is this?", answers: ["Object permanence", "Conservation ✓", "Centration", "Egocentrism"], correct: 1 },
+            { q: "An adolescent believes that 'everyone is constantly watching and judging me' (imaginary audience) and 'my experiences are unique and no one could possibly understand' (personal fable). What developmental phenomenon is this?", answers: ["Concrete operational thinking", "Adolescent egocentrism ✓", "Identity crisis", "Role confusion"], correct: 1 },
+            { q: "According to Lawrence Kohlberg's theory of moral development, the reasoning 'it's wrong to steal because you'll get caught and punished' represents which stage?", answers: ["Preconventional morality ✓", "Conventional morality", "Postconventional morality", "Complete absence of moral development"], correct: 0 },
+            { q: "Between the ages of 2 and 6, children experience rapid vocabulary growth in which they can learn new words after hearing them just once. What is this phenomenon called?", answers: ["Telegraphic speech", "Language explosion or vocabulary spurt ✓", "Overregularization", "Babbling"], correct: 1 }
         ]
     }
 };
 
 const module4Quiz = {
     questions: [
-        { q: "Gardner's multiple intelligences theory suggests:", answers: ["One general intelligence", "Eight relatively independent intelligences ✓", "Only IQ matters", "Three types"], correct: 1 },
-        { q: "Cross-sectional vs longitudinal studies:", answers: ["Same thing", "Cross-sectional: different ages at once; Longitudinal: same people over time ✓", "Longitudinal is faster", "Cross-sectional shows change"], correct: 1 },
-        { q: "Nature vs nurture debate concerns:", answers: ["Only genetics", "Only environment", "Interaction of heredity and environment ✓", "Neither matters"], correct: 2 },
-        { q: "Telegraphic speech (\"want cookie\") occurs:", answers: ["Infancy", "Around age 2 ✓", "Adolescence", "Adulthood"], correct: 1 },
-        { q: "Kohlberg's conventional morality stage emphasizes:", answers: ["Avoiding punishment", "Social rules and approval ✓", "Universal ethics", "Self-interest only"], correct: 1 },
-        { q: "Cognitive development research uses conservation tasks to assess:", answers: ["Memory", "Understanding that quantity stays same despite appearance changes ✓", "Language", "Attachment"], correct: 1 },
-        { q: "Divergent thinking involves:", answers: ["One correct answer", "Multiple creative solutions ✓", "Convergent only", "No creativity"], correct: 1 },
-        { q: "Strange Situation procedure measures:", answers: ["Intelligence", "Attachment quality ✓", "Language development", "Memory"], correct: 1 },
-        { q: "Menopause and male midlife changes show:", answers: ["No biological changes in middle adulthood", "Reproductive and hormonal changes, gradual not sudden ✓", "Only women change", "Complete cessation of all hormones"], correct: 1 },
-        { q: "Metacognition refers to:", answers: ["Memory only", "Thinking about one's own thinking processes ✓", "Concrete operations", "Social cognition"], correct: 1 }
+        { q: "Howard Gardner's theory of multiple intelligences proposes that:", answers: ["Intelligence consists of one general ability", "Intelligence comprises eight relatively independent types ✓", "Only traditional IQ scores matter for success", "Intelligence has exactly three distinct types"], correct: 1 },
+        { q: "What is the key methodological difference between cross-sectional and longitudinal research designs?", answers: ["They are identical research methods", "Cross-sectional studies compare different age groups simultaneously while longitudinal studies follow the same individuals over time ✓", "Longitudinal designs are faster to complete", "Cross-sectional designs can show developmental change"], correct: 1 },
+        { q: "The nature versus nurture debate in developmental psychology concerns:", answers: ["The exclusive role of genetics in development", "The exclusive role of environment in development", "The complex interaction between heredity and environment ✓", "The conclusion that neither factor influences development"], correct: 2 },
+        { q: "Telegraphic speech, characterized by two-word phrases like 'want cookie' or 'mommy go,' typically occurs during which developmental period?", answers: ["Early infancy", "Around age 2 years ✓", "Adolescence", "Young adulthood"], correct: 1 },
+        { q: "Lawrence Kohlberg's conventional stage of moral development emphasizes:", answers: ["Avoiding punishment and seeking rewards", "Conforming to social rules and gaining approval ✓", "Universal ethical principles", "Pure self-interest"], correct: 1 },
+        { q: "In cognitive development research, conservation tasks are used to assess a child's understanding of:", answers: ["Memory capacity", "The principle that quantity remains constant despite changes in appearance ✓", "Language comprehension", "Attachment security"], correct: 1 },
+        { q: "Divergent thinking, an important component of creativity, involves:", answers: ["Finding one single correct answer", "Generating multiple creative solutions to open-ended problems ✓", "Only convergent reasoning", "Complete absence of creativity"], correct: 1 },
+        { q: "Mary Ainsworth's Strange Situation procedure was specifically designed to measure:", answers: ["Cognitive intelligence", "Attachment quality between infant and caregiver ✓", "Language development milestones", "Memory capabilities"], correct: 1 },
+        { q: "Research on menopause in women and hormonal changes in middle-aged men demonstrates that:", answers: ["No significant biological changes occur during middle adulthood", "Reproductive and hormonal changes occur gradually rather than suddenly ✓", "Only women experience midlife physical changes", "All hormones completely cease production"], correct: 1 },
+        { q: "In cognitive psychology, the term 'metacognition' refers to:", answers: ["Memory processes exclusively", "The ability to think about and monitor one's own thinking processes ✓", "Concrete operational reasoning", "Social cognition and perspective-taking"], correct: 1 }
     ]
 };
 
