@@ -21,20 +21,21 @@ const courseResources = {
                 heading: "Course Structure",
                 content: `**8 Modules** covering scientific psychology:
 - Each module includes 4 learning activities (LA1-LA4)
-- Discussion forums in all 8 modules (RSI requirement)
-- Module quizzes (6 total)
-- Progressive Portfolio (8 pieces throughout semester)
-- Midterm Creative Project (Module 4)
-- Final Exam & Reflection (Module 8)
+- 8 Module quizzes (25 pts each)
+- 4 Discussion Boards with portfolio progress (100 pts each - Modules 1,3,5,8)
+- Progressive Research Portfolio (3 checkpoints + final report)
+- Midterm Exam (Module 4)
+- Final Exam (Module 8)
 
 **Point Distribution**:
-- Learning Activities: 720 points (90 pts × 8 modules)
-- Discussions: 400 points (50 pts × 8 modules)
-- Module Quizzes: 180 points (30 pts × 6 quizzes)
-- Progressive Portfolio: 320 points (40 pts × 8 pieces)
-- Written Assignments: 180 points (3 × 60 pts)
-- Midterm Project: 100 points
+- Learning Activities: 640 points (20 pts × 32 activities)
+- Module Quizzes: 200 points (25 pts × 8)
+- Discussion Boards: 400 points (100 pts × 4)
+- Project Checkpoints: 150 points (50 pts × 3)
+- Final Portfolio: 200 points (Module 7)
+- Midterm Exam: 100 points
 - Final Exam: 100 points
+- Other assessments: 210 points
 **Total**: 2,000 points`
             },
             {
