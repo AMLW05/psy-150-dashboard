@@ -21,16 +21,16 @@ const module2Activities = {
     },
     la2: {
         questions: [
-            { q: "Patient has damage to Broca's area. Most likely symptom:", answers: ["Cannot understand speech", "Cannot produce fluent speech ✓", "Cannot see", "Cannot remember"], correct: 1 },
-            { q: "Neurotransmitter involved in mood, linked to depression:", answers: ["Acetylcholine", "Dopamine", "Serotonin ✓", "GABA"], correct: 2 },
-            { q: "Split-brain patient sees word in left visual field. They:", answers: ["Can say the word", "Cannot verbally report but can point with left hand ✓", "See nothing", "Have normal response"], correct: 1 },
-            { q: "You enter dark theater and gradually see better. This is:", answers: ["Sensory adaptation ✓", "Perceptual set", "Gate control", "Absolute threshold"], correct: 0 },
-            { q: "Rubbing injured area reduces pain, supporting:", answers: ["Trichromatic theory", "Gate-control theory ✓", "Place theory", "Signal detection"], correct: 1 },
-            { q: "Sympathetic nervous system activation causes:", answers: ["Digestion", "Increased heart rate and alertness ✓", "Sleep", "Memory formation"], correct: 1 },
-            { q: "fMRI is used to:", answers: ["Measure brain activity through blood flow ✓", "Record single neurons", "Stimulate brain areas", "Measure neurotransmitters"], correct: 0 },
-            { q: "Phantom limb pain demonstrates:", answers: ["Brain creates pain perception even without limb ✓", "Gate-control failure", "Sensory adaptation", "Absolute threshold changes"], correct: 0 },
-            { q: "Bottom-up processing means:", answers: ["Expectations shape perception", "Sensation drives perception from stimuli upward ✓", "Top-down only", "No sensory input needed"], correct: 1 },
-            { q: "Damage to hippocampus would most impair:", answers: ["Emotion regulation", "Forming new memories ✓", "Language production", "Motor control"], correct: 1 }
+            { q: "A patient has sustained damage to Broca's area in the frontal lobe. Which symptom would this patient most likely exhibit?", answers: ["Inability to comprehend spoken language", "Difficulty producing fluent, grammatical speech ✓", "Complete loss of vision", "Severe memory impairment"], correct: 1 },
+            { q: "Which neurotransmitter is primarily involved in mood regulation and has been strongly implicated in clinical depression?", answers: ["Acetylcholine", "Dopamine", "Serotonin ✓", "GABA (gamma-aminobutyric acid)"], correct: 2 },
+            { q: "A split-brain patient (whose corpus callosum has been severed) is shown a word in the left visual field only. What would be the expected response?", answers: ["The patient can verbally report the word", "The patient cannot verbally report the word but can point to it with the left hand ✓", "The patient sees nothing at all", "The patient responds normally with no impairment"], correct: 1 },
+            { q: "When you enter a dark movie theater, your vision gradually improves and you can see better after several minutes. Which sensory process explains this phenomenon?", answers: ["Sensory adaptation (dark adaptation) ✓", "Perceptual set", "Gate-control theory of pain", "Absolute threshold adjustment"], correct: 0 },
+            { q: "According to gate-control theory, rubbing or massaging an injured area can reduce pain perception. Which principle explains this effect?", answers: ["Trichromatic color theory", "Gate-control theory: touch signals compete with pain signals ✓", "Place theory of pitch perception", "Signal detection theory"], correct: 1 },
+            { q: "When the sympathetic nervous system is activated during a stress response, which physiological changes typically occur?", answers: ["Increased digestive activity", "Increased heart rate and heightened alertness ✓", "Promotion of sleep and rest", "Enhanced long-term memory formation"], correct: 1 },
+            { q: "Functional magnetic resonance imaging (fMRI) is a neuroimaging technique that allows researchers to:", answers: ["Measure brain activity by detecting blood flow changes ✓", "Record electrical activity from individual neurons", "Directly stimulate specific brain regions", "Measure neurotransmitter concentrations in synapses"], correct: 0 },
+            { q: "Some individuals who have had limbs amputated continue to experience pain sensations from the missing limb (phantom limb pain). What does this phenomenon demonstrate?", answers: ["That the pain is purely imaginary and not real", "That the brain can create pain perceptions even without physical input from the limb ✓", "That gate-control mechanisms have completely failed", "That sensory adaptation has occurred abnormally"], correct: 0 },
+            { q: "In perception, bottom-up processing refers to which type of information flow?", answers: ["Prior expectations and knowledge shape perception", "Sensory input drives perception from basic stimuli upward to higher cognition ✓", "Only top-down processing occurs in perception", "Perception occurs without any sensory input"], correct: 1 },
+            { q: "Damage to the hippocampus would most severely impair which cognitive function?", answers: ["Regulation of emotional responses", "Formation of new long-term memories ✓", "Production of spoken language", "Voluntary motor control"], correct: 1 }
         ]
     },
     la3: {
@@ -66,30 +66,30 @@ const module2Activities = {
     la4: {
         title: "LA4: Neuroscience Case Analysis",
         questions: [
-            { q: "Patient can understand speech but cannot speak fluently (knows what to say but can't form words). Most likely damage:", answers: ["Wernicke's area", "Broca's area ✓", "Hippocampus", "Amygdala"], correct: 1 },
-            { q: "Patient cannot form new long-term memories but remembers childhood (like H.M.). Damage likely in:", answers: ["Frontal lobe", "Hippocampus ✓", "Cerebellum", "Occipital lobe"], correct: 1 },
-            { q: "Patient has tremors, difficulty initiating movement, and slowed movement. Low levels of which neurotransmitter most likely:", answers: ["Serotonin", "Dopamine ✓", "Acetylcholine", "GABA"], correct: 1 },
-            { q: "After amygdala damage, patient would most likely show:", answers: ["Memory loss", "Reduced fear response ✓", "Language problems", "Motor impairment"], correct: 1 },
-            { q: "Split-brain patient sees image of spoon in LEFT visual field. They will:", answers: ["Say 'spoon'", "Point with left hand but not verbally name it ✓", "See nothing", "Name it normally"], correct: 1 },
-            { q: "Person feels anxious. SSRIs (like Prozac) would help by:", answers: ["Decreasing serotonin", "Increasing serotonin availability ✓", "Blocking dopamine", "Reducing GABA"], correct: 1 },
-            { q: "After frontal lobe damage (Phineas Gage case), changes occur in:", answers: ["Memory only", "Personality and impulse control ✓", "Vision", "Hearing"], correct: 1 },
-            { q: "Person experiences phantom limb pain (pain in amputated limb). This demonstrates:", answers: ["Imaginary pain", "Brain creates pain perception without physical limb ✓", "Malingering", "Nerve damage only"], correct: 1 }
+            { q: "A patient can understand spoken language perfectly but cannot produce fluent speech (they know what they want to say but cannot form the words). Which brain area has most likely been damaged?", answers: ["Wernicke's area", "Broca's area ✓", "Hippocampus", "Amygdala"], correct: 1 },
+            { q: "A patient cannot form new long-term memories but can remember events from childhood perfectly (similar to patient H.M.). Which brain structure has most likely been damaged?", answers: ["Frontal lobe", "Hippocampus ✓", "Cerebellum", "Occipital lobe"], correct: 1 },
+            { q: "A patient exhibits tremors, difficulty initiating movements, and overall slowed motor function. Which neurotransmitter is most likely deficient in this patient?", answers: ["Serotonin", "Dopamine ✓", "Acetylcholine", "GABA"], correct: 1 },
+            { q: "After sustaining damage to the amygdala, a patient would most likely exhibit changes in which area?", answers: ["Long-term memory formation", "Fear responses and emotional reactivity ✓", "Language production and comprehension", "Fine motor control and coordination"], correct: 1 },
+            { q: "A split-brain patient is shown an image of a spoon in the LEFT visual field only. What would be the expected response?", answers: ["The patient will verbally say 'spoon'", "The patient cannot name it verbally but can point to it with the left hand ✓", "The patient will report seeing nothing", "The patient will name it normally without impairment"], correct: 1 },
+            { q: "A patient experiencing anxiety is prescribed an SSRI medication (such as Prozac or Zoloft). How do these medications work to reduce anxiety?", answers: ["By decreasing serotonin levels in the brain", "By increasing serotonin availability in synapses ✓", "By blocking dopamine receptors", "By reducing GABA activity"], correct: 1 },
+            { q: "After sustaining severe frontal lobe damage (as in the famous case of Phineas Gage), in which areas would changes most likely occur?", answers: ["Long-term memory storage only", "Personality characteristics and impulse control ✓", "Visual perception", "Auditory processing"], correct: 1 },
+            { q: "A person who has undergone limb amputation continues to experience pain sensations from the missing limb (phantom limb pain). What does this phenomenon demonstrate about pain perception?", answers: ["That the pain is imaginary and not real", "That the brain can generate pain perceptions even without physical input from the limb ✓", "That the patient is malingering or faking symptoms", "That nerve damage is the sole cause"], correct: 1 }
         ]
     }
 };
 
 const module2Quiz = {
     questions: [
-        { q: "Neurons communicate via:", answers: ["Direct electrical connection", "Neurotransmitters at synapses ✓", "Blood flow", "Hormones only"], correct: 1 },
-        { q: "Parasympathetic nervous system promotes:", answers: ["Fight-or-flight", "Rest and digest ✓", "Stress response", "Memory encoding"], correct: 1 },
-        { q: "MRI vs fMRI:", answers: ["MRI shows structure, fMRI shows function ✓", "Same thing", "MRI shows function", "fMRI is older"], correct: 0 },
-        { q: "Wernicke's area damage causes:", answers: ["Cannot produce speech", "Cannot understand speech ✓", "Cannot see", "Cannot remember"], correct: 1 },
-        { q: "Neuroplasticity means:", answers: ["Brain is fixed after childhood", "Brain can reorganize and form new connections ✓", "Only neurons grow", "Brain shrinks with age"], correct: 1 },
-        { q: "Rods vs cones:", answers: ["Rods for color, cones for black/white", "Rods for dim light, cones for color ✓", "Same function", "Rods only in fovea"], correct: 1 },
-        { q: "Signal detection theory considers:", answers: ["Only stimulus intensity", "Both stimulus and psychological factors (expectations, motivation) ✓", "Only perception", "Only sensation"], correct: 1 },
-        { q: "Gestalt principles emphasize:", answers: ["Individual sensations", "Organized whole perception ✓", "Bottom-up only", "Top-down only"], correct: 1 },
-        { q: "Biopsychosocial approach to pain includes:", answers: ["Biological factors only", "Biological, psychological, and social factors ✓", "Psychological only", "Social only"], correct: 1 },
-        { q: "Endocrine system differs from nervous system:", answers: ["Uses hormones, slower, longer-lasting effects ✓", "Faster communication", "Only in brain", "No difference"], correct: 0 }
+        { q: "How do neurons primarily communicate with each other in the nervous system?", answers: ["Through direct electrical connections between neurons", "By releasing neurotransmitters into synapses ✓", "Through blood flow between brain regions", "Exclusively through hormone signaling"], correct: 1 },
+        { q: "The parasympathetic nervous system primarily promotes which physiological state?", answers: ["Fight-or-flight stress response", "Rest, digestion, and energy conservation ✓", "Heightened stress and arousal", "Enhanced memory encoding"], correct: 1 },
+        { q: "What is the primary difference between MRI and fMRI neuroimaging techniques?", answers: ["MRI shows brain structure while fMRI shows brain function ✓", "They are identical techniques with different names", "MRI shows brain function while fMRI shows structure", "fMRI is an older, outdated version of MRI"], correct: 0 },
+        { q: "Damage to Wernicke's area in the brain typically causes which language impairment?", answers: ["Inability to produce fluent speech", "Inability to comprehend spoken and written language ✓", "Complete loss of vision", "Severe memory impairment"], correct: 1 },
+        { q: "In neuroscience, what does the term 'neuroplasticity' refer to?", answers: ["The brain's structure becomes fixed and unchangeable after childhood", "The brain's ability to reorganize itself and form new neural connections ✓", "Only new neurons can grow, existing ones cannot change", "The brain inevitably shrinks as we age"], correct: 1 },
+        { q: "What is the functional difference between rods and cones in the human eye?", answers: ["Rods detect color while cones detect black and white", "Rods function in dim light while cones detect color and fine detail ✓", "Rods and cones serve identical functions", "Rods are found only in the fovea"], correct: 1 },
+        { q: "Signal detection theory in sensation and perception considers which factors when determining whether a stimulus is detected?", answers: ["Only the physical intensity of the stimulus", "Both the stimulus characteristics and psychological factors like expectations and motivation ✓", "Only perceptual organization", "Only sensory processes without cognition"], correct: 1 },
+        { q: "Gestalt principles of perception emphasize which aspect of how we perceive stimuli?", answers: ["Individual sensory elements processed separately", "The tendency to perceive organized wholes rather than separate parts ✓", "Exclusively bottom-up sensory processing", "Exclusively top-down cognitive processing"], correct: 1 },
+        { q: "The biopsychosocial approach to understanding pain perception includes which types of factors?", answers: ["Biological factors only", "Biological, psychological, and social factors all interacting ✓", "Psychological factors only", "Social and cultural factors only"], correct: 1 },
+        { q: "How does the endocrine system differ from the nervous system in terms of communication?", answers: ["The endocrine system uses hormones and has slower but longer-lasting effects ✓", "The endocrine system communicates faster than the nervous system", "The endocrine system operates only within the brain", "There are no significant differences between the two systems"], correct: 0 }
     ]
 };
 
