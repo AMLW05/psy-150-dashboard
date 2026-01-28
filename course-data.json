@@ -11,20 +11,21 @@
     "description": "Scientific study of behavior and mental processes, including biological bases, learning, cognition, development, personality, social behavior, and psychological disorders.",
     "status": "production-ready",
     "completionPercent": 100,
-    "totalPoints": 1860,
-    "autoGradedPercent": 59,
+    "totalPoints": 2000,
+    "autoGradedPercent": 57,
     "totalActivities": 32
   },
   "statistics": {
     "modules": 8,
     "learningActivities": 32,
     "quizzes": 8,
-    "projectCheckpoints": 4,
+    "projectCheckpoints": 3,
     "discussions": 4,
+    "finalPortfolio": 1,
     "midtermExam": 1,
     "finalExam": 1,
-    "autoGradedPoints": 1100,
-    "manualGradedPoints": 760
+    "autoGradedPoints": 1140,
+    "manualGradedPoints": 860
   },
   "clos": [
     {
@@ -137,14 +138,15 @@
   ],
   "threadProject": {
     "title": "Psychological Investigation Portfolio",
-    "description": "Progressive semester-long research project where students design and conduct a psychological investigation, building research literacy and scientific thinking across 4 checkpoints",
-    "totalPoints": 200,
+    "description": "Progressive semester-long research project where students design, conduct, and report on a psychological investigation, building research literacy and scientific thinking across the semester. Individual pieces submitted in Modules 1, 3, 5 (50 pts each), with final complete portfolio due in Module 7 (200 pts).",
+    "totalPoints": 350,
     "checkpoints": [
       {
         "number": 1,
         "module": 1,
-        "title": "Research Question & Design",
+        "title": "Piece #1: Research Question & Method Selection",
         "points": 50,
+        "submissionType": "Project Checkpoint",
         "linkedPTS": [
           "PTS1"
         ],
@@ -152,13 +154,14 @@
           "CLO2",
           "CLO3"
         ],
-        "description": "Choose a psychological phenomenon, formulate a research question, identify appropriate research method, and create basic research design"
+        "description": "Choose a psychological phenomenon, formulate a research question, identify appropriate research method (experimental, correlational, or descriptive), and justify method choice with ethical considerations"
       },
       {
         "number": 2,
         "module": 3,
-        "title": "Literature Review & Hypothesis",
+        "title": "Piece #2: Literature Review & Hypothesis",
         "points": 50,
+        "submissionType": "Project Checkpoint",
         "linkedPTS": [
           "PTS1",
           "PTS6"
@@ -167,28 +170,30 @@
           "CLO2",
           "CLO3"
         ],
-        "description": "Review 3-5 empirical studies, synthesize existing research, develop specific hypothesis, and justify methodology choice"
+        "description": "Find and summarize 3 empirical research articles, synthesize literature to identify patterns and gaps, develop specific testable hypothesis based on research"
       },
       {
         "number": 3,
         "module": 5,
-        "title": "Data Analysis & Results",
+        "title": "Piece #3: Research Design & Methodology",
         "points": 50,
+        "submissionType": "Project Checkpoint",
         "linkedPTS": [
           "PTS1",
-          "PTS5"
+          "PTS4"
         ],
         "linkedCLOs": [
           "CLO2",
           "CLO3"
         ],
-        "description": "Collect/analyze data (simulated or real), create data visualizations, interpret findings, and discuss limitations"
+        "description": "Create detailed research design with participants, materials, procedure, and controls. Include operational definitions, potential confounds, and comprehensive ethical safeguards"
       },
       {
         "number": 4,
         "module": 7,
-        "title": "Final Report & Presentation",
-        "points": 50,
+        "title": "Complete Portfolio: Full APA Research Report",
+        "points": 200,
+        "submissionType": "Final Portfolio",
         "linkedPTS": [
           "PTS1",
           "PTS2",
@@ -204,7 +209,7 @@
           "CLO4",
           "CLO5"
         ],
-        "description": "Complete APA-style research report with biopsychosocial integration, discuss implications, and present findings"
+        "description": "Complete APA-style research report integrating all previous pieces plus data collection plan, simulated data analysis with results, and comprehensive discussion with biopsychosocial analysis, limitations, and implications"
       }
     ]
   },
@@ -375,9 +380,27 @@
           ]
         },
         {
-          "type": "Discussion Board",
-          "title": "Discussion #1: Psychology in Your Life",
+          "type": "Project Checkpoint",
+          "title": "Project Checkpoint #1: Research Question & Method Selection",
           "points": 50,
+          "rubric": "RUBRIC_2_Project_Checkpoints",
+          "linkedMLOs": [
+            2,
+            3
+          ],
+          "linkedCLOs": [
+            "CLO2",
+            "CLO3"
+          ],
+          "linkedPTS": [
+            "PTS1"
+          ]
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
           "linkedMLOs": [
             1,
             2
@@ -561,23 +584,6 @@
             2,
             3
           ]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Biopsychosocial Analysis",
-          "points": 50,
-          "linkedMLOs": [
-            3
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4",
-            "CLO5"
-          ],
-          "linkedPTS": [
-            "PTS2",
-            "PTS3"
-          ]
         }
       ]
     },
@@ -748,8 +754,9 @@
         },
         {
           "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #2: Literature Review & Hypothesis",
+          "title": "Project Checkpoint #2: Literature Review & Hypothesis",
           "points": 50,
+          "rubric": "RUBRIC_2_Project_Checkpoints",
           "linkedMLOs": [
             2
           ],
@@ -759,6 +766,25 @@
           ],
           "linkedPTS": [
             "PTS1",
+            "PTS6"
+          ]
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
+          "linkedMLOs": [
+            1,
+            2,
+            3
+          ],
+          "linkedCLOs": [
+            "CLO3",
+            "CLO4"
+          ],
+          "linkedPTS": [
+            "PTS2",
             "PTS6"
           ]
         }
@@ -921,6 +947,18 @@
       ],
       "assessments": [
         {
+          "type": "Module Quiz",
+          "title": "Module 4 Quiz",
+          "points": 25,
+          "questionCount": 10,
+          "autoGraded": true,
+          "linkedMLOs": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
           "type": "Midterm Exam",
           "title": "Midterm Exam",
           "points": 100,
@@ -930,20 +968,6 @@
             1
           ],
           "coverage": "Modules 1-3 comprehensive"
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Midterm Reflection",
-          "points": 50,
-          "linkedMLOs": [
-            2
-          ],
-          "linkedCLOs": [
-            "CLO3"
-          ],
-          "linkedPTS": [
-            "PTS2"
-          ]
         }
       ]
     },
@@ -1114,8 +1138,9 @@
         },
         {
           "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #3: Data Analysis & Results",
+          "title": "Project Checkpoint #3: Research Design & Methodology",
           "points": 50,
+          "rubric": "RUBRIC_2_Project_Checkpoints",
           "linkedMLOs": [
             2
           ],
@@ -1125,7 +1150,27 @@
           ],
           "linkedPTS": [
             "PTS1",
-            "PTS5"
+            "PTS4"
+          ]
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
+          "linkedMLOs": [
+            1,
+            2,
+            3
+          ],
+          "linkedCLOs": [
+            "CLO3",
+            "CLO4",
+            "CLO5"
+          ],
+          "linkedPTS": [
+            "PTS2",
+            "PTS3"
           ]
         }
       ]
@@ -1292,21 +1337,6 @@
             1,
             2,
             3
-          ]
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Social Influence",
-          "points": 50,
-          "linkedMLOs": [
-            3
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4"
-          ],
-          "linkedPTS": [
-            "PTS2"
           ]
         }
       ]
@@ -1481,10 +1511,12 @@
           ]
         },
         {
-          "type": "Project Checkpoint",
-          "title": "Thread Project Checkpoint #4: Final Report & Presentation",
-          "points": 50,
+          "type": "Final Portfolio",
+          "title": "Final Portfolio: Complete APA Research Report",
+          "points": 200,
+          "rubric": "RUBRIC_3_Final_Portfolio",
           "linkedMLOs": [
+            1,
             2,
             3
           ],
@@ -1661,6 +1693,41 @@
       ],
       "assessments": [
         {
+          "type": "Module Quiz",
+          "title": "Module 8 Quiz",
+          "points": 25,
+          "questionCount": 10,
+          "autoGraded": true,
+          "linkedMLOs": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "type": "Discussion Board",
+          "title": "Discussion Board #4: Course Reflection & Psychology in Your Future",
+          "points": 100,
+          "rubric": "RUBRIC_1_Discussion_Boards",
+          "linkedMLOs": [
+            2,
+            3
+          ],
+          "linkedCLOs": [
+            "CLO1",
+            "CLO2",
+            "CLO3",
+            "CLO4",
+            "CLO5"
+          ],
+          "linkedPTS": [
+            "PTS1",
+            "PTS2",
+            "PTS3",
+            "PTS6"
+          ]
+        },
+        {
           "type": "Final Exam",
           "title": "Comprehensive Final Exam",
           "points": 100,
@@ -1670,43 +1737,6 @@
             1
           ],
           "coverage": "All modules, emphasis on 4-8"
-        },
-        {
-          "type": "Discussion Board",
-          "title": "Discussion: Final Reflection",
-          "points": 50,
-          "linkedMLOs": [
-            2,
-            3
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4"
-          ],
-          "linkedPTS": [
-            "PTS2"
-          ]
-        },
-        {
-          "type": "Final Reflection Paper",
-          "title": "Final Reflection: Your Psychological Thinking Journey",
-          "points": 60,
-          "linkedMLOs": [
-            2,
-            3
-          ],
-          "linkedCLOs": [
-            "CLO3",
-            "CLO4"
-          ],
-          "linkedPTS": [
-            "PTS1",
-            "PTS2",
-            "PTS3",
-            "PTS4",
-            "PTS5",
-            "PTS6"
-          ]
         }
       ]
     }

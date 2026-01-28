@@ -400,8 +400,8 @@ function buildAssessment(a, mn) {
         const projectData = (typeof psychologicalInvestigationPortfolio !== 'undefined') ? psychologicalInvestigationPortfolio : null;
         let piece = null;
 
-        // Map module to piece number
-        const pieceMap = { 2: 'piece1', 4: 'piece2', 6: 'piece3', 7: 'module7Submission' };
+        // Map module to piece number (updated for new pattern)
+        const pieceMap = { 1: 'piece1', 3: 'piece2', 5: 'piece3' };
         const pieceKey = pieceMap[mn];
 
         if (projectData && pieceKey) {
@@ -410,30 +410,33 @@ function buildAssessment(a, mn) {
 
         if (piece) {
             details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
-            details += '<h4 style="margin-top:0;color:var(--accent)">' + piece.title + '</h4>';
+            details += '<h4 style="margin-top:0;color:var(--accent)">' + piece.title + ' (' + piece.points + ' pts)</h4>';
+            details += '<p style="margin:10px 0;font-style:italic;color:#666">📌 Individual submission graded. Incorporate feedback into final portfolio (Module 7, 200 pts).</p>';
+            details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + piece.instructions + '</div>';
+            if (piece.tips && piece.tips.length > 0) {
+                details += '<h5 style="margin-top:20px">💡 Tips for Success:</h5><ul style="margin-left:20px;line-height:1.8">';
+                piece.tips.forEach(tip => details += '<li>' + tip + '</li>');
+                details += '</ul>';
+            }
+            details += '<p style="margin-top:15px;font-style:italic">Copy/paste ready for Canvas. See project-pieces.js and rubrics.js (RUBRIC_2_Project_Checkpoints) for complete content.</p></div>';
+        }
+    }
+    // Final Portfolio - Module 7
+    else if (a.type === 'Final Portfolio') {
+        const projectData = (typeof psychologicalInvestigationPortfolio !== 'undefined') ? psychologicalInvestigationPortfolio : null;
+        const piece = projectData ? projectData.module7Submission : null;
 
-            // For Module 7 (full portfolio submission)
-            if (mn === 7) {
-                details += '<p style="margin:10px 0;font-weight:bold;color:var(--accent)">⭐ ALL 6 PIECES DUE TOGETHER (200 points total)</p>';
-                details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + piece.description + '</div>';
-                if (piece.submissionRequirements) {
-                    details += '<h5 style="margin-top:20px">Submission Requirements:</h5><ul style="margin-left:20px;line-height:1.8">';
-                    piece.submissionRequirements.forEach(req => details += '<li>' + req + '</li>');
-                    details += '</ul>';
-                }
-                details += '<p style="margin-top:15px;font-style:italic">See project-pieces.js for complete instructions for all 6 pieces.</p>';
+        if (piece) {
+            details = '<div style="padding:15px;background:#f8f9fa;border-radius:6px;margin:15px 0">';
+            details += '<h4 style="margin-top:0;color:var(--accent)">⭐ ' + piece.title + ' (' + piece.points + ' pts)</h4>';
+            details += '<p style="margin:10px 0;font-weight:bold;color:var(--accent)">Complete APA-style research report integrating Pieces #1-3 plus data analysis and biopsychosocial discussion</p>';
+            details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + piece.description + '</div>';
+            if (piece.submissionRequirements) {
+                details += '<h5 style="margin-top:20px">Submission Requirements:</h5><ul style="margin-left:20px;line-height:1.8">';
+                piece.submissionRequirements.forEach(req => details += '<li>' + req + '</li>');
+                details += '</ul>';
             }
-            // For individual pieces (Modules 2, 4, 6)
-            else {
-                details += '<p style="margin:10px 0;font-style:italic;color:#666">⚠️ NOTE: This piece is built progressively but all 6 pieces are submitted together in Module 7</p>';
-                details += '<div style="white-space:pre-wrap;line-height:1.8;margin:15px 0">' + piece.instructions + '</div>';
-                if (piece.tips && piece.tips.length > 0) {
-                    details += '<h5 style="margin-top:20px">💡 Tips for Success:</h5><ul style="margin-left:20px;line-height:1.8">';
-                    piece.tips.forEach(tip => details += '<li>' + tip + '</li>');
-                    details += '</ul>';
-                }
-            }
-            details += '</div>';
+            details += '<p style="margin-top:15px;font-style:italic">Copy/paste ready for Canvas. See project-pieces.js and rubrics.js (RUBRIC_3_Final_Portfolio) for complete content.</p></div>';
         }
     }
     // Module Quiz

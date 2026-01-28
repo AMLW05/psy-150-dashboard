@@ -3,9 +3,13 @@
 
 const discussionBoards = {
     module1: {
-        title: "Discussion #1: Psychology in Your Life",
-        points: 50,
-        prompt: `# Discussion: Psychology in Your Life
+        title: "Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work",
+        points: 100,
+        prompt: `# Discussion Board #1: Psychology in Your Life + Portfolio Piece #2 Work
+
+## PART A: Discussion Post (70 points)
+
+### Psychology in Your Life
 
 ## Instructions
 
@@ -50,17 +54,49 @@ Respond to two classmates who chose DIFFERENT principles than you.
 
 ❌ Avoid: "Great post!" "I agree." (too brief, not substantive)
 
-## Grading Rubric (50 points total)
+---
 
-**Initial Post (30 points)**
-- Accurate explanation of psychological principle (10 pts)
-- Relevant, detailed personal example (10 pts)
-- Psychological analysis using terminology (5 pts)
-- Thoughtful reflection on significance (5 pts)
+## PART B: Portfolio Piece #2 Work - Begin Literature Review (30 points)
 
-**Peer Responses (20 points)**
-- Response #1: Substantive engagement (10 pts)
-- Response #2: Substantive engagement (10 pts)
+While you're working on this discussion, also begin **Piece #2: Literature Review & Hypothesis** for your research portfolio (which will be submitted in Module 3).
+
+**Your Task for This Week:**
+1. **Find at least 1-2 empirical research articles** related to your research question from Piece #1
+2. **Post a brief update (150+ words)** in this same discussion thread sharing:
+   - Article citations (APA format)
+   - Brief summary of what each article found
+   - How these articles relate to your research question
+   - Any questions or challenges you're encountering
+
+**Why This is Part of the Discussion:**
+Research is a conversation! Sharing your progress with classmates helps you:
+- Get feedback on your article choices
+- Discover new research sources from peers
+- Practice explaining your research to others
+- Build accountability and momentum
+
+**Example Post:**
+"For my research on music and memory, I found two relevant articles:
+
+Smith, J., & Jones, M. (2022). The effects of background music on memory recall. *Journal of Cognitive Psychology, 34*(2), 145-162.
+
+This study found that students who studied in silence performed better on memory tests than those with music playing. This relates directly to my research question about whether music helps or hinders studying.
+
+I'm still looking for articles that examine *different types* of music (classical vs. lyrical). Any suggestions?"
+
+---
+
+## Grading Rubric (100 points total)
+
+**PART A: Psychology Discussion (70 points)**
+- **Initial Post** (40 pts): Psychological principle explanation, personal example, analysis, and reflection
+- **Peer Response #1** (15 pts): Substantive engagement with classmate who chose different principle
+- **Peer Response #2** (15 pts): Substantive engagement with classmate who chose different principle
+
+**PART B: Portfolio Progress Update (30 points)**
+- **Article quality** (10 pts): At least 1-2 empirical, peer-reviewed articles with correct APA citations
+- **Summary clarity** (10 pts): Clear explanation of what articles found and relevance to research question
+- **Engagement** (10 pts): Thoughtful reflection on challenges, questions, or connections
 
 ## Tips for Success
 ✓ Cite the textbook when defining psychological terms
@@ -79,9 +115,13 @@ Respond to two classmates who chose DIFFERENT principles than you.
     },
 
     module3: {
-        title: "Discussion #2: Learning Principles in Action",
-        points: 50,
-        prompt: `# Discussion: Learning Principles in Action
+        title: "Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work",
+        points: 100,
+        prompt: `# Discussion Board #2: Learning Principles in Action + Portfolio Piece #3 Work
+
+## PART A: Discussion Post (70 points)
+
+### Learning Principles in Action
 
 ## Instructions
 
@@ -118,7 +158,40 @@ Describe a habit you want to change (or have changed) and design a behavior modi
 - Suggest an alternative approach
 - Share research that relates to their scenario
 
-## Grading Rubric (50 points total)
+---
+
+## PART B: Portfolio Piece #3 Work - Begin Research Design (30 points)
+
+Continue building your research portfolio by starting **Piece #3: Research Design & Methodology** (due Module 5).
+
+**Your Task for This Week:**
+1. **Draft your hypothesis** based on your literature review
+2. **Post a brief update (150+ words)** sharing:
+   - Your specific, testable hypothesis
+   - Planned research method (experimental, correlational, or descriptive)
+   - Initial thoughts on participants and procedure
+   - Questions or concerns about your design
+
+**Example Post:**
+"Based on my literature review, my hypothesis is: Students who study with instrumental music will recall MORE words than students who study in silence, but students who study with lyrical music will recall FEWER words than silence.
+
+I'm planning an experimental design with three groups (silence, instrumental, lyrical) randomly assigned. Each group studies a word list for 10 minutes, then recalls after 24 hours.
+
+My concern: How do I control for prior music preferences? Should I screen participants?"
+
+---
+
+## Grading Rubric (100 points total)
+
+**PART A: Learning Principles Discussion (70 points)**
+- **Initial Post** (40 pts): Scenario description, principle identification, evaluation, and recommendations with research
+- **Peer Response #1** (15 pts): Adds new behavioral insight or alternative approach
+- **Peer Response #2** (15 pts): Adds new behavioral insight or alternative approach
+
+**PART B: Portfolio Progress Update (30 points)**
+- **Hypothesis quality** (10 pts): Specific, testable prediction with clear variables
+- **Method clarity** (10 pts): Appropriate method with initial participant/procedure thoughts
+- **Critical thinking** (10 pts): Identifies potential challenges or design concerns
 
 **Initial Post (30 points)**
 - Detailed scenario description (5 pts)
@@ -152,9 +225,13 @@ Describe a habit you want to change (or have changed) and design a behavior modi
     },
 
     module5: {
-        title: "Discussion #3: Motivation & Well-Being",
-        points: 50,
-        prompt: `# Discussion: Motivation & Well-Being
+        title: "Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work",
+        points: 100,
+        prompt: `# Discussion Board #3: Motivation & Well-Being + Portfolio Piece #4 Work
+
+## PART A: Discussion Post (70 points)
+
+### Motivation & Well-Being
 
 ## Instructions
 
@@ -198,7 +275,43 @@ What psychological needs does social media fulfill? Analyze social media motivat
 - Suggest an additional strategy
 - Make connections to other course concepts (emotion, learning, cognition)
 
-## Grading Rubric (50 points total)
+---
+
+## PART B: Portfolio Piece #4 Work - Data Collection Planning (30 points)
+
+Begin planning **Piece #4: Data Collection Plan** (which you'll include in your final portfolio, Module 7).
+
+**Your Task for This Week:**
+1. **Plan your data collection approach**
+2. **Post a brief update (150+ words)** sharing:
+   - How you'll collect data (survey, observation, experiment setup)
+   - Sample size target
+   - Any materials/measures you'll use
+   - Timeline and feasibility concerns
+
+**Example Post:**
+"For my music and memory study, I plan to recruit 30 college students through Instagram and course announcements. I'll use Qualtrics to randomly assign participants to conditions and deliver the word list.
+
+Materials needed:
+- 20-word list (neutral nouns)
+- Three audio tracks (silence, instrumental, lyrical)
+- Memory test (free recall)
+
+Timeline: Hoping to collect data over 2 weeks. Concerned about participant retention for the 24-hour follow-up test—any suggestions for keeping people engaged?"
+
+---
+
+## Grading Rubric (100 points total)
+
+**PART A: Motivation Discussion (70 points)**
+- **Initial Post** (40 pts): Challenge description, two theories applied, analysis of conflicts, strategies, well-being connection, and research citation
+- **Peer Response #1** (15 pts): Applies different theory or shares relevant personal experience
+- **Peer Response #2** (15 pts): Applies different theory or shares relevant personal experience
+
+**PART B: Portfolio Progress Update (30 points)**
+- **Data collection plan** (10 pts): Clear, feasible approach with appropriate sample size
+- **Materials description** (10 pts): Specific measures and materials identified
+- **Feasibility analysis** (10 pts): Realistic timeline and awareness of challenges
 
 **Initial Post (30 points)**
 - Clear description of motivational challenge (5 pts)
@@ -233,9 +346,9 @@ What psychological needs does social media fulfill? Analyze social media motivat
     },
 
     module8: {
-        title: "Discussion #4: Course Reflection & Psychology in Your Future",
-        points: 50,
-        prompt: `# Discussion: Course Reflection & Psychology in Your Future
+        title: "Discussion Board #4: Course Reflection & Psychology in Your Future",
+        points: 100,
+        prompt: `# Discussion Board #4: Course Reflection & Psychology in Your Future
 
 ## Instructions
 
@@ -282,17 +395,17 @@ Choose at least TWO domains and explain how you'll apply psychological principle
 
 **Make this personal and authentic.** This is your farewell to classmates—be genuine.
 
-## Grading Rubric (50 points total)
+## Grading Rubric (100 points total)
 
-**Initial Post (30 points)**
-- Surprising/paradigm-shifting concepts (7 pts)
-- Personal growth and self-awareness (7 pts)
-- Biopsychosocial integration demonstrated (8 pts)
-- Future applications across domains (8 pts)
+**Initial Post (60 points)**
+- Surprising/paradigm-shifting concepts (15 pts)
+- Personal growth and self-awareness (15 pts)
+- Biopsychosocial integration demonstrated (15 pts)
+- Future applications across domains (15 pts)
 
-**Peer Responses (20 points)**
-- Response #1: Meaningful connection (10 pts)
-- Response #2: Meaningful connection (10 pts)
+**Peer Responses (40 points)**
+- Response #1: Meaningful connection (20 pts)
+- Response #2: Meaningful connection (20 pts)
 
 ## Example of Biopsychosocial Integration
 

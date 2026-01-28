@@ -4,8 +4,8 @@
 const psychologicalInvestigationPortfolio = {
     overview: {
         title: "Psychological Investigation Portfolio",
-        description: "Progressive semester-long research project where you design, conduct, and report on a psychological investigation. You will build this portfolio piece-by-piece across the semester, with ALL 6 PIECES DUE TOGETHER IN MODULE 7.",
-        totalPoints: 200,
+        description: "Progressive semester-long research project where you design, conduct, and report on a psychological investigation. Individual pieces submitted in Modules 1, 3, 5 (50 pts each) with final complete portfolio due Module 7 (200 pts). Total: 350 points.",
+        totalPoints: 350,
         learningObjectives: [
             "Design a valid psychological research study",
             "Evaluate and synthesize research literature",
@@ -17,10 +17,10 @@ const psychologicalInvestigationPortfolio = {
     },
 
     piece1: {
-        module: 2,
+        module: 1,
         title: "Piece #1: Research Question & Method Selection",
         points: 50,
-        dueDate: "Module 2 (part of portfolio, full portfolio due Module 7)",
+        dueDate: "Module 1 submission",
         instructions: `# PORTFOLIO PIECE #1: Research Question & Method Selection
 
 ## Overview
@@ -119,10 +119,10 @@ Explain WHY your chosen method is appropriate:
     },
 
     piece2: {
-        module: 4,
-        title: "Piece #2: Literature Review",
+        module: 3,
+        title: "Piece #2: Literature Review & Hypothesis",
         points: 50,
-        dueDate: "Module 4 (part of portfolio, full portfolio due Module 7)",
+        dueDate: "Module 3 submission",
         instructions: `# PORTFOLIO PIECE #2: Literature Review
 
 ## Overview
@@ -218,10 +218,10 @@ Smith and Jones (2022) investigated whether sleep deprivation affects memory con
     },
 
     piece3: {
-        module: 6,
-        title: "Piece #3: Hypothesis & Research Design",
+        module: 5,
+        title: "Piece #3: Research Design & Methodology",
         points: 50,
-        dueDate: "Module 6 (part of portfolio, full portfolio due Module 7)",
+        dueDate: "Module 5 submission",
         instructions: `# PORTFOLIO PIECE #3: Hypothesis & Research Design
 
 ## Overview
