@@ -1705,6 +1705,12 @@
           ]
         },
         {
+          "type": "Discussion Board",
+          "title": "Discussion Board #4: Course Reflection & Psychology in Your Future",
+          "points": 100,
+          "dueDate": "Sunday 11:59pm"
+        },
+        {
           "type": "Final Exam",
           "title": "Comprehensive Final Exam",
           "points": 100,
